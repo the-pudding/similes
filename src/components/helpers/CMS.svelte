@@ -1,6 +1,8 @@
 <script>
+	import Details from "$components/helpers/CMS.Details.svelte";
 	// components: an object of components that map to section names (e.g., { "Hero": Hero }) where Hero is a Svelte component
 	// body: an array of objects that contain a {section, content} obj
+	const defaultComponents = { Details };
 	let { components = {}, body = [] } = $props();
 </script>
 
@@ -13,7 +15,7 @@
 			<C {...content} />
 		{:else}
 			{#each content as { type, value }}
-				{@const C = components[type]}
+				{@const C = components[type] || defaultComponents[type]}
 				{@const isString = typeof value === "string"}
 				{#if C}
 					<C {...value} />
