@@ -1,23 +1,21 @@
 <script>
-	let { summary, content } = $props();
+	let { summary, content, open, name } = $props();
+
+	let single = $derived(typeof content === "string");
+	let isOpen = $derived(open === "true");
 </script>
 
-<details>
+<details open={isOpen} {name}>
 	<summary>{@html summary}</summary>
-	<p>{@html content}</p>
+	<div class="content">
+		{#if single}
+			{@html content}
+		{:else}
+			{#each content as { value }}
+				<p>
+					{@html value}
+				</p>
+			{/each}
+		{/if}
+	</div>
 </details>
-
-<style>
-	details {
-		margin: 1em 0;
-	}
-
-	summary {
-		cursor: pointer;
-		user-select: none;
-	}
-
-	details p {
-		margin-top: 0.5em;
-	}
-</style>

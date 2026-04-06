@@ -7,8 +7,8 @@
 /* colors defined in variables.css */
 :root {
 	/* font */
-	--font-sans: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-	--font-serif: Iowan Old Style, Times New Roman, Times, serif;
+	--font-sans: "Atlas Grotesk", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+	--font-serif: "Tiempos Text", Iowan Old Style, Times New Roman, Times, serif;
 	--font-mono: Menlo, Consolas, Monaco, monospace;
 
 	/* z-index */
@@ -19,7 +19,7 @@
 	--z-modal: 1000;
 
 	/* presets (used in reset.css) */
-	--font-body: var(--font-sans);
+	--font-body: var(--font-serif);
 	--font-form: var(--font-sans);
 
 	--radius-xs: 0.125rem;
@@ -28,7 +28,7 @@
 	--radius-lg: 1rem;
 	
 	--color-bg: var(--color-white);
-	--color-fg: var(--color-gray-900);
+	--color-fg: var(--color-black);
 	--color-fg-light: var(--color-gray-500);
 	--color-primary: var(--color-black);
 	--color-link: var(--color-black);
@@ -90,4 +90,10 @@ svg {
 	display: block;
 	width: 100%;
 	height: auto;
+}
+
+h1 {
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
 }

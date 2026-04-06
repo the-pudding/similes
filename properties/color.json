@@ -39,20 +39,23 @@
 		"gray-950": {
 			"value": "oklch(14.5% 0 0)"
 		},
-		"purple": {
-			"value": "oklch(0.5581 0.2208 314.87)"
-		},
 		"blue": {
 			"value": "oklch(0.4759 0.2842 276.25)"
-		},
-		"green": {
-			"value": "oklch(0.6506 0.0971 191.52)"
 		},
 		"red": {
 			"value": "oklch(0.677 0.2117 30.54)"
 		},
 		"yellow": {
 			"value": "oklch(0.8897 0.1781 108.83)"
+		},
+		"gold": {
+			"value": "oklch(0.6646 0.1181 86.72)"
+		},
+		"green": {
+			"value": "oklch(0.6195 0.0593 201.56)"
+		},
+		"purple": {
+			"value": "oklch(0.5793 0.1451 301.46)"
 		}
 	}
 }

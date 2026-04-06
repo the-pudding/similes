@@ -5,6 +5,23 @@
   },
   "body": [
     {
+      "section": "hero",
+      "content": [
+        {
+          "type": "h1",
+          "value": "<span class=line1>Comparisons</span> <span class=line2>as predictable as</span> <span class=line3 color-gold>the sunrise</span>"
+        },
+        {
+          "type": "text",
+          "value": "<span class=dek>An analysis of 200,000 similes from popular fiction.</span>"
+        },
+        {
+          "type": "text",
+          "value": "<span class=byline>By <a href=https://pudding.cool/author/russell-samora>Russell Samora.</a> Design by <a href=https://pudding.cool/author/shelly-tan>Shelly Tan.</a>"
+        }
+      ]
+    },
+    {
       "section": "intro",
       "content": [
         {
@@ -13,23 +30,20 @@
         },
         {
           "type": "text",
-          "value": "Let’s play a quick game: for each adjective, the most popular completion is revealed. The rest are hidden."
+          "value": "Maybe you haven’t considered the simile since grade school, so let’s play a quick game (or pop-quiz depending on your perspective) to get you in a writer’s mindset:"
         },
         {
           "type": "text",
-          "value": "You have ten seconds to guess a completion. The catch? More common = fewer points. Like Family Feud, but reversed. Ready?"
+          "value": "I’m going to show you an adjective. Try to fill in the blank. Oh, and you have ten seconds. Ready?"
         },
         {
           "type": "text",
-          "value": "<mark>[game here] - plan is 3 questions to give a variety and opportunity to experience the challenge. could be sold on 1 as less game and more playful example interaction. (@shelly?)"
-        },
-        {
-          "type": "text",
-          "value": "</mark>"
+          "value": "<mark>game - As fragile as ___</mark>"
         },
         {
           "type": "Game",
           "value": {
+            "note": "Just use one-two word nouns",
             "responses": [
               "as common as dirt",
               "as weak as a kitten"
@@ -38,13 +52,63 @@
         },
         {
           "type": "text",
-          "value": "The game you just played reflects real patterns I found after analyzing ~200,000 similes. I thought it would be a trivial exercise, but the more I poked around, the more questions I had. Let’s explore what I learned."
+          "value": "The game you just played reflects real patterns I found after analyzing ~200,000 similes. They are found in everything from <em>Jane Eyre</em> to last year's smash-hit <em>Heart the Lover</em>. It’s an old standby that writers still reach for constantly."
+        },
+        {
+          "type": "text",
+          "value": "<mark>some graphic of quotes from old and new books</mark>"
+        },
+        {
+          "type": "Examples",
+          "value": {
+            "items": [
+              {
+                "quote": "Remain where you are till I return; be <strong>as still as a mouse.</strong>",
+                "title": "Jane Eyre",
+                "year": "1847"
+              },
+              {
+                "quote": "I’m like my mother, I’m <strong>as useless as a beggar in Calcutta.</strong>",
+                "title": "Heart the Lover",
+                "year": "2025"
+              },
+              {
+                "quote": "I had part of a cup of coffee and about half of some cake that was <strong>as hard as a rock.</strong>",
+                "title": "The Catcher in the Rye",
+                "year": "1951"
+              },
+              {
+                "quote": "My mouth has gone <strong>as dry as sawdust.</strong>",
+                "title": "The Hunger Games",
+                "year": "2008"
+              },
+              {
+                "quote": "And Sunny remembered Ulla, who was so nonchalant about such matters that it made negotiations around sex <strong>as natural as a conversation between children playing in a sandbox.</strong>",
+                "title": "The Loneliness of Sonia and Sunny",
+                "year": "2025"
+              },
+              {
+                "quote": "It offered twenty-one guest rooms, commanding sea views, and a lobby fireplace <strong>as big as a truck.</strong>",
+                "title": "All the Light we Cannot See",
+                "year": "2014"
+              },
+              {
+                "quote": "Sparrows, awake even at night, chittered in the rafters, high above men who sat with meager scatterings of field mushrooms and pond greens, buckets whose bottoms were populated with <strong>shrimp as slender as pins,</strong> and snails collected from village porches.",
+                "title": "A Guardian and a Thief",
+                "year": "2025"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "value": "I thought it would be a trivial exercise, but the more I poked around, the more questions I had. Let’s explore what I learned."
         },
         {
           "type": "Details",
           "value": {
             "summary": "Why <strong>as ___ as ___</strong>?",
-            "content": "English has lots of ways to make comparisons. “Eyes like daggers,” “razor-sharp wit,” “moved like water.” But most of these forms get challenging to extract from text at scale. “As ___ as ___” is the exception because of its rigid structure. This makes it the most reliable to parse programmatically while minimizing the need for human judgement. It’s also surprisingly common in all forms of fiction. So while it’s just a sample of figurative language, it gives us one solid quantifiable perspective on the topic."
+            "content": "English has lots of ways to make comparisons. “Eyes like daggers,” “razor-sharp wit,” “moved like water.” But most of these forms get challenging to extract from text at scale. “As ___ as ___” is the exception because of its rigid structure. This makes it the most reliable to parse programmatically while minimizing the need for human judgement. It’s also surprisingly common in all forms of fiction. So while it’s just a sample of figurative language, it gives us a quantifiable glimpse into the topic."
           }
         }
       ]
@@ -54,15 +118,27 @@
       "content": [
         {
           "type": "h2",
-          "value": "The adjectives"
+          "value": "Every adjective has a fingerprint"
         },
         {
           "type": "text",
-          "value": "First, a notable disclaimer: most of the following sections look only at nouns that are mono/bi-grams (1-2 words) to simplify the analysis. There is a lot of noise when you include noun phrases, like “In the doorway stood Kristen, Dylan, and Alicia, looking as stunned as Taylor Swift during the 2009 VMAs when Kanye stole her acceptance speech.” This one-offs are fun (more on those later) but not useful when looking for data trends."
+          "value": "So we’re on the same page, here is a technical diagram of this form of simile:"
         },
         {
           "type": "text",
-          "value": "Every adjective has a signature. If you look at the usage of the nouns* that are compared to it, you can see whether it’s dominated by a single cliché or has more variety. Here is the last one from the game: <strong>fragile</strong>."
+          "value": "<mark>chart of technical terms (tenor - the thing being described, vehicle - the comparison (noun), ground - the the thing they have in common (the quality / adjective)</mark>"
+        },
+        {
+          "type": "text",
+          "value": "First, a notable disclaimer. From here on we’ll mostly just look at grounds that are adjectives and vehicles that are mono/bi-grams (nouns that are 1-2 words). This simplifies the analysis because including vehicle phrases gets noisy. For example: “In the doorway stood Kristen, Dylan, and Alicia, looking as stunned as <strong>Taylor Swift during the 2009 VMAs when Kanye stole her acceptance speech.</strong>”"
+        },
+        {
+          "type": "text",
+          "value": "These one-offs can be fun and evocative if you know the context, but not helpful when looking for data trends."
+        },
+        {
+          "type": "text",
+          "value": "In similes, every adjective has a fingerprint. If you look at the usage of the nouns that follow, you can see whether the adjective is dominated by a single cliché or has range. Here is the last one from the game: <strong>fragile</strong>."
         },
         {
           "type": "text",
@@ -78,7 +154,7 @@
         },
         {
           "type": "text",
-          "value": "Each tiny chart is one adjective’s signature. Most have a similar skewed distribution, with some key distinctions:"
+          "value": "Each tiny chart is one adjective’s fingerprint. Most have a similar skewed distribution, with some key distinctions:"
         },
         {
           "type": "text",
@@ -94,7 +170,7 @@
         },
         {
           "type": "text",
-          "value": "<mark>walk through an example or two? (@shelly not sure if this whole section should be scrolly or static, options)</mark>"
+          "value": "<mark>walk through an example or two?</mark>"
         },
         {
           "type": "text",
@@ -111,7 +187,7 @@
       "content": [
         {
           "type": "h2",
-          "value": "The nouns"
+          "value": "Specialist and generalists"
         },
         {
           "type": "text",
@@ -127,7 +203,7 @@
         },
         {
           "type": "text",
-          "value": "<mark>Beeswarm chart. x-axis is a spectrum from generalist to specialist. Each dot is a noun (@shelly images?)</mark>"
+          "value": "<mark>Beeswarm chart. x-axis is a spectrum from generalist to specialist. Each dot is a noun</mark>"
         },
         {
           "type": "text",
@@ -135,7 +211,7 @@
         },
         {
           "type": "text",
-          "value": "But like most things, the interesting stuff lies at the extremes–nouns so tightly coupled with a single noun they’ve become common expressions, or so plamigerent that they’ve lost all meaning."
+          "value": "But like most things, the interesting stuff lies at the extremes–nouns so tightly coupled with a single adjective they’ve become common expressions, or so plamigerent that they’ve lost all meaning."
         },
         {
           "type": "text",
@@ -148,11 +224,11 @@
       "content": [
         {
           "type": "h2",
-          "value": "Three cases"
+          "value": "Three nouns, three stories"
         },
         {
           "type": "text",
-          "value": "Let’s focus on three different nouns that each tell a different story about what similes do."
+          "value": "Let’s focus on three different nouns that each tell a different story about what similes do and how language and culture work."
         },
         {
           "type": "h3",
@@ -221,7 +297,7 @@
       "content": [
         {
           "type": "h2",
-          "value": "Fading similes"
+          "value": "Disappearing similes"
         },
         {
           "type": "text",
@@ -230,6 +306,10 @@
         {
           "type": "text",
           "value": "<mark>example charts</mark>"
+        },
+        {
+          "type": "text",
+          "value": "“mad as a hatter” - agatha christie and then there were none"
         },
         {
           "type": "text",
