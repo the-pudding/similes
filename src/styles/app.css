@@ -92,8 +92,20 @@ svg {
 	height: auto;
 }
 
-h1 {
+/* HERO */
+#hero h1 {
 	font-weight: bold;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	line-height: 1.125;
+}
+
+#hero h1 span:nth-of-type(2) {
+	font-size: 0.8em;
+}
+
+#hero span:nth-of-type(3) {
+	font-size: 0.8em;
+	color: var(--color-gold);
 }
