@@ -30,29 +30,23 @@
         },
         {
           "type": "text",
-          "value": "Maybe you haven’t considered the simile since grade school, so let’s play a quick game (or pop-quiz depending on your perspective) to get you in a writer’s mindset:"
-        },
-        {
-          "type": "text",
-          "value": "I’m going to show you an adjective. Try to fill in the blank. Oh, and you have ten seconds. Ready?"
-        },
-        {
-          "type": "text",
-          "value": "<mark>game - As fragile as ___</mark>"
+          "value": "Maybe you haven’t considered the simile since grade school, so let’s play a quick game (or pop-quiz depending on your perspective) to get you in a writer’s mindset: <strong>Fill in the blank.</strong>"
         },
         {
           "type": "Game",
           "value": {
+            "example": "My mouth was <strong>as dry as ___</strong>",
             "note": "Just use one-two word nouns",
             "responses": [
               "as common as dirt",
-              "as weak as a kitten"
+              "as familiar as a friend",
+              "as rare as a unicorn"
             ]
           }
         },
         {
           "type": "text",
-          "value": "The game you just played reflects real patterns I found after analyzing ~200,000 similes. They are found in everything from <em>Jane Eyre</em> to last year's smash-hit <em>Heart the Lover</em>. It’s an old standby that writers still reach for constantly."
+          "value": "The game you just played reflects real patterns I found after analyzing ~200,000 similes. They are found in everything from <em>Jane Eyre</em> to last year’s smash-hit <em>Heart the Lover</em>. This form of simile is an old standby that writers still reach for."
         },
         {
           "type": "text",
@@ -138,11 +132,11 @@
         },
         {
           "type": "text",
-          "value": "In similes, every adjective has a fingerprint. If you look at the usage of the nouns that follow, you can see whether the adjective is dominated by a single cliché or has range. Here is the last one from the game: <strong>fragile</strong>."
+          "value": "In similes, every adjective has a fingerprint. If you look at the usage of the nouns that follow, you can see whether the adjective is dominated by a single cliché or has range. Here is the last one from the game: <strong>dry</strong>."
         },
         {
           "type": "text",
-          "value": "<mark>a bar chart of all nouns and their usage counts for fragile.</mark>"
+          "value": "<mark>a bar chart of all nouns and their usage counts for dry.</mark>"
         },
         {
           "type": "text",
