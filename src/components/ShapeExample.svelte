@@ -2,7 +2,7 @@
 	import { Plot, BarY, RuleY } from "svelteplot";
 	import { chartData } from "$runes/misc.svelte.js";
 
-	const maxToShow = 30;
+	const maxToShow = 20;
 	const x = "vehicle";
 	const y = "count";
 
