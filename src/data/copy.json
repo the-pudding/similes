@@ -49,11 +49,7 @@
           "value": "Those were real results from my extensive analysis of this specific form of simile. Once you start looking, you see them everywhere, from the classics <em>Jane Eyre</em> to last year’s smash-hit <em>Heart the Lover</em>."
         },
         {
-          "type": "text",
-          "value": "<mark>some graphic of quotes from old and new books</mark>"
-        },
-        {
-          "type": "Examples",
+          "type": "Quotes",
           "value": {
             "items": [
               {
@@ -119,8 +115,8 @@
           "value": "So we’re on the same page, here is a technical diagram of this form of simile:"
         },
         {
-          "type": "text",
-          "value": "<mark>chart of technical terms (tenor - the thing being described, vehicle - the comparison (noun), ground - the the thing they have in common (the quality / adjective)</mark>"
+          "type": "Explainer",
+          "value": {}
         },
         {
           "type": "text",
@@ -132,19 +128,21 @@
         },
         {
           "type": "text",
-          "value": "In similes, every adjective has a fingerprint. If you look at the usage of the nouns that follow, you can see whether the adjective is dominated by a single cliché or has range. Here is the last one from the game: <strong>dry</strong>."
+          "value": "In similes, every adjective has a fingerprint. If you look at the usage of the nouns that follow, you can see whether the adjective is dominated by a single cliché or has range. Here is the shape of <strong>dry</strong> from our pop quiz."
         },
         {
-          "type": "text",
-          "value": "<mark>a bar chart of all nouns and their usage counts for dry.</mark>"
+          "type": "ShapeExample",
+          "value": {
+            "ground": "dry"
+          }
         },
         {
           "type": "text",
           "value": "You’ll notice that x, y, and z make up X% of all usage, and there is a pretty quick drop-off after that with a long tail of one-offs. Let’s zoom out to see what it looks like across more adjectives."
         },
         {
-          "type": "text",
-          "value": "<mark>small multiple of top adjectives ~50 maybe</mark>"
+          "type": "ShapeAll",
+          "value": {}
         },
         {
           "type": "text",
@@ -164,7 +162,7 @@
         },
         {
           "type": "text",
-          "value": "<mark>walk through an example or two?</mark>"
+          "value": "<mark>walk through an example or two? or just click to enlarge</mark>"
         },
         {
           "type": "text",
@@ -189,7 +187,7 @@
         },
         {
           "type": "text",
-          "value": "<strong>As cool as a cucumber</strong> is the paragon a specialist. It doesn’t even crack the top ten for any other adjective."
+          "value": "<strong>As cool as a cucumber</strong> is the paragon specialist. It doesn’t even crack the top ten for any other adjective."
         },
         {
           "type": "text",
