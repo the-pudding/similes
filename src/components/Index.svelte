@@ -4,6 +4,7 @@
 	import Footer from "$components/Footer.svelte";
 	import Game from "$components/Game.svelte";
 	import ShapeExample from "$components/ShapeExample.svelte";
+	import Explainer from "$components/Explainer.svelte";
 	import loadCsv from "$utils/loadCsv.js";
 	import { chartData } from "$runes/misc.svelte.js";
 	import * as d3 from "d3";
@@ -12,7 +13,7 @@
 	// const data = getContext("data");
 
 	const body = copy?.body || [];
-	const components = { Game, ShapeExample };
+	const components = { Game, ShapeExample, Explainer };
 
 	$effect(async () => {
 		const raw = await loadCsv("assets/pairs.csv");

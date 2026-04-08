@@ -112,15 +112,35 @@
         },
         {
           "type": "text",
-          "value": "So we’re on the same page, here is a technical diagram of this form of simile:"
+          "value": "So that we’re on the same page, here is a diagram of this form of simile:"
         },
         {
           "type": "Explainer",
-          "value": {}
+          "value": {
+            "terms": [
+              {
+                "term": "Tenor",
+                "description": "the thing being described"
+              },
+              {
+                "term": "Ground",
+                "description": "the shared quality (adjective)"
+              },
+              {
+                "term": "Vehicle",
+                "description": "the comparison (noun)"
+              }
+            ],
+            "example": "My <span>mouth</span> was as <span>dry</span> as <span>sawdust.</span>"
+          }
         },
         {
           "type": "text",
-          "value": "First, a notable disclaimer. From here on we’ll mostly just look at grounds that are adjectives and vehicles that are mono/bi-grams (nouns that are 1-2 words). This simplifies the analysis because including vehicle phrases gets noisy. For example: “In the doorway stood Kristen, Dylan, and Alicia, looking as stunned as <strong>Taylor Swift during the 2009 VMAs when Kanye stole her acceptance speech.</strong>”"
+          "value": "First, a notable disclaimer. From here on we’ll mostly just look at a simplified version of this form that exclusively uses grounds that are adjectives and vehicles that are mono/bi-grams nouns (1-2 words). This reduces the noise to see the signal. For example:"
+        },
+        {
+          "type": "text",
+          "value": "“In the doorway stood Kristen, Dylan, and Alicia, looking as stunned as <strong>Taylor Swift during the 2009 VMAs when Kanye stole her acceptance speech.</strong>”"
         },
         {
           "type": "text",
@@ -128,7 +148,7 @@
         },
         {
           "type": "text",
-          "value": "In similes, every adjective has a fingerprint. If you look at the usage of the nouns that follow, you can see whether the adjective is dominated by a single cliché or has range. Here is the shape of <strong>dry</strong> from our pop quiz."
+          "value": "In similes, every adjective has a distinct shape. If you look at the usage of the nouns that follow, you can see whether the adjective is dominated by a single cliché or has range. Here is the shape of <strong>dry</strong> from our pop quiz."
         },
         {
           "type": "ShapeExample",
@@ -150,15 +170,15 @@
         },
         {
           "type": "text",
-          "value": "* A few have a gentler slope which tells us there is no real cultural default standard."
+          "value": "* A few have a gentler slope which tells us there is no real cultural default."
         },
         {
           "type": "text",
-          "value": "* Most are dominated by a few go-to nouns then have a long tail of one-offs."
+          "value": "* Most are dominated by a few go-to nouns then have a long tail."
         },
         {
           "type": "text",
-          "value": "* The clichés are apparent with a single tall spike and virtually nothing else registering."
+          "value": "* The clichés are marked by a single tall spike and virtually nothing else surfacing."
         },
         {
           "type": "text",
@@ -166,7 +186,7 @@
         },
         {
           "type": "text",
-          "value": "All similes follow a similar shape probably because of a blend of reasons: Cultural connections, literary precedent, and perhaps sometimes laziness could all be factors. Some writers may want a novel comparison to make it their own, while some may just want a reliable and accessible one."
+          "value": "Most similes follow a similar shape, probably due to a blend of factors: cultural connections, literary precedent, and perhaps sometimes plain laziness. Some writers reach for a novel comparison to make it their own, while others just want one that’s reliable and accessible."
         },
         {
           "type": "text",
@@ -187,7 +207,7 @@
         },
         {
           "type": "text",
-          "value": "<strong>As cool as a cucumber</strong> is the paragon specialist. It doesn’t even crack the top ten for any other adjective."
+          "value": "<strong>As cool as a cucumber</strong> is the paragon specialist. Cucumber (or as I learned that it sometimes was referred to as “cowcumber”) doesn’t even crack the top ten for any other adjective."
         },
         {
           "type": "text",
