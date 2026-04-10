@@ -2,7 +2,7 @@
 	import { Plot, BarY, RuleY } from "svelteplot";
 	import { chartData } from "$runes/misc.svelte.js";
 
-	const maxToShow = 20;
+	const maxToShow = 30;
 	const x = "vehicle";
 	const y = "count";
 
@@ -21,3 +21,10 @@
 		</Plot>
 	{/if}
 </div>
+
+<style>
+	.c {
+		max-width: var(--chart-max-width);
+		margin: 1rem auto;
+	}
+</style>

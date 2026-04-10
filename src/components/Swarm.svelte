@@ -13,3 +13,10 @@
 		<Dot {data} {x} sort={{ channel: "-r" }} y={0} {r} dodgeY="middle" />
 	</Plot>
 </div>
+
+<style>
+	.c {
+		max-width: var(--chart-max-width);
+		margin: 1rem auto;
+	}
+</style>
