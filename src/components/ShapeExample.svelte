@@ -13,7 +13,7 @@
 	);
 </script>
 
-<div class="c">
+<div class="c graphic">
 	{#if chartData.shape.length}
 		<Plot grid x={{ tickRotate: -45 }}>
 			<RuleY data={[0]} />

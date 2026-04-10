@@ -1,1 +1,1 @@
-export const chartData = $state({ shape: [] });
+export const chartData = $state({ shape: [], swarm: [] });

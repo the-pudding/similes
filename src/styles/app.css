@@ -92,6 +92,28 @@ svg {
 	height: auto;
 }
 
+p, li, details {
+	font-size: var(--18px);
+	line-height: 1.6;
+}
+
+.color-tenor {
+	color: var(--color-gold);
+}
+
+.color-ground {
+	color: var(--color-green);
+}
+
+.color-vehicle {
+	color: var(--color-purple);
+}
+
+section > *:not(.graphic) {
+	max-width: 600px;
+	margin: 1rem auto;
+} 
+
 /* HERO */
 #hero h1 {
 	font-weight: bold;
@@ -109,3 +131,10 @@ svg {
 	font-size: 0.8em;
 	color: var(--color-gold);
 }
+
+@media screen and (min-width: 800px) {
+	p, li {
+		font-size: var(--20px);
+	}
+}
+

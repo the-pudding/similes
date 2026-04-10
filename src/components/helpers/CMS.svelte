@@ -1,8 +1,9 @@
 <script>
 	import Details from "$components/helpers/CMS.Details.svelte";
+	import Ul from "$components/helpers/CMS.Ul.svelte";
 	// components: an object of components that map to section names (e.g., { "Hero": Hero }) where Hero is a Svelte component
 	// body: an array of objects that contain a {section, content} obj
-	const defaultComponents = { Details };
+	const defaultComponents = { Details, Ul };
 	let { components = {}, body = [] } = $props();
 </script>
 

@@ -3,26 +3,38 @@
 	import CMS from "$components/helpers/CMS.svelte";
 	import Footer from "$components/Footer.svelte";
 	import Game from "$components/Game.svelte";
-	import ShapeExample from "$components/ShapeExample.svelte";
 	import Explainer from "$components/Explainer.svelte";
+	import ShapeExample from "$components/ShapeExample.svelte";
+	import Swarm from "$components/Swarm.svelte";
 	import loadCsv from "$utils/loadCsv.js";
 	import { chartData } from "$runes/misc.svelte.js";
+	import rawSimpson from "$data/simpson.csv";
 	import * as d3 from "d3";
 
 	const copy = getContext("copy");
 	// const data = getContext("data");
 
 	const body = copy?.body || [];
-	const components = { Game, ShapeExample, Explainer };
+	const components = { Game, Explainer, ShapeExample, Swarm };
 
 	$effect(async () => {
-		const raw = await loadCsv("assets/pairs.csv");
-		const clean = raw.map((d) => ({
+		const rawPairs = await loadCsv("assets/pairs.csv");
+		const cleanPairs = rawPairs.map((d) => ({
 			...d,
 			count: +d.count
 		}));
-		clean.sort((a, b) => d3.descending(a.count, b.count));
-		chartData.shape = clean;
+		cleanPairs.sort((a, b) => d3.descending(a.count, b.count));
+		chartData.shape = cleanPairs;
+
+		// TODO consider async load of simpson data
+		const cleanSimpson = rawSimpson.map((d) => ({
+			...d,
+			totalCount: +d.totalCount,
+			adjectiveCount: +d.adjectiveCount,
+			topAdjectives: d.topAdjectives.split("|").map((s) => s.trim())
+		}));
+
+		chartData.swarm = cleanSimpson;
 	});
 </script>
 
@@ -33,10 +45,3 @@
 <svelte:boundary onerror={(e) => console.error(e)}>
 	<!-- <Footer recirc={true} /> -->
 </svelte:boundary>
-
-<style>
-	.c {
-		max-width: 640px;
-		margin: 0 auto;
-	}
-</style>
