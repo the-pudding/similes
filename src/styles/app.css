@@ -48,7 +48,9 @@
 	/* "1" second duration */
 	--1s: 1ms;
 
-	--chart-max-width: 960px;
+	--chart-max-width-sm: 960px;
+	--chart-max-width-lg: 1600px;
+
 }
 
 /* dark theme */

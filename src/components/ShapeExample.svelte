@@ -24,7 +24,7 @@
 
 <style>
 	.c {
-		max-width: var(--chart-max-width);
+		max-width: var(--chart-max-width-sm);
 		margin: 1rem auto;
 	}
 </style>

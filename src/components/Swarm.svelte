@@ -1,18 +1,28 @@
 <script>
 	import { Plot, Dot, Text } from "svelteplot";
+	import { ElementSize } from "runed";
+	import useWindowDimensions from "$runes/useWindowDimensions.svelte.js";
+
 	import { chartData } from "$runes/misc.svelte.js";
 
 	const x = "score";
 	const r = "totalCount";
 
+	let dimensions = new useWindowDimensions();
+	let el = $state();
+	const size = new ElementSize(() => el);
+
 	let data = $derived(chartData.swarm.filter((d) => d[r] >= 200));
+
+	let rRange = $derived([size.width * 0.005, size.width * 0.03]);
+	let height = $derived((dimensions.height || 320) * 0.6);
 </script>
 
-<div class="c graphic">
+<div class="c graphic" bind:this={el}>
 	<Plot
-		height={600}
-		inset={24}
-		r={{ range: [2, 32] }}
+		{height}
+		inset={rRange[1]}
+		r={{ range: rRange }}
 		y={{ axis: false }}
 		x={[0, 1]}
 	>
@@ -38,7 +48,7 @@
 
 <style>
 	.c {
-		max-width: var(--chart-max-width);
+		max-width: var(--chart-max-width-lg);
 		margin: 1rem auto;
 	}
 </style>
