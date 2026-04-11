@@ -158,7 +158,7 @@
         },
         {
           "type": "text",
-          "value": "You’ll notice that bone, desert, and dust make up a big portion of all usage, and there is a pretty quick drop-off after that with a long tail of smaller ones. Let’s zoom out to see what it looks like across more adjectives."
+          "value": "You’ll notice that the top 3–bone, desert, and dust–make up 43% of all usage, and there is a pretty quick drop-off after that with a long tail of smaller ones. Let’s zoom out to see what the shape of more adjectives."
         },
         {
           "type": "ShapeAll",
@@ -326,11 +326,11 @@
         },
         {
           "type": "text",
-          "value": "But not all similes are used as intended. Take the classic expression “as clear as mud.” It inverts the expectation by finding a contrasting quality, often for humor or irony. This becomes more of an art form as the comparison gets more specific."
+          "value": "But not all similes are used as intended. Take the classic expression <strong>“as clear as mud.”</strong> It inverts the expectation by using a contrasting quality of the noun, often for humor. This becomes more of an art form as the comparison gets more specific."
         },
         {
           "type": "text",
-          "value": "“He looks about as happy as a dad at a Taylor Swift concert, but at least he’s in control of his rage.”"
+          "value": "“He looks about <strong>as happy as a dad at a Taylor Swift concert</strong>, but at least he’s in control of his rage.”"
         },
         {
           "type": "text",
@@ -339,6 +339,19 @@
         {
           "type": "text",
           "value": "<mark>fun graphic</mark>"
+        }
+      ]
+    },
+    {
+      "section": "method",
+      "content": [
+        {
+          "type": "h2",
+          "value": "Data and method"
+        },
+        {
+          "type": "text",
+          "value": "TK some note about this is all pre-AI books, so chill."
         }
       ]
     }
