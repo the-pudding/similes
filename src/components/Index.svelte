@@ -3,8 +3,10 @@
 	import CMS from "$components/helpers/CMS.svelte";
 	import Footer from "$components/Footer.svelte";
 	import Game from "$components/Game.svelte";
+	import Quotes from "$components/Quotes.svelte";
 	import Explainer from "$components/Explainer.svelte";
 	import ShapeExample from "$components/ShapeExample.svelte";
+	import ShapeAll from "$components/ShapeAll.svelte";
 	import Swarm from "$components/Swarm.svelte";
 	import loadCsv from "$utils/loadCsv.js";
 	import { chartData } from "$runes/misc.svelte.js";
@@ -15,7 +17,7 @@
 	// const data = getContext("data");
 
 	const body = copy?.body || [];
-	const components = { Game, Explainer, ShapeExample, Swarm };
+	const components = { Game, Quotes, Explainer, ShapeExample, ShapeAll, Swarm };
 
 	$effect(async () => {
 		const rawPairs = await loadCsv("assets/pairs.csv");

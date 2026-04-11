@@ -7,19 +7,15 @@
 	const y = "count";
 
 	let data = $derived(
-		chartData.shape
-			.filter((d, i) => d.ground === "dry")
-			.filter((d, i) => i < maxToShow)
+		chartData.shape.filter((d, i) => d.ground === "dry").slice(0, maxToShow)
 	);
 </script>
 
 <div class="c graphic">
-	{#if chartData.shape.length}
-		<Plot grid x={{ tickRotate: -45 }}>
-			<RuleY data={[0]} />
-			<BarY {data} {x} {y} sort="-count" />
-		</Plot>
-	{/if}
+	<Plot grid x={{ tickRotate: -45 }}>
+		<RuleY data={[0]} />
+		<BarY {data} {x} {y} sort="-count" />
+	</Plot>
 </div>
 
 <style>
