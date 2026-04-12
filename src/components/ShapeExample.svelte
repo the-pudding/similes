@@ -12,10 +12,12 @@
 </script>
 
 <div class="c graphic">
-	<Plot grid x={{ tickRotate: -45 }}>
-		<RuleY data={[0]} />
-		<BarY {data} {x} {y} sort="-count" />
-	</Plot>
+	{#if data.length}
+		<Plot grid x={{ tickRotate: -45 }}>
+			<RuleY data={[0]} />
+			<BarY {data} {x} {y} sort="-count" />
+		</Plot>
+	{/if}
 </div>
 
 <style>

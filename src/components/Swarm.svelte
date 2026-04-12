@@ -19,31 +19,33 @@
 </script>
 
 <div class="c graphic" bind:this={el}>
-	<Plot
-		{height}
-		inset={rRange[1]}
-		r={{ range: rRange }}
-		y={{ axis: false }}
-		x={[0, 1]}
-	>
-		<Dot
-			{data}
-			{x}
-			sort={{ channel: "-r" }}
-			y={0}
-			{r}
-			dodgeY={{ anchor: "middle", padding: 3 }}
-		/>
-		<Text
-			{data}
-			{x}
-			sort={{ channel: "-r" }}
-			y={0}
-			{r}
-			text={(d) => d.vehicle}
-			dodgeY={{ anchor: "middle", padding: 3 }}
-		/>
-	</Plot>
+	{#if data.length}
+		<Plot
+			{height}
+			inset={rRange[1]}
+			r={{ range: rRange }}
+			y={{ axis: false }}
+			x={[0, 1]}
+		>
+			<Dot
+				{data}
+				{x}
+				sort={{ channel: "-r" }}
+				y={0}
+				{r}
+				dodgeY={{ anchor: "middle", padding: 3 }}
+			/>
+			<Text
+				{data}
+				{x}
+				sort={{ channel: "-r" }}
+				y={0}
+				{r}
+				text={(d) => d.vehicle}
+				dodgeY={{ anchor: "middle", padding: 3 }}
+			/>
+		</Plot>
+	{/if}
 </div>
 
 <style>

@@ -187,6 +187,13 @@
           "value": "Most similes follow a similar shape, probably due to a blend of factors: cultural connections, literary precedent, and perhaps sometimes plain laziness. Some writers reach for a novel comparison to make it their own, while others just want one that’s reliable and accessible."
         },
         {
+          "type": "img",
+          "value": {
+            "src": "assets/idioms.webp",
+            "alt": "A list of idioms from the 1964 textbook Examine Your English."
+          }
+        },
+        {
           "type": "text",
           "value": "todo - brief note on it still being used in popular fiction from this year."
         }
@@ -202,6 +209,13 @@
         {
           "type": "text",
           "value": "Now let’s flip it around and look at it from the noun’s perspective. Some are wielded as a comparison for dozens of different adjectives (generalists), while some are uniquely tied to a single quality (specialists)."
+        },
+        {
+          "type": "img",
+          "value": {
+            "src": "assets/pippi.webp",
+            "alt": "A box from the comic Pippi Longstocking showing a speech bubble that has “as cool as a cucumber” in it."
+          }
         },
         {
           "type": "text",
