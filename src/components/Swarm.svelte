@@ -15,7 +15,16 @@
 	let data = $derived(chartData.swarm.filter((d) => d[r] >= 200));
 
 	let rRange = $derived([size.width * 0.005, size.width * 0.03]);
-	let height = $derived((dimensions.height || 320) * 0.6);
+	let height = $derived(rRange[1] * 15);
+
+	// $effect(() => {
+	// 	if (data.length > 0)
+	// 		window.x = JSON.stringify(
+	// 			data.map((d) => ({ value: +d.score, size: +d.totalCount })),
+	// 			null,
+	// 			2
+	// 		);
+	// });
 </script>
 
 <div class="c graphic" bind:this={el}>

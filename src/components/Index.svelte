@@ -8,6 +8,7 @@
 	import ShapeExample from "$components/ShapeExample.svelte";
 	import ShapeAll from "$components/ShapeAll.svelte";
 	import Swarm from "$components/Swarm.svelte";
+	import Irony from "$components/Irony.svelte";
 	import loadCsv from "$utils/loadCsv.js";
 	import { chartData } from "$runes/misc.svelte.js";
 	import rawSimpson from "$data/simpson.csv";
@@ -17,7 +18,15 @@
 	// const data = getContext("data");
 
 	const body = copy?.body || [];
-	const components = { Game, Quotes, Explainer, ShapeExample, ShapeAll, Swarm };
+	const components = {
+		Game,
+		Quotes,
+		Explainer,
+		ShapeExample,
+		ShapeAll,
+		Swarm,
+		Irony
+	};
 
 	$effect(async () => {
 		const rawPairs = await loadCsv("assets/pairs.csv");
@@ -27,6 +36,10 @@
 		}));
 		cleanPairs.sort((a, b) => d3.descending(a.count, b.count));
 		chartData.shape = cleanPairs;
+
+		const rawIrony = await loadCsv("assets/irony.csv");
+		rawIrony.sort((a, b) => d3.ascending(a.vehicle.length, b.vehicle.length));
+		chartData.irony = rawIrony;
 
 		// TODO consider async load of simpson data
 		const cleanSimpson = rawSimpson.map((d) => ({

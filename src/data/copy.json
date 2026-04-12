@@ -319,15 +319,19 @@
         },
         {
           "type": "text",
-          "value": "<strong>As hot as hell</strong> makes sense, if you subscribe to the religious imagery. But sexy as hell? Confused as hell? Similes usually work because the noun possesses the quality. Hell often functions more as an amplifier."
+          "value": "<strong>As hot as hell</strong> makes sense, if you subscribe to the religious imagery. But as confused as hell? As sexy as hell? Similes usually work because the noun possesses the quality. Hell often functions more as an amplifier."
         },
         {
           "type": "text",
-          "value": "<mark>chart showing hell’s adjectives, their size, and color-coded if they have a real connection to the word or not</mark>"
+          "value": "<mark>first usage as sexy as hell</mark>"
         },
         {
           "type": "text",
           "value": "That makes hell pretty unique in the dataset. Most nouns earn their place by embodying something, whereas hell just became another way to say “very.”"
+        },
+        {
+          "type": "text",
+          "value": "<mark>chart showing hell’s adjectives, their size, and color-coded if they have a real connection to the word or not</mark>"
         }
       ]
     },
@@ -351,8 +355,8 @@
           "value": "While these are a small subset of the dataset, a kind of counter-culture of the simile world, they often paint a more vivid and memorable picture. These tend to work best with positive-sentiment adjectives to set up a punch line."
         },
         {
-          "type": "text",
-          "value": "<mark>fun graphic</mark>"
+          "type": "Irony",
+          "value": {}
         }
       ]
     },
