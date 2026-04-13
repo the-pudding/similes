@@ -35,7 +35,7 @@
         {
           "type": "Game",
           "value": {
-            "example": "My mouth was <strong>as dry as</strong>",
+            "example": "My mouth has gone <strong>as dry as</strong>",
             "note": "Just use one-two word nouns",
             "responses": [
               "as common as dirt",
@@ -131,7 +131,7 @@
                 "description": "the comparison (noun)"
               }
             ],
-            "example": "My <span>mouth</span> was as <span>dry</span> as <span>sawdust.</span>"
+            "example": "My <span>mouth</span> has gone as <span>dry</span> as <span>sawdust.</span>"
           }
         },
         {
@@ -158,7 +158,7 @@
         },
         {
           "type": "text",
-          "value": "You’ll notice that the top 3–bone, desert, and dust–make up 43% of all usage, and there is a pretty quick drop-off after that with a long tail of smaller ones. Let’s zoom out to see what the shape of more adjectives."
+          "value": "You’ll notice that the top 3–bone, desert, and dust–make up 43% of all usage, and there is a pretty quick drop-off after that with a long tail of rarer choices. Let’s zoom out to see the shape of more adjectives. Here are the top 20 nouns for every adjective with at least 200 occurrences."
         },
         {
           "type": "ShapeAll",
@@ -172,9 +172,9 @@
           "type": "Ul",
           "value": {
             "li": [
-              "A few have a gentler slope which tells us there is no real cultural default.",
-              "Most are dominated by a few go-to nouns then have a long tail.",
-              "The clichés are marked by a single tall spike and virtually nothing else surfacing."
+              "Gentler slopes tell us there are no dominant idioms.",
+              "Many have a couple go-to nouns followed by a long tail.",
+              "The clichés are obvious, marked by a single tall spike that overshadows the others."
             ]
           }
         },
@@ -184,7 +184,7 @@
         },
         {
           "type": "text",
-          "value": "Most similes follow a similar shape, probably due to a blend of factors: cultural connections, literary precedent, and perhaps sometimes plain laziness. Some writers reach for a novel comparison to make it their own, while others just want one that’s reliable and accessible."
+          "value": "Most similes follow a similar shape. Some writers reach for a novel comparison to make it their own, while most just want one that’s reliable and accessible. Take this 1964 textbook for English learners, which reinforces the patterns from the start."
         },
         {
           "type": "img",
@@ -192,10 +192,6 @@
             "src": "assets/idioms.webp",
             "alt": "A list of idioms from the 1964 textbook Examine Your English."
           }
-        },
-        {
-          "type": "text",
-          "value": "todo - brief note on it still being used in popular fiction from this year."
         }
       ]
     },
@@ -208,7 +204,11 @@
         },
         {
           "type": "text",
-          "value": "Now let’s flip it around and look at it from the noun’s perspective. Some are wielded as a comparison for dozens of different adjectives (generalists), while some are uniquely tied to a single quality (specialists)."
+          "value": "Now let’s flip it around and look at similes from the noun’s perspective. Some nouns are wielded as a common comparison for dozens of different adjectives (generalists), while some are uniquely tied to a single quality (specialists)."
+        },
+        {
+          "type": "text",
+          "value": "Nothing exemplifies the specialist better than the cucumber. <strong>As cool as a cucumber</strong> is the paragon specialist."
         },
         {
           "type": "img",
@@ -219,17 +219,16 @@
         },
         {
           "type": "text",
-          "value": "<strong>As cool as a cucumber</strong> is the paragon specialist. Cucumber (or as I learned that it sometimes was referred to as “cowcumber”) doesn’t even crack the top ten for any other adjective."
+          "value": "Cucumber (or as I learned that it sometimes was referred to as “cowcumber”) doesn’t even crack the top ten in usage for any other adjective. On the other hand, you have <strong>hell</strong> which is the most-used noun for 19 different adjectives."
         },
         {
           "type": "text",
-          "value": "On the other hand, you have <strong>hell</strong> which is the top noun for nineteen different adjectives."
+          "value": "To quantify this, I looked at the diversity of adjectives for each noun using the <a href=https://en.wikipedia.org/wiki/Diversity_index#Simpson_index target=_blank rel=noreferrer>Simpson index.</a> Put plainly: if you pick two similes for a noun at random, what is the chance the adjectives match?"
         },
         {
           "type": "Swarm",
           "value": {
-            "description": "If you pick two similes for a noun at random, what is the percentage chance the adjective matches?",
-            "axis": "Predictability Score <br>(Simpson’s Diversity Index)"
+            "axisLabel": "Predictability score <br>(Simpson’s diversity index)"
           }
         },
         {
@@ -287,7 +286,7 @@
         },
         {
           "type": "text",
-          "value": "It ranks first for 17 adjectives, but nearly all of them point in a similar direction; Hard, solid, firm. Still, motionless, immovable. Silent, mute, dumb. Blank, impassive, expressionless. It is mostly a bunch of different words that say “nothing is happening here,” which makes it a blank and malleable canvas."
+          "value": "It ranks first for 17 adjectives, but nearly all of them point in a similar direction; Hard, solid, firm. Still, motionless, immovable. Silent, mute, dumb. Blank, impassive, expressionless. It is mostly a bunch of different words that say “nothing is happening here,” which makes it a perfect blank and canvas."
         },
         {
           "type": "h3",

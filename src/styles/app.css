@@ -118,6 +118,10 @@ section > *:not(.graphic) {
 	margin: 1rem auto;
 } 
 
+.graphic {
+	margin: 2rem auto;
+}
+
 /* HERO */
 #hero h1 {
 	font-weight: bold;

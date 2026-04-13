@@ -2,8 +2,9 @@
 	import { Plot, Dot, Text } from "svelteplot";
 	import { ElementSize } from "runed";
 	import useWindowDimensions from "$runes/useWindowDimensions.svelte.js";
-
 	import { chartData } from "$runes/misc.svelte.js";
+
+	let { axisLabel } = $props();
 
 	const x = "score";
 	const r = "totalCount";
@@ -28,13 +29,17 @@
 </script>
 
 <div class="c graphic" bind:this={el}>
+	<div class="annotation">
+		<div>&larr; Generalists</div>
+		<div>Specialiasts &rarr;</div>
+	</div>
 	{#if data.length}
 		<Plot
 			{height}
 			inset={rRange[1]}
 			r={{ range: rRange }}
 			y={{ axis: false }}
-			x={[0, 1]}
+			x={{ domain: [0, 1], label: false, percent: true }}
 		>
 			<Dot
 				{data}
@@ -55,11 +60,23 @@
 			/>
 		</Plot>
 	{/if}
+	<div class="axis-label">{@html axisLabel}</div>
 </div>
 
 <style>
 	.c {
 		max-width: var(--chart-max-width-lg);
 		margin: 1rem auto;
+		font-family: var(--font-sans);
+	}
+
+	.axis-label {
+		text-align: center;
+		margin-top: 1rem;
+	}
+
+	.annotation {
+		display: flex;
+		justify-content: space-between;
 	}
 </style>

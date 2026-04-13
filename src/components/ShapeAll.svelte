@@ -1,11 +1,22 @@
 <script>
-	import { Plot, BarY, RuleY } from "svelteplot";
+	import { Plot, BarY, RuleY, Text } from "svelteplot";
 	import { chartData } from "$runes/misc.svelte.js";
 	import * as d3 from "d3";
 
 	const maxToShow = 20;
 	const x = "vehicle";
 	const y = "count";
+
+	function calculateSimpson(items) {
+		const totalCount = d3.sum(items, (d) => d.count);
+
+		const matchProbability = d3.sum(items, (d) => {
+			const fraction = d.count / totalCount;
+			return fraction * fraction;
+		});
+
+		return matchProbability;
+	}
 
 	function calculateEntropy(items) {
 		const total = d3.sum(items, (d) => d.count);
@@ -23,12 +34,15 @@
 			.map(([ground, items]) => ({
 				ground,
 				entropy: calculateEntropy(items.slice(0, maxToShow)),
+				simpson: calculateSimpson(items.slice(0, maxToShow)),
 				data: d3
 					.range(maxToShow)
 					.map((i) => items[i] || { vehicle: i, count: 0 })
 			}));
 
-		grouped.sort((a, b) => d3.descending(a.entropy, b.entropy));
+		// grouped.sort((a, b) => d3.ascending(a.ground, b.ground));
+		// grouped.sort((a, b) => d3.descending(a.entropy, b.entropy));
+		grouped.sort((a, b) => d3.ascending(a.simpson, b.simpson));
 
 		return grouped;
 	});
@@ -36,11 +50,25 @@
 
 <div class="c graphic">
 	{#each byGround as { ground, data }}
+		{@const textData = data.slice(0, 1)}
 		<div class="chart">
 			<div class="chart-title">{ground}</div>
-			<Plot x={{ axis: false }} y={{ axis: false }} height={(w) => w / 2}>
-				<!-- <RuleY data={[0]} /> -->
+			<Plot
+				x={{ axis: false, insetLeft: 0 }}
+				y={{ axis: false, insetTop: 10, insetBottom: 16 }}
+				height={(w) => w / 1.5}
+			>
 				<BarY {data} {x} {y} sort="-count" />
+				<Text
+					data={textData}
+					{x}
+					{y}
+					text={(d) => `${d.vehicle}: ${d.count}`}
+					lineAnchor="bottom"
+					textAnchor="start"
+					dy={-4}
+					dx={-4}
+				/>
 			</Plot>
 		</div>
 	{/each}
@@ -49,10 +77,10 @@
 <style>
 	.c {
 		max-width: var(--chart-max-width-lg);
-		margin: 1rem auto;
 		display: flex;
 		flex-wrap: wrap;
 		gap: 1rem;
+		font-family: var(--font-sans);
 	}
 
 	.chart {
@@ -62,10 +90,10 @@
 
 	.chart-title {
 		position: absolute;
-		top: 0;
+		bottom: 0;
 		left: 50%;
 		transform: translate(-50%, 0);
-		font-size: var(--12px);
+		font-size: var(--14px);
 		font-weight: bold;
 		font-family: var(--font-sans);
 	}
