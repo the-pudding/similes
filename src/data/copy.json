@@ -141,6 +141,13 @@
       "section": "adjectives",
       "content": [
         {
+          "type": "img",
+          "value": {
+            "src": "assets/section-illos/shakespeare.png",
+            "alt": "Illustration of Shakespeare, stacking blocks with words to form the quote “To be or not to be, that is the question.”"
+          }
+        },
+        {
           "type": "h2",
           "value": "Every adjective has a fingerprint"
         },
@@ -228,6 +235,13 @@
     {
       "section": "nouns",
       "content": [
+        {
+          "type": "img",
+          "value": {
+            "src": "assets/section-illos/devil-cucumber.png",
+            "alt": "Illustration of the Devil and an anthropomorphic cucumber, having tea together. The Devil’s tea cup is on fire, and the cucumber’s is cooling as the cucumber blows on it."
+          }
+        },
         {
           "type": "h2",
           "value": "Specialist and generalists"
@@ -373,6 +387,13 @@
     {
       "section": "irony",
       "content": [
+        {
+          "type": "img",
+          "value": {
+            "src": "assets/section-illos/dad-swift.png",
+            "alt": "Illustration of a tired and bored dad at a Taylor Swift concert. He’s leaning against a barricade, looking off into the distance as the crowd behind him cheers and dances."
+          }
+        },
         {
           "type": "h2",
           "value": "The funny ones"
