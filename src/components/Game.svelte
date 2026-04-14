@@ -2,7 +2,7 @@
 	import Button from "$components/ui/Button.svelte";
 	import data from "$data/dry.csv";
 
-	let { example, note, responses } = $props();
+	let { example, note, responses, images } = $props();
 
 	const total = data.length;
 
@@ -81,11 +81,17 @@
 			</div>
 		</div>
 	{/if}
+	{#each images as { src, alt, className }}
+		<div class="page graphic">
+			<img class={className} src={src} alt={alt} />
+		</div>
+	{/each}
 </div>
 
 <style>
 	.c {
 		min-height: 400px;
+		position: relative;
 	}
 
 	.game {
@@ -147,5 +153,35 @@
 	.chip-count {
 		font-size: var(--12px);
 		color: var(--color-gray-500);
+	}
+
+	.page:nth-of-type(2),
+	.page:nth-of-type(3){
+		z-index: -1;
+		display: block;
+		position: absolute;
+		top: -100%;
+		left: -90%;
+		margin: auto;
+		width: auto;
+		height: 85vh;
+	}
+	.page:nth-of-type(3){
+		left: auto;
+		right: -90%;
+	}
+	.page:nth-of-type(2) img,
+	.page:nth-of-type(3) img{
+		width: auto;
+		height: 100%;
+		opacity: 0.3;
+	}
+	@media(max-width: 900px){
+		.page:nth-of-type(2){
+			left: -75%;
+		}
+		.page:nth-of-type(3){
+			right: -75%;
+		}
 	}
 </style>

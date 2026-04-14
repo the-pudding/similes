@@ -63,6 +63,18 @@
               "as common as dirt",
               "as familiar as a friend",
               "as rare as a unicorn"
+            ],
+            "images": [
+              {
+                "src": "/assets/topper/pages-bottomleft.png",
+                "alt": "Book pages flying through the air.",
+                "className": "pages-left"
+              },
+              {
+                "src": "/assets/topper/pages-bottomright.png",
+                "alt": "Book pages flying through the air.",
+                "className": "pages-right"
+              }
             ]
           }
         },
