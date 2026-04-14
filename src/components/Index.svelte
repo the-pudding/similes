@@ -2,6 +2,7 @@
 	import { getContext } from "svelte";
 	import CMS from "$components/helpers/CMS.svelte";
 	import Footer from "$components/Footer.svelte";
+	import TopperImages from "$components/TopperImages.svelte"
 	import Game from "$components/Game.svelte";
 	import Quotes from "$components/Quotes.svelte";
 	import Explainer from "$components/Explainer.svelte";
@@ -34,7 +35,8 @@
 		Cat,
 		Child,
 		Stone,
-		Irony
+		Irony,
+		TopperImages
 	};
 
 	$effect(async () => {

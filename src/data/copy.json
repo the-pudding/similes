@@ -18,6 +18,28 @@
         {
           "type": "text",
           "value": "<span class=byline>By <a href=https://pudding.cool/author/russell-samora>Russell Samora.</a> Design by <a href=https://pudding.cool/author/shelly-tan>Shelly Tan.</a>"
+        },
+        {
+          "type": "TopperImages",
+          "value": {
+            "images": [
+              {
+                "src": "/assets/topper/book.png",
+                "alt": "Illustration of an open book.",
+                "className": "book"
+              },
+              {
+                "src": "/assets/topper/pages-topleft.png",
+                "alt": "Book pages flying through the air.",
+                "className": "pages-left"
+              },
+              {
+                "src": "/assets/topper/pages-topright.png",
+                "alt": "Book pages flying through the air.",
+                "className": "pages-right"
+              }
+            ]
+          }
         }
       ]
     },
