@@ -139,7 +139,7 @@
           "value": "First, a notable disclaimer. We’ll mostly just look at a simplified version of this form; <strong class=color-ground>grounds that are adjectives</strong>, and <strong class=color-vehicle>vehicles that are nouns</strong> (specifically mono/bi-grams, i.e., one or two words). This reduces the noise in favor of a clearer signal. For example:"
         },
         {
-          "type": "text",
+          "type": "blockquote",
           "value": "“In the doorway stood Kristen, Dylan, and Alicia, looking <strong>as <span class=color-ground>stunned</span> as <span class=color-vehicle>Taylor Swift during the 2009 VMAs when Kanye stole her acceptance speech.</span></strong>”"
         },
         {
@@ -286,7 +286,7 @@
         },
         {
           "type": "text",
-          "value": "In fiction, a child has become shorthand for two things; their being defenseless and wholesome."
+          "value": "In fiction, a child has become shorthand for two things; being defenseless and wholesome."
         },
         {
           "type": "Child",
@@ -310,7 +310,11 @@
         },
         {
           "type": "text",
-          "value": "I was curious about when this phenomenon started. According to <a href=https://books.google.com/ngrams/ target=_blank rel=noreferrer>Google Books Ngram Viewer</a>, the first use of “sexy as hell” that I could verify was from the 1948 novel <em>Innocent Villa,</em> “She looks like an old harpy but thinks she’s sexy as hell.”"
+          "value": "I was curious about when this phenomenon started. According to <a href=https://books.google.com/ngrams/ target=_blank rel=noreferrer>Google Books Ngram Viewer</a>, the first use of “sexy as hell” that I could verify was from the 1948 novel <em>Innocent Villa</em>:"
+        },
+        {
+          "type": "blockquote",
+          "value": "“She looks like an old harpy but thinks she’s <strong>sexy as hell.</strong>”"
         },
         {
           "type": "img",
@@ -320,7 +324,11 @@
         },
         {
           "type": "text",
-          "value": "If we want to get pedantic, the first use with the exact structure (“as _ as _”) was from the 1954 novel <em>The Refuge,</em> “‘Any woman with eyes like hers gets a reputation for being as sexy as hell, old boy.’”"
+          "value": "If we want to get pedantic, the first use with the exact structure (“as _ as _”) was from the 1954 novel <em>The Refuge</em>:"
+        },
+        {
+          "type": "blockquote",
+          "value": "“‘Any woman with eyes like hers gets a reputation for being <strong>as sexy as hell,</strong> old boy.’”"
         },
         {
           "type": "text",
@@ -340,7 +348,7 @@
           "value": "But not all similes are used as intended. Take the classic expression <strong>“as clear as mud.”</strong> It inverts the expectation by using a contrasting quality of the noun, often for humor. This becomes more of an art form as the comparison gets more specific."
         },
         {
-          "type": "text",
+          "type": "blockquote",
           "value": "“He looks about <strong>as happy as a dad at a Taylor Swift concert</strong>, but at least he’s in control of his rage.”"
         },
         {
