@@ -184,7 +184,7 @@
         },
         {
           "type": "text",
-          "value": "Most similes follow a similar shape. Some writers reach for a novel comparison to make it their own, while most just want one that’s reliable and accessible. Take this 1964 textbook for English learners, which reinforces the patterns from the start."
+          "value": "Most similes follow a similar shape. Some writers reach for a novel comparison to make it their own, while most just want one that’s reliable and accessible. Check out this 1964 textbook <em>Examine Your English</em>, which implants the patterns         from the start."
         },
         {
           "type": "img",
@@ -219,7 +219,7 @@
         },
         {
           "type": "text",
-          "value": "Cucumber (or as I learned that it sometimes was referred to as “cowcumber”) doesn’t even crack the top ten in usage for any other adjective. On the other hand, you have <strong>hell</strong> which is the most-used noun for 19 different adjectives."
+          "value": "Cucumber (or as I learned that it sometimes was referred to as “cowcumber”) doesn’t even crack the top ten in usage for any other adjective. On the other hand, you have <strong>hell</strong> which is a top-10 noun for 17 different adjectives."
         },
         {
           "type": "text",
@@ -258,19 +258,21 @@
         },
         {
           "type": "text",
-          "value": "Cat is a noun of contradictions. Writers use it to mean nervous and relaxed, active and lazy."
+          "value": "Cat is a noun that covers serious ground. Writers use it to mean everything from graceful to weak."
         },
         {
           "type": "text",
-          "value": "<mark>a chart showing the breadth of adjectives (can i use some quant. metric like cosine sim to make the point with data?)"
+          "value": "While most animals are pigeon-holed–think stubborn as a mule–cats span a huge range of observed behavior. And cat is the most used noun for four different adjectives; nervous, active, agile, nimble."
         },
         {
-          "type": "text",
-          "value": "While most animals are pigeon-holed–think stubborn as a mule–cats span a huge range of observed behavior, and no single adjective dominates. Cats are the number one most used noun for nine different adjectives, from agility to anxiety to stealth."
+          "type": "img",
+          "value": {
+            "src": "assets/temp-cat.png"
+          }
         },
         {
-          "type": "text",
-          "value": "<mark>chart of cats vs other animals</mark>"
+          "type": "Cat",
+          "value": {}
         },
         {
           "type": "h3",
@@ -278,15 +280,17 @@
         },
         {
           "type": "text",
-          "value": "Stone is the opposite. Where a cat is defined by the range of things it does, stone is often defined by what it lacks. It doesn’t move, speak, feel, or think."
+          "value": "Stone is the opposite. Where a cat is defined by the range of things it does, stone is often defined by what it lacks."
+        },
+        {
+          "type": "img",
+          "value": {
+            "src": "assets/temp-stone.png"
+          }
         },
         {
           "type": "text",
-          "value": "<mark> chart of stone’s categories</mark>"
-        },
-        {
-          "type": "text",
-          "value": "It ranks first for 17 adjectives, but nearly all of them point in a similar direction; Hard, solid, firm. Still, motionless, immovable. Silent, mute, dumb. Blank, impassive, expressionless. It is mostly a bunch of different words that say “nothing is happening here,” which makes it a perfect blank and canvas."
+          "value": "It ranks first for 13 adjectives, but nearly all of them point in a similar direction. It is mostly a bunch of different words that say “nothing is happening here,” which makes it a perfect blank canvas."
         },
         {
           "type": "h3",
@@ -294,19 +298,17 @@
         },
         {
           "type": "text",
-          "value": "The adjectives paired with children are more about what adults project onto them."
+          "value": "In fiction, a child has become shorthand for two things; their being defenseless and wholesome."
+        },
+        {
+          "type": "img",
+          "value": {
+            "src": "assets/temp-child.png"
+          }
         },
         {
           "type": "text",
-          "value": "<mark>chart of some buckets of child’s adjectives</mark>"
-        },
-        {
-          "type": "text",
-          "value": "The most common pairings are divided between two camps: fragility and pureness. On the fragile side: helpless, innocent, weak, ignorant, vulnerable, foolish, lost. On the pure side: excited, delighted, eager, happy, pleased."
-        },
-        {
-          "type": "text",
-          "value": "Both say more about the adult writing the simile than the child comparison being invoked. Child is unique in its dual nature since most nouns carry just one emotional note."
+          "value": "The scale tips towards the defenseless side with the highest usage being helpless and innocent. Interestingly, child is still just second in usage in both of those adjectives to the even more defenseless baby."
         },
         {
           "type": "h3",
@@ -314,23 +316,29 @@
         },
         {
           "type": "text",
-          "value": "Hell is one of the most versatile nouns in the dataset. It ranks first for 20 different adjectives, more than any other noun. However, most of them have nothing to do with hell."
+          "value": "Hell is one of the most versatile nouns in the dataset. However, most of them have nothing to do with hell."
         },
         {
           "type": "text",
-          "value": "<strong>As hot as hell</strong> makes sense, if you subscribe to the religious imagery. But as confused as hell? As sexy as hell? Similes usually work because the noun possesses the quality. Hell often functions more as an amplifier."
+          "value": "<strong>As hot as hell</strong> makes sense, if you subscribe to the religious imagery. But as cute as hell? As sexy as hell? Similes usually work because the noun possesses the quality. Hell often functions more as an amplifier."
         },
         {
           "type": "text",
-          "value": "<mark>first usage as sexy as hell</mark>"
+          "value": "I was curious about when this phenomenon started. According to <a href=https://books.google.com/ngrams/ target=_blank rel=noreferrer>Google Books Ngram Viewer</a>, the first use of “sexy as hell” that I could verify was from the 1948 novel <em>Innocent Villa,</em> “She looks like an old harpy but thinks she’s sexy as hell.”"
+        },
+        {
+          "type": "img",
+          "value": {
+            "src": "assets/innocent-villa-cover.png"
+          }
         },
         {
           "type": "text",
-          "value": "That makes hell pretty unique in the dataset. Most nouns earn their place by embodying something, whereas hell just became another way to say “very.”"
+          "value": "If we want to get pedantic, the first use with the exact structure (“as _ as _”) was from the 1954 novel <em>The Refuge,</em> “‘Any woman with eyes like hers gets a reputation for being as sexy as hell, old boy.’”"
         },
         {
           "type": "text",
-          "value": "<mark>chart showing hell’s adjectives, their size, and color-coded if they have a real connection to the word or not</mark>"
+          "value": "This makes hell pretty unique in the dataset. Most nouns earn their place by embodying something, whereas hell just became another way to say “very.”"
         }
       ]
     },
@@ -368,7 +376,11 @@
         },
         {
           "type": "text",
-          "value": "TK some note about this is all pre-AI books, so chill."
+          "value": "TK some note about this is all pre-AI books."
+        },
+        {
+          "type": "text",
+          "value": "Used 100+ occurrences for most noun stats."
         }
       ]
     }
