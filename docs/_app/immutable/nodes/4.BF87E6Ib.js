@@ -1,4 +1,4 @@
-import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as M,t as _,K as l,a0 as h,ar as E,Z as L,F as A,_ as B,a2 as z,M as I,aH as V,ag as D,bb as Y,L as Q}from"../chunks/B92FeS2C.js";import{b as v,f as g,c as O,t as Z}from"../chunks/BvRfo2l_.js";import{a as x,f as X,e as P}from"../chunks/BwpuD7DB.js";import{e as H,i as $,c as ee,d as te}from"../chunks/C2Vtx1Y2.js";import{e as ne}from"../chunks/DD47trRG.js";import{c as ae,b as se,i as oe}from"../chunks/DxeqRFj7.js";import{s as re,p as T}from"../chunks/C2wkIQ8G.js";import{s as W}from"../chunks/DGiPyN0h.js";import{c as ie,C as le,a as ce}from"../chunks/OHPZlGBd.js";import{b as ue}from"../chunks/CaBT9S1Q.js";import"../chunks/HvopnIf4.js";var he=g('<section id="demo-link"><h2>Link</h2> <p><a href="elements">Default element styles demo</a></p> <p><a href="fonts">Pudding-hosted font previews</a></p> <p><a href="ui">BitsUI styled components</a></p></section>');function de(r){var t=he();v(r,t)}var me=g('<section id="demo-image"><h2>Image</h2> <p>img tag</p> <img src="../assets/demo/test.jpg" alt="cat" class="svelte-b56t42"/> <p>background image</p> <div class="svelte-b56t42"></div></section>');function pe(r){var t=me();v(r,t)}var ve=g('<section id="demo-element"><h2>Dynamic Svelte Element</h2> <!></section>');function fe(r){const t=[{tag:"h3",text:"I am a h3 tag."},{tag:"p",text:"I am p tag."}];var n=ve(),e=p(m(n),2);H(e,17,()=>t,$,(i,s)=>{let c=()=>l(s).tag,d=()=>l(s).text;var f=O(),a=M(f);ne(a,c,!1,(o,u)=>{var y=Z();_(()=>x(y,d())),v(u,y)}),v(i,f)}),h(n),v(r,n)}var ge=g("<p> </p>");function ye(r,t){var n=ge(),e=m(n);h(n),_(()=>x(e,`I am component A and my favorite number is ${t.number??""}.`)),v(r,n)}var be=g("<p> </p>");function xe(r,t){var n=be(),e=m(n);h(n),_(()=>x(e,`I am component B and my name is ${t.name??""}.`)),v(r,n)}var we=g('<section id="demo-component"><h2>Dynamic Svelte Component</h2> <!></section>');function ke(r){const t={A:ye,B:xe},n=[{component:"A",number:42},{component:"B",name:"Russell"}];var e=we(),i=p(m(e),2);H(i,17,()=>n,$,(s,c)=>{const d=E(()=>t[l(c).component]);var f=O(),a=M(f);ae(a,()=>l(d),(o,u)=>{u(o,re(()=>l(c)))}),v(s,f)}),h(e),v(r,e)}var _e=g("<div><!></div>");function Se(r,t){L(t,!0);let n=T(t,"root",3,null),e=T(t,"top",3,0),i=T(t,"bottom",3,0),s=T(t,"increments",3,100),c=T(t,"value",15,void 0),d=[],f=[],a=[],o=[],u;function y(){let b=0,k=0;for(let j=0;j<d.length;j++)d[j]>b&&(b=d[j],k=j);b>0?c(k):c(void 0)}function S(b,k){const j=J=>{J[0].isIntersecting;const N=J[0].intersectionRatio;d[k]=N,y()},R=e()?e()*-1:0,G=i()?i()*-1:0,U=`${R}px 0px ${G}px 0px`,K={root:n(),rootMargin:U,threshold:f};o[k]&&o[k].disconnect();const F=new IntersectionObserver(j,K);F.observe(b),o[k]=F}function q(){a.length&&a.forEach(S)}A(()=>{for(let b=0;b<s()+1;b++)f.push(b/s());a=u.querySelectorAll(":scope > *:not(iframe)"),q()}),A(()=>{e(),i(),q()});var w=_e(),C=m(w);W(C,()=>t.children??z),h(w),se(w,b=>u=b,()=>u),v(r,w),B()}var je=g('<div><p class="svelte-1sxgmm9"> </p></div>'),Ie=g('<section id="scrolly"><h2 class="svelte-1sxgmm9">Scrolly <span> </span></h2> <div class="spacer svelte-1sxgmm9"></div> <!> <div class="spacer svelte-1sxgmm9"></div></section>');function qe(r){let t=D(void 0);var n=Ie(),e=m(n),i=p(m(e)),s=m(i,!0);h(i),h(e);var c=p(e,4);Se(c,{get value(){return l(t)},set value(d){I(t,d,!0)},children:(d,f)=>{var a=O(),o=M(a);H(o,16,()=>[0,1,2,3,4],$,(u,y,S)=>{const q=E(()=>l(t)===S);var w=je();let C;var b=m(w),k=m(b,!0);h(b),h(w),_(()=>{C=ee(w,1,"step svelte-1sxgmm9",null,C,{active:l(q)}),x(k,y)}),v(u,w)}),v(d,a)},$$slots:{default:!0}}),V(2),h(n),_(()=>x(s,l(t)||"-")),v(r,n)}const Te=`{
+import"../chunks/DsnmJJEf.js";import{aq as d,$ as p,a1 as C,t as k,K as l,a0 as h,ar as E,Z as L,F as M,_ as B,a2 as z,M as q,aH as N,ag as D,bb as Y,L as Q}from"../chunks/B92FeS2C.js";import{b as v,f as g,c as F,t as Z}from"../chunks/BvRfo2l_.js";import{a as x,f as X,e as O}from"../chunks/BwpuD7DB.js";import{e as H,i as R,c as ee,d as te}from"../chunks/C2Vtx1Y2.js";import{e as ne}from"../chunks/DD47trRG.js";import{c as ae,b as se,i as oe}from"../chunks/DxeqRFj7.js";import{s as re,p as A}from"../chunks/C2wkIQ8G.js";import{s as P}from"../chunks/DGiPyN0h.js";import{c as ie,C as le,a as ce}from"../chunks/VkZvhZvr.js";import{b as ue}from"../chunks/D2E1UgrZ.js";import"../chunks/HvopnIf4.js";var he=g('<section id="demo-link"><h2>Link</h2> <p><a href="elements">Default element styles demo</a></p> <p><a href="fonts">Pudding-hosted font previews</a></p> <p><a href="ui">BitsUI styled components</a></p></section>');function me(r){var t=he();v(r,t)}var pe=g('<section id="demo-image"><h2>Image</h2> <p>img tag</p> <img src="../assets/demo/test.jpg" alt="cat" class="svelte-b56t42"/> <p>background image</p> <div class="svelte-b56t42"></div></section>');function de(r){var t=pe();v(r,t)}var ve=g('<section id="demo-element"><h2>Dynamic Svelte Element</h2> <!></section>');function fe(r){const t=[{tag:"h3",text:"I am a h3 tag."},{tag:"p",text:"I am p tag."}];var n=ve(),e=d(p(n),2);H(e,17,()=>t,R,(i,s)=>{let c=()=>l(s).tag,m=()=>l(s).text;var f=F(),a=C(f);ne(a,c,!1,(o,u)=>{var y=Z();k(()=>x(y,m())),v(u,y)}),v(i,f)}),h(n),v(r,n)}var ge=g("<p> </p>");function ye(r,t){var n=ge(),e=p(n);h(n),k(()=>x(e,`I am component A and my favorite number is ${t.number??""}.`)),v(r,n)}var be=g("<p> </p>");function xe(r,t){var n=be(),e=p(n);h(n),k(()=>x(e,`I am component B and my name is ${t.name??""}.`)),v(r,n)}var we=g('<section id="demo-component"><h2>Dynamic Svelte Component</h2> <!></section>');function _e(r){const t={A:ye,B:xe},n=[{component:"A",number:42},{component:"B",name:"Russell"}];var e=we(),i=d(p(e),2);H(i,17,()=>n,R,(s,c)=>{const m=E(()=>t[l(c).component]);var f=F(),a=C(f);ae(a,()=>l(m),(o,u)=>{u(o,re(()=>l(c)))}),v(s,f)}),h(e),v(r,e)}var ke=g("<div><!></div>");function Se(r,t){L(t,!0);let n=A(t,"root",3,null),e=A(t,"top",3,0),i=A(t,"bottom",3,0),s=A(t,"increments",3,100),c=A(t,"value",15,void 0),m=[],f=[],a=[],o=[],u;function y(){let b=0,_=0;for(let I=0;I<m.length;I++)m[I]>b&&(b=m[I],_=I);b>0?c(_):c(void 0)}function S(b,_){const I=J=>{J[0].isIntersecting;const K=J[0].intersectionRatio;m[_]=K,y()},$=e()?e()*-1:0,U=i()?i()*-1:0,W=`${$}px 0px ${U}px 0px`,V={root:n(),rootMargin:W,threshold:f};o[_]&&o[_].disconnect();const G=new IntersectionObserver(I,V);G.observe(b),o[_]=G}function j(){a.length&&a.forEach(S)}M(()=>{for(let b=0;b<s()+1;b++)f.push(b/s());a=u.querySelectorAll(":scope > *:not(iframe)"),j()}),M(()=>{e(),i(),j()});var w=ke(),T=p(w);P(T,()=>t.children??z),h(w),se(w,b=>u=b,()=>u),v(r,w),B()}var Ie=g('<div><p class="svelte-1sxgmm9"> </p></div>'),qe=g('<section id="scrolly"><h2 class="svelte-1sxgmm9">Scrolly <span> </span></h2> <div class="spacer svelte-1sxgmm9"></div> <!> <div class="spacer svelte-1sxgmm9"></div></section>');function je(r){let t=D(void 0);var n=qe(),e=p(n),i=d(p(e)),s=p(i,!0);h(i),h(e);var c=d(e,4);Se(c,{get value(){return l(t)},set value(m){q(t,m,!0)},children:(m,f)=>{var a=F(),o=C(a);H(o,16,()=>[0,1,2,3,4],R,(u,y,S)=>{const j=E(()=>l(t)===S);var w=Ie();let T;var b=p(w),_=p(b,!0);h(b),h(w),k(()=>{T=ee(w,1,"step svelte-1sxgmm9",null,T,{active:l(j)}),x(_,y)}),v(u,w)}),v(m,a)},$$slots:{default:!0}}),N(2),h(n),k(()=>x(s,l(t)||"-")),v(r,n)}const Ae=`{
   "meta": {
     "title": "Comparisons as predictable as the sunrise",
     "description": "An analysis of 200,000 similes from popular fiction."
@@ -184,7 +184,7 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as M,t as _,K as l,a0 as 
         },
         {
           "type": "text",
-          "value": "Most similes follow a similar shape. Some writers reach for a novel comparison to make it their own, while most just want one that’s reliable and accessible. Take this 1964 textbook for English learners, which reinforces the patterns from the start."
+          "value": "Most similes follow a similar shape. Some writers reach for a novel comparison to make it their own, while most just want one that’s reliable and accessible. Check out this 1964 textbook <em>Examine Your English</em>, which implants the patterns         from the start."
         },
         {
           "type": "img",
@@ -219,7 +219,7 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as M,t as _,K as l,a0 as 
         },
         {
           "type": "text",
-          "value": "Cucumber (or as I learned that it sometimes was referred to as “cowcumber”) doesn’t even crack the top ten in usage for any other adjective. On the other hand, you have <strong>hell</strong> which is the most-used noun for 19 different adjectives."
+          "value": "Cucumber (or as I learned that it sometimes was referred to as “cowcumber”) doesn’t even crack the top ten in usage for any other adjective. On the other hand, you have <strong>hell</strong> which is a top-10 noun for 17 different adjectives."
         },
         {
           "type": "text",
@@ -258,19 +258,21 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as M,t as _,K as l,a0 as 
         },
         {
           "type": "text",
-          "value": "Cat is a noun of contradictions. Writers use it to mean nervous and relaxed, active and lazy."
+          "value": "Cat is a noun that covers serious ground. Writers use it to mean everything from graceful to weak."
         },
         {
           "type": "text",
-          "value": "<mark>a chart showing the breadth of adjectives (can i use some quant. metric like cosine sim to make the point with data?)"
+          "value": "While most animals are pigeon-holed–think stubborn as a mule–cats span a huge range of observed behavior. And cat is the most used noun for four different adjectives; nervous, active, agile, nimble."
         },
         {
-          "type": "text",
-          "value": "While most animals are pigeon-holed–think stubborn as a mule–cats span a huge range of observed behavior, and no single adjective dominates. Cats are the number one most used noun for nine different adjectives, from agility to anxiety to stealth."
+          "type": "img",
+          "value": {
+            "src": "assets/temp-cat.png"
+          }
         },
         {
-          "type": "text",
-          "value": "<mark>chart of cats vs other animals</mark>"
+          "type": "Cat",
+          "value": {}
         },
         {
           "type": "h3",
@@ -278,15 +280,17 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as M,t as _,K as l,a0 as 
         },
         {
           "type": "text",
-          "value": "Stone is the opposite. Where a cat is defined by the range of things it does, stone is often defined by what it lacks. It doesn’t move, speak, feel, or think."
+          "value": "Stone is the opposite. Where a cat is defined by the range of things it does, stone is often defined by what it lacks."
+        },
+        {
+          "type": "img",
+          "value": {
+            "src": "assets/temp-stone.png"
+          }
         },
         {
           "type": "text",
-          "value": "<mark> chart of stone’s categories</mark>"
-        },
-        {
-          "type": "text",
-          "value": "It ranks first for 17 adjectives, but nearly all of them point in a similar direction; Hard, solid, firm. Still, motionless, immovable. Silent, mute, dumb. Blank, impassive, expressionless. It is mostly a bunch of different words that say “nothing is happening here,” which makes it a perfect blank and canvas."
+          "value": "It ranks first for 13 adjectives, but nearly all of them point in a similar direction. It is mostly a bunch of different words that say “nothing is happening here,” which makes it a perfect blank canvas."
         },
         {
           "type": "h3",
@@ -294,19 +298,17 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as M,t as _,K as l,a0 as 
         },
         {
           "type": "text",
-          "value": "The adjectives paired with children are more about what adults project onto them."
+          "value": "In fiction, a child has become shorthand for two things; their being defenseless and wholesome."
+        },
+        {
+          "type": "img",
+          "value": {
+            "src": "assets/temp-child.png"
+          }
         },
         {
           "type": "text",
-          "value": "<mark>chart of some buckets of child’s adjectives</mark>"
-        },
-        {
-          "type": "text",
-          "value": "The most common pairings are divided between two camps: fragility and pureness. On the fragile side: helpless, innocent, weak, ignorant, vulnerable, foolish, lost. On the pure side: excited, delighted, eager, happy, pleased."
-        },
-        {
-          "type": "text",
-          "value": "Both say more about the adult writing the simile than the child comparison being invoked. Child is unique in its dual nature since most nouns carry just one emotional note."
+          "value": "The scale tips towards the defenseless side with the highest usage being helpless and innocent. Interestingly, child is still just second in usage in both of those adjectives to the even more defenseless baby."
         },
         {
           "type": "h3",
@@ -314,23 +316,29 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as M,t as _,K as l,a0 as 
         },
         {
           "type": "text",
-          "value": "Hell is one of the most versatile nouns in the dataset. It ranks first for 20 different adjectives, more than any other noun. However, most of them have nothing to do with hell."
+          "value": "Hell is one of the most versatile nouns in the dataset. However, most of them have nothing to do with hell."
         },
         {
           "type": "text",
-          "value": "<strong>As hot as hell</strong> makes sense, if you subscribe to the religious imagery. But as confused as hell? As sexy as hell? Similes usually work because the noun possesses the quality. Hell often functions more as an amplifier."
+          "value": "<strong>As hot as hell</strong> makes sense, if you subscribe to the religious imagery. But as cute as hell? As sexy as hell? Similes usually work because the noun possesses the quality. Hell often functions more as an amplifier."
         },
         {
           "type": "text",
-          "value": "<mark>first usage as sexy as hell</mark>"
+          "value": "I was curious about when this phenomenon started. According to <a href=https://books.google.com/ngrams/ target=_blank rel=noreferrer>Google Books Ngram Viewer</a>, the first use of “sexy as hell” that I could verify was from the 1948 novel <em>Innocent Villa,</em> “She looks like an old harpy but thinks she’s sexy as hell.”"
+        },
+        {
+          "type": "img",
+          "value": {
+            "src": "assets/innocent-villa-cover.png"
+          }
         },
         {
           "type": "text",
-          "value": "That makes hell pretty unique in the dataset. Most nouns earn their place by embodying something, whereas hell just became another way to say “very.”"
+          "value": "If we want to get pedantic, the first use with the exact structure (“as _ as _”) was from the 1954 novel <em>The Refuge,</em> “‘Any woman with eyes like hers gets a reputation for being as sexy as hell, old boy.’”"
         },
         {
           "type": "text",
-          "value": "<mark>chart showing hell’s adjectives, their size, and color-coded if they have a real connection to the word or not</mark>"
+          "value": "This makes hell pretty unique in the dataset. Most nouns earn their place by embodying something, whereas hell just became another way to say “very.”"
         }
       ]
     },
@@ -368,9 +376,13 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as M,t as _,K as l,a0 as 
         },
         {
           "type": "text",
-          "value": "TK some note about this is all pre-AI books, so chill."
+          "value": "TK some note about this is all pre-AI books."
+        },
+        {
+          "type": "text",
+          "value": "Used 100+ occurrences for most noun stats."
         }
       ]
     }
   ]
-}`;var De=g('<p> </p> <progress max="100"></progress>',1);function Ce(r,t){let n=T(t,"label",3,"A"),e=T(t,"value",3,0);var i=De(),s=M(i),c=m(s,!0);h(s);var d=p(s,2);_(()=>{x(c,n()),te(d,e())}),v(r,i)}var Me=g('<section id="cms"><h2>MicroCMS</h2> <code><pre> </pre></code> <!></section>');function Ae(r,t){L(t,!0);const{body:n}=ie,e={Test:Ce};var i=Me(),s=p(m(i),2),c=m(s),d=m(c,!0);h(c),h(s);var f=p(s,2);le(f,{get components(){return e},get body(){return n}}),h(i),_(a=>x(d,a),[()=>Te.replace(/\t/g," ")]),v(r,i),B()}const Ee=(r,t=z)=>{var n=Le(),e=m(n),i=m(e,!0);h(e);var s=p(e,2),c=m(s,!0);h(s),h(n),_(()=>{x(i,t().name),x(c,t().age)}),v(r,n)};var Le=g('<div class="person svelte-q3gttf"><p class="svelte-q3gttf"> </p> <p class="svelte-q3gttf"> </p></div>'),Be=g('<h2>Svelte5</h2> <h3>Reactive variables 3 ways:</h3> <button class="svelte-q3gttf">count++</button> <p class="svelte-q3gttf"> </p> <p class="svelte-q3gttf"> </p> <p class="svelte-q3gttf"> </p> <h3>Children (previously slots):</h3> <div class="children"><!></div> <h3>Dispatch Event</h3> <button class="svelte-q3gttf">Random</button>  <h3>Snippets</h3> <div class="people svelte-q3gttf"></div>',1);function He(r,t){L(t,!0),T(t,"age",3,30);const n=[{name:"John",age:30},{name:"Jill",age:45}];let e=D(0),i=E(()=>l(e)*2),s=E(()=>l(e)*2),c=D(0);A(()=>{I(c,l(e)*2)});var d=Be(),f=p(M(d),4),a=p(f,2),o=m(a);h(a);var u=p(a,2),y=m(u);h(u);var S=p(u,2),q=m(S);h(S);var w=p(S,4),C=m(w);W(C,()=>t.children??z),h(w);var b=p(w,4),k=p(b,4);H(k,21,()=>n,$,(j,R)=>{Ee(j,()=>l(R))}),h(k),_(()=>{x(o,`${l(e)??""} doubled is ${l(i)??""} (derived)`),x(y,`${l(e)??""} doubled is ${l(s)??""} (derived by)`),x(q,`${l(e)??""} doubled is ${l(c)??""} ($effect)`)}),P("click",f,()=>Y(e)),P("click",b,()=>t.random(Math.floor(Math.random()*10))),v(r,d),B()}X(["click"]);const $e=(r,t)=>{let n=D(Q(r)),e=D(null),i=D(!0),s=D(void 0);const c=(a=!0)=>{I(i,a,!0),a===!0&&(I(s,null),I(e,null))},d=async()=>{try{const a=await fetch(l(n),t);if(!a.ok)throw new Error(`Unexpected error occurred (status ${a.status})`);let o;if(l(n).includes(".csv")){const u=await a.text();o=ce(u)}else o=await a.json();return[null,o]}catch(a){const{errorMessage:o="Unexpected error eccurred"}=a;return[o,null]}},f=async a=>{c(!0);const[o,u]=await d();if(a===l(n)){if(o){c(!1),I(s,o,!0);return}c(!1),I(e,u,!0)}};return A(()=>{f(l(n))}),{get data(){return l(e)},get loading(){return l(i)},get error(){return l(s)},get url(){return l(n)},set url(a){l(n)!==a&&I(n,a,!0)}}};var Re=g("<p>loading data...</p>"),ze=g("<p> </p>"),Oe=g("<p>data loaded</p> <pre> </pre>",1),Fe=g('<div class="c"><h2>Load Data</h2> <div class="response"><!></div></div>');function Je(r,t){L(t,!0);const n=`${ue}/assets/demo/test.csv`,e=$e(n);A(()=>{});var i=Fe(),s=p(m(i),2),c=m(s);{var d=o=>{var u=Re();v(o,u)},f=o=>{var u=ze(),y=m(u);h(u),_(()=>x(y,`error: ${e.error??""}`)),v(o,u)},a=o=>{var u=Oe(),y=p(M(u),2),S=m(y,!0);h(y),_(q=>x(S,q),[()=>JSON.stringify(e.data,null,2)]),v(o,u)};oe(c,o=>{e.loading?o(d):e.error?o(f,1):o(a,-1)})}h(s),h(i),v(r,i),B()}var Pe=g('<div id="demo" class="svelte-15aotx7"><h1>Demo</h1> <!> <!> <!> <!> <!> <!> <!> <!></div>');function We(r){let t=D(0);function n(y){console.log(y)}var e=Pe(),i=p(m(e),2);de(i);var s=p(i,2);pe(s);var c=p(s,2);fe(c);var d=p(c,2);ke(d);var f=p(d,2);Ae(f,{});var a=p(f,2);Je(a,{});var o=p(a,2);qe(o);var u=p(o,2);He(u,{random:n,get value(){return l(t)},set value(y){I(t,y,!0)}}),h(e),v(r,e)}function at(r){We(r)}export{at as component};
+}`;var De=g('<p> </p> <progress max="100"></progress>',1);function Te(r,t){let n=A(t,"label",3,"A"),e=A(t,"value",3,0);var i=De(),s=C(i),c=p(s,!0);h(s);var m=d(s,2);k(()=>{x(c,n()),te(m,e())}),v(r,i)}var Ce=g('<section id="cms"><h2>MicroCMS</h2> <code><pre> </pre></code> <!></section>');function Me(r,t){L(t,!0);const{body:n}=ie,e={Test:Te};var i=Ce(),s=d(p(i),2),c=p(s),m=p(c,!0);h(c),h(s);var f=d(s,2);le(f,{get components(){return e},get body(){return n}}),h(i),k(a=>x(m,a),[()=>Ae.replace(/\t/g," ")]),v(r,i),B()}const Ee=(r,t=z)=>{var n=Le(),e=p(n),i=p(e,!0);h(e);var s=d(e,2),c=p(s,!0);h(s),h(n),k(()=>{x(i,t().name),x(c,t().age)}),v(r,n)};var Le=g('<div class="person svelte-q3gttf"><p class="svelte-q3gttf"> </p> <p class="svelte-q3gttf"> </p></div>'),Be=g('<h2>Svelte5</h2> <h3>Reactive variables 3 ways:</h3> <button class="svelte-q3gttf">count++</button> <p class="svelte-q3gttf"> </p> <p class="svelte-q3gttf"> </p> <p class="svelte-q3gttf"> </p> <h3>Children (previously slots):</h3> <div class="children"><!></div> <h3>Dispatch Event</h3> <button class="svelte-q3gttf">Random</button>  <h3>Snippets</h3> <div class="people svelte-q3gttf"></div>',1);function He(r,t){L(t,!0),A(t,"age",3,30);const n=[{name:"John",age:30},{name:"Jill",age:45}];let e=D(0),i=E(()=>l(e)*2),s=E(()=>l(e)*2),c=D(0);M(()=>{q(c,l(e)*2)});var m=Be(),f=d(C(m),4),a=d(f,2),o=p(a);h(a);var u=d(a,2),y=p(u);h(u);var S=d(u,2),j=p(S);h(S);var w=d(S,4),T=p(w);P(T,()=>t.children??z),h(w);var b=d(w,4),_=d(b,4);H(_,21,()=>n,R,(I,$)=>{Ee(I,()=>l($))}),h(_),k(()=>{x(o,`${l(e)??""} doubled is ${l(i)??""} (derived)`),x(y,`${l(e)??""} doubled is ${l(s)??""} (derived by)`),x(j,`${l(e)??""} doubled is ${l(c)??""} ($effect)`)}),O("click",f,()=>Y(e)),O("click",b,()=>t.random(Math.floor(Math.random()*10))),v(r,m),B()}X(["click"]);const Re=(r,t)=>{let n=D(Q(r)),e=D(null),i=D(!0),s=D(void 0);const c=(a=!0)=>{q(i,a,!0),a===!0&&(q(s,null),q(e,null))},m=async()=>{try{const a=await fetch(l(n),t);if(!a.ok)throw new Error(`Unexpected error occurred (status ${a.status})`);let o;if(l(n).includes(".csv")){const u=await a.text();o=ce(u)}else o=await a.json();return[null,o]}catch(a){const{errorMessage:o="Unexpected error eccurred"}=a;return[o,null]}},f=async a=>{c(!0);const[o,u]=await m();if(a===l(n)){if(o){c(!1),q(s,o,!0);return}c(!1),q(e,u,!0)}};return M(()=>{f(l(n))}),{get data(){return l(e)},get loading(){return l(i)},get error(){return l(s)},get url(){return l(n)},set url(a){l(n)!==a&&q(n,a,!0)}}};var $e=g("<p>loading data...</p>"),ze=g("<p> </p>"),Fe=g("<p>data loaded</p> <pre> </pre>",1),Ge=g('<div class="c"><h2>Load Data</h2> <div class="response"><!></div></div>');function Je(r,t){L(t,!0);const n=`${ue}/assets/demo/test.csv`,e=Re(n);M(()=>{});var i=Ge(),s=d(p(i),2),c=p(s);{var m=o=>{var u=$e();v(o,u)},f=o=>{var u=ze(),y=p(u);h(u),k(()=>x(y,`error: ${e.error??""}`)),v(o,u)},a=o=>{var u=Fe(),y=d(C(u),2),S=p(y,!0);h(y),k(j=>x(S,j),[()=>JSON.stringify(e.data,null,2)]),v(o,u)};oe(c,o=>{e.loading?o(m):e.error?o(f,1):o(a,-1)})}h(s),h(i),v(r,i),B()}var Oe=g('<div id="demo" class="svelte-15aotx7"><h1>Demo</h1> <!> <!> <!> <!> <!> <!> <!> <!></div>');function Pe(r){let t=D(0);function n(y){console.log(y)}var e=Oe(),i=d(p(e),2);me(i);var s=d(i,2);de(s);var c=d(s,2);fe(c);var m=d(c,2);_e(m);var f=d(m,2);Me(f,{});var a=d(f,2);Je(a,{});var o=d(a,2);je(o);var u=d(o,2);He(u,{random:n,get value(){return l(t)},set value(y){q(t,y,!0)}}),h(e),v(r,e)}function at(r){Pe(r)}export{at as component};
