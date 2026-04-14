@@ -48,6 +48,7 @@
 	/* "1" second duration */
 	--1s: 1ms;
 
+	--col-width: 600px;
 	--chart-max-width-sm: 960px;
 	--chart-max-width-lg: 1600px;
 
@@ -114,7 +115,7 @@ p, li, details {
 }
 
 section > *:not(.graphic) {
-	max-width: 600px;
+	max-width: var(--col-width);
 	margin: 1rem auto;
 } 
 

@@ -180,10 +180,6 @@
         },
         {
           "type": "text",
-          "value": "<mark>walk through an example or two? or just click to enlarge</mark>"
-        },
-        {
-          "type": "text",
           "value": "Most similes follow a similar shape. Some writers reach for a novel comparison to make it their own, while most just want one that’s reliable and accessible. Check out this 1964 textbook <em>Examine Your English</em>, which implants the patterns         from the start."
         },
         {
@@ -265,12 +261,6 @@
           "value": "While most animals are pigeon-holed–think stubborn as a mule–cats span a huge range of observed behavior. And cat is the most used noun for four different adjectives; nervous, active, agile, nimble."
         },
         {
-          "type": "img",
-          "value": {
-            "src": "assets/temp-cat.png"
-          }
-        },
-        {
           "type": "Cat",
           "value": {}
         },
@@ -280,17 +270,15 @@
         },
         {
           "type": "text",
-          "value": "Stone is the opposite. Where a cat is defined by the range of things it does, stone is often defined by what it lacks."
+          "value": "Although stone has one dominant physical quality where it tops seven adjectives (hard/solid/impenetrable, etc.,), where a cat is defined by the range of things it does, stone is often defined by what it lacks."
         },
         {
-          "type": "img",
-          "value": {
-            "src": "assets/temp-stone.png"
-          }
+          "type": "Stone",
+          "value": {}
         },
         {
           "type": "text",
-          "value": "It ranks first for 13 adjectives, but nearly all of them point in a similar direction. It is mostly a bunch of different words that say “nothing is happening here,” which makes it a perfect blank canvas."
+          "value": "These four categories are mostly a bunch of different ways to say “nothing is happening here,” which makes it a perfectly blank, and oft-used canvas for a simile."
         },
         {
           "type": "h3",
@@ -301,10 +289,8 @@
           "value": "In fiction, a child has become shorthand for two things; their being defenseless and wholesome."
         },
         {
-          "type": "img",
-          "value": {
-            "src": "assets/temp-child.png"
-          }
+          "type": "Child",
+          "value": {}
         },
         {
           "type": "text",
