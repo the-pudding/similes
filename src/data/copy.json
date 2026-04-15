@@ -413,6 +413,18 @@
         {
           "type": "Irony",
           "value": {}
+        },
+        {
+          "type": "img",
+          "value": {
+            "src": "assets/crosshatch.jpg"
+          }
+        },
+        {
+          "type": "img",
+          "value": {
+            "src": "assets/pages-ender.png"
+          }
         }
       ]
     },
