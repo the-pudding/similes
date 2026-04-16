@@ -301,6 +301,13 @@
           "value": "Cat"
         },
         {
+          "type": "img",
+          "value": {
+            "src": "assets/cat.png",
+            "alt": "Illustration of a cat stretching."
+          }
+        },
+        {
           "type": "text",
           "value": "Cat is a noun that covers serious ground. Writers use it to mean everything from graceful to weak."
         },
@@ -315,6 +322,13 @@
         {
           "type": "h3",
           "value": "Stone"
+        },
+        {
+          "type": "img",
+          "value": {
+            "src": "assets/stone.png",
+            "alt": "Illustration of a stone with googly eyes attached."
+          }
         },
         {
           "type": "text",
@@ -333,6 +347,13 @@
           "value": "Child"
         },
         {
+          "type": "img",
+          "value": {
+            "src": "assets/child.png",
+            "alt": "Illustration of an anxious kid, looking between two theater masks. One is smiling, the other crying."
+          }
+        },
+        {
           "type": "text",
           "value": "In fiction, a child has become shorthand for two things; being defenseless and wholesome."
         },
@@ -347,6 +368,13 @@
         {
           "type": "h3",
           "value": "Hell"
+        },
+        {
+          "type": "img",
+          "value": {
+            "src": "assets/hell.png",
+            "alt": "Illustration of the devil, balancing a stack of different hats on his head."
+          }
         },
         {
           "type": "text",

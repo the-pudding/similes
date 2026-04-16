@@ -197,7 +197,16 @@ section > *:not(.graphic) {
 	width: 130px;
 	margin-top: -300px;
 }
-
+#specific img:nth-of-type(odd){
+	float: right;
+	max-width: 250px;
+	margin: 10px 20% 10px 10px;
+}
+#specific img:nth-of-type(even){
+	float: left;
+	max-width: 250px;
+	margin: 10px 10px 10px 20%;
+}
 @media screen and (min-width: 800px) {
 	p, li, blockquote, details {
 		font-size: var(--20px);
