@@ -158,13 +158,14 @@ section > *:not(.graphic) {
 	font-size: 1em;
 }
 
+/* Sections with black bgs, white text */
 #adjectives,
 #irony{
 	position: relative;
 	background: var(--color-adjusted-black);
 	color: var(--color-adjusted-white);
 }
-/* These are needed for the section illo bgs */
+/* These are needed for the section illo bgs to help blend page color transitions */
 #adjectives::before,
 #irony::before,
 #nouns::before{
@@ -210,16 +211,18 @@ section > *:not(.graphic) {
 	position: relative;
 	z-index: 2;
 }
-/* Section illos */
+/* Section topper illos */
 #adjectives img:nth-of-type(1),
 #nouns img:nth-of-type(1),
-#irony img:nth-of-type(1),
-#irony img:nth-last-of-type(2){
+#irony img:nth-of-type(1){
 	z-index: 2;
 	position: relative;
 	width: 100%;
 	max-width: 1000px;
 	margin-bottom: -80px;
+}
+#irony img:nth-of-type(1){
+	margin-bottom: 0;
 }
 /* Inline illos for 4 nouns */
 #specific img:nth-of-type(odd){
@@ -255,11 +258,7 @@ section > *:not(.graphic) {
 @media screen and (max-width: 500px) {
 	#irony img:nth-last-of-type(1){
 		width: 100px;
-		/* margin-top: -300px; */
 	}
-	/* #irony::after{
-		height: 25px;
-	} */
 }
 
 
