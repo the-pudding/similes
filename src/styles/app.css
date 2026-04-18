@@ -45,6 +45,7 @@
 	--color-input-fg: var(--color-gray-900);
 	--color-placeholder: var(--color-gray-500);
 	--color-adjusted-black: #1A1D21;
+	--color-adjusted-white: #D1D2D3;
 
 	/* "1" second duration */
 	--1s: 1ms;
@@ -159,7 +160,7 @@ section > *:not(.graphic) {
 #irony{
 	position: relative;
 	background: var(--color-adjusted-black);
-	color: #D1D2D3;
+	color: var(--color-adjusted-white);
 }
 /* These are needed for the section illo bgs */
 #adjectives::before,
