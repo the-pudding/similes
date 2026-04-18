@@ -166,7 +166,8 @@ section > *:not(.graphic) {
 }
 /* These are needed for the section illo bgs */
 #adjectives::before,
-#irony::before{
+#irony::before,
+#nouns::before{
 	z-index: 0;
 	content: '';
 	position: absolute;
@@ -193,6 +194,13 @@ section > *:not(.graphic) {
 	background: #FFF;
 	bottom: 0;
 	margin: auto;
+}
+#nouns{
+	position: relative;
+}
+#nouns::before{
+	background: var(--color-adjusted-black);
+	height: 595px;
 }
 #adjectives h2{
 	-webkit-text-stroke: 10px var(--color-adjusted-black);
@@ -245,7 +253,8 @@ section > *:not(.graphic) {
 }
 @media screen and (max-width: 1000px) {
 	#adjectives::before,
-	#irony::before{
+	#irony::before,
+	#nouns::before{
 		display: none;
 	}
 }
