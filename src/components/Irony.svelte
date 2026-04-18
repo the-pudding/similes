@@ -17,6 +17,10 @@
 </div>
 
 <style>
+	.graphic{
+		position: relative;
+		z-index: 3;
+	}
 	.scroll-view {
 		display: none;
 	}
