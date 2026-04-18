@@ -155,20 +155,22 @@
 		color: var(--color-gray-500);
 	}
 
+	/* These are the falling pages that curve down from topper */
 	.page:nth-of-type(2),
 	.page:nth-of-type(3){
 		z-index: -1;
 		display: block;
 		position: absolute;
 		top: -100%;
-		left: -90%;
+		left: -750px;
+		width: 550px;
+		max-width: 40vw;
+		height: auto;
 		margin: auto;
-		width: auto;
-		height: 85vh;
 	}
 	.page:nth-of-type(3){
 		left: auto;
-		right: -90%;
+		right: -750px;
 	}
 	.page:nth-of-type(2) img,
 	.page:nth-of-type(3) img{
@@ -176,12 +178,18 @@
 		height: 100%;
 		opacity: 0.3;
 	}
-	@media(max-width: 900px){
+	@media(max-width: 1400px){
 		.page:nth-of-type(2){
-			left: -75%;
+			left: -550px;
 		}
 		.page:nth-of-type(3){
-			right: -75%;
+			right: -550px;
+		}
+	}
+	@media(max-width: 900px){
+		.page:nth-of-type(2),
+		.page:nth-of-type(3){
+			display: none;
 		}
 	}
 </style>

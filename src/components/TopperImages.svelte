@@ -20,22 +20,23 @@
 		display: block;
 		margin: auto;
 		width: 90%;
-		mix-blend-mode: multiply;
+		/* mix-blend-mode: multiply; */
 	}
 	.topper-image:nth-of-type(2),
 	.topper-image:nth-of-type(3){
 		z-index: -1;
 		display: block;
 		position: absolute;
-		top: -5vh;
-		left: -170px;
+		top: -50px;
+		left: -140px;
 		margin: auto;
-		width: auto;
-		height: 100vh;
+		width: 550px;
+		max-width: 40vw;
+		height: auto;
 	}
 	.topper-image:nth-of-type(3){
 		left: auto;
-		right: -170px;
+		right: -140px;
 	}
 	.topper-image:nth-of-type(2) img,
 	.topper-image:nth-of-type(3) img{
@@ -43,10 +44,22 @@
 		height: 100%;
 		opacity: 0.3;
 	}
-	@media(max-width: 768px){
+	@media(max-width: 1000px){
 		.topper-image:nth-of-type(2),
 		.topper-image:nth-of-type(3){
-			height: 80vh;
+			width: 450px;
+		}
+	}
+	@media(max-width: 800px){
+		.topper-image:nth-of-type(2),
+		.topper-image:nth-of-type(3){
+			width: 400px;
+		}
+	}
+	@media(max-width: 500px){
+		.topper-image:nth-of-type(2),
+		.topper-image:nth-of-type(3){
+			width: 350px;
 		}
 	}
 </style>
