@@ -47,6 +47,13 @@
       "section": "intro",
       "content": [
         {
+          "type": "img",
+          "value": {
+            "src": "assets/pages-intro.png",
+            "alt": "Illustration of book pages floating through the air."
+          }
+        },
+        {
           "type": "text",
           "value": "I pulled every simile in the form <strong>“as ___ as ___”</strong> from tens of thousands of books for the top 500 most common adjectives."
         },

@@ -157,7 +157,12 @@ section > *:not(.graphic) {
 #hero p:nth-of-type(2) {
 	font-size: 1em;
 }
-
+#intro img:nth-of-type(1){
+	display: none;
+	width: 100%;
+	max-width: 70px;
+	margin: 15px auto 20px auto;
+}
 /* Sections with black bgs, white text */
 #adjectives,
 #irony{
@@ -253,6 +258,11 @@ section > *:not(.graphic) {
 	#irony::before,
 	#nouns::before{
 		display: none;
+	}
+}
+@media screen and (max-width: 900px) {
+	#intro img:nth-of-type(1){
+		display: block;
 	}
 }
 @media screen and (max-width: 500px) {

@@ -31,7 +31,7 @@
 		left: -140px;
 		margin: auto;
 		width: 550px;
-		max-width: 40vw;
+		max-width: max(40vw, 350px);
 		height: auto;
 	}
 	.topper-image:nth-of-type(3){
@@ -44,7 +44,7 @@
 		height: 100%;
 		opacity: 0.3;
 	}
-	@media(max-width: 1000px){
+	/* @media(max-width: 1000px){
 		.topper-image:nth-of-type(2),
 		.topper-image:nth-of-type(3){
 			width: 450px;
@@ -61,5 +61,5 @@
 		.topper-image:nth-of-type(3){
 			width: 350px;
 		}
-	}
+	} */
 </style>
