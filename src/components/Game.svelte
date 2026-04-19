@@ -164,7 +164,7 @@
 		top: -100%;
 		left: -750px;
 		width: 550px;
-		max-width: 40vw;
+		max-width: max(40vw, 300px);
 		height: auto;
 		margin: auto;
 	}
