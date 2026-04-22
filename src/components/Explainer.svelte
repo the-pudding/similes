@@ -18,6 +18,7 @@
 	.c {
 		font-family: var(--font-sans);
 		color: var(--color-adjusted-black);
+		margin: 2rem auto;
 	}
 
 	ul {

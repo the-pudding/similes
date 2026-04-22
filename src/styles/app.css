@@ -110,6 +110,14 @@ p, li, details, blockquote {
 	line-height: 1.6;
 }
 
+details summary {
+	cursor: pointer;
+}
+
+details .content {
+	font-size: var(--16px);
+}
+
 .color-tenor {
 	color: var(--color-gold);
 }
