@@ -21,6 +21,7 @@
 		gap: 1rem;
 		justify-content: center;
 		font-family: var(--font-sans);
+		padding: 0 1rem;
 	}
 
 	.group {

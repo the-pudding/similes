@@ -72,9 +72,10 @@
 <style>
 	.c {
 		max-width: var(--chart-max-width-lg);
-		margin: 1rem auto;
+		margin: 2rem auto;
 		font-family: var(--font-sans);
 		user-select: none;
+		padding: 0 1rem;
 	}
 
 	.axis-label {

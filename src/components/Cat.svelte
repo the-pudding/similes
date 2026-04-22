@@ -49,6 +49,7 @@
 		max-width: var(--col-width);
 		margin: 2rem auto;
 		font-family: var(--font-sans);
+		padding: 0 1rem;
 	}
 
 	td,

@@ -11,17 +11,13 @@
 </div>
 
 <style>
-	.c {
-		/* position: relative; */
-	}
-
 	.img:nth-of-type(1) {
 		z-index: 1;
 		position: relative;
 		display: flex;
 		justify-content: center;
 		margin: 0 auto;
-		width: 90%;
+		width: 100%;
 		max-width: var(--chart-max-width-md);
 	}
 

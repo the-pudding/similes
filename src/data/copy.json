@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Comparisons as predictable as the sunrise",
+    "title": "Comparisons as Predictable as the Sunrise",
     "description": "An analysis of 200,000 similes from popular fiction."
   },
   "body": [
@@ -9,7 +9,7 @@
       "content": [
         {
           "type": "h1",
-          "value": "<span>Comparisons</span> <span>as predictable as</span> <span>the sunrise</span>"
+          "value": "<span>Comparisons</span> <span>as Predictable as</span> <span>the Sunrise</span>"
         },
         {
           "type": "text",
@@ -156,12 +156,13 @@
           "type": "img",
           "value": {
             "src": "assets/section-illos/shakespeare.png",
-            "alt": "Illustration of Shakespeare, stacking blocks with words to form the quote “To be or not to be, that is the question.”"
+            "alt": "Illustration of Shakespeare, stacking blocks with words to form the quote “To be or not to be, that is the question.”",
+            "class": "section-illo"
           }
         },
         {
           "type": "h2",
-          "value": "Every adjective has a fingerprint"
+          "value": "Every Adjective has a Fingerprint"
         },
         {
           "type": "text",
@@ -256,12 +257,13 @@
           "type": "img",
           "value": {
             "src": "assets/section-illos/devil-cucumber.png",
-            "alt": "Illustration of the Devil and an anthropomorphic cucumber, having tea together. The Devil’s tea cup is on fire, and the cucumber’s is cooling as the cucumber blows on it."
+            "alt": "Illustration of the Devil and an anthropomorphic cucumber, having tea together. The Devil’s tea cup is on fire, and the cucumber’s is cooling as the cucumber blows on it.",
+            "class": "section-illo"
           }
         },
         {
           "type": "h2",
-          "value": "Specialist and generalists"
+          "value": "Specialist and Generalists"
         },
         {
           "type": "text",
@@ -308,7 +310,7 @@
       "content": [
         {
           "type": "h2",
-          "value": "Four nouns, four stories"
+          "value": "Four Nouns, Four Stories"
         },
         {
           "type": "text",
@@ -443,12 +445,13 @@
           "type": "img",
           "value": {
             "src": "assets/section-illos/dad-swift.png",
-            "alt": "Illustration of a tired and bored dad at a Taylor Swift concert. He’s leaning against a barricade, looking off into the distance as the crowd behind him cheers and dances."
+            "alt": "Illustration of a tired and bored dad at a Taylor Swift concert. He’s leaning against a barricade, looking off into the distance as the crowd behind him cheers and dances.",
+            "class": "section-illo"
           }
         },
         {
           "type": "h2",
-          "value": "The funny ones"
+          "value": "The Funny Ones"
         },
         {
           "type": "text",
@@ -479,7 +482,7 @@
       "content": [
         {
           "type": "h2",
-          "value": "Data and methods"
+          "value": "Data and Methods"
         },
         {
           "type": "text",

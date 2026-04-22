@@ -142,14 +142,20 @@ details .content {
 	color: var(--color-purple-light);
 }
 
+
 section > *:not(.graphic) {
 	max-width: var(--col-width);
 	margin: 1rem auto;
+	padding: 0 1rem;
 } 
 
 .graphic {
 	margin: 2rem auto;
 	clear: both;
+}
+
+img.section-illo {
+	padding: 0;
 }
 
 /* HERO */
@@ -291,6 +297,12 @@ img.img-stone, img.img-hell {
 	border-image-outset: 0px;
 	border-image-repeat: round;
 	border-style: solid;
+}
+
+img.border-decorative {
+	width: calc(100% - 2rem);
+	margin: 2rem auto;
+	max-width: calc(var(--col-width) - 2rem);
 }
 
 .border-1 {

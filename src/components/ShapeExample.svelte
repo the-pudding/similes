@@ -29,6 +29,7 @@
 	.c {
 		max-width: var(--chart-max-width-sm);
 		font-family: var(--font-sans);
+		padding: 0 1rem;
 	}
 
 	.c :global(.tick text) {
