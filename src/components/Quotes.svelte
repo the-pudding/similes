@@ -28,10 +28,10 @@
 			<div class="embla-container">
 				{#each items as { quote, title, year }, i}
 					<div class="embla-slide">
-						<div class={`border-decorative border-${(i % 3) + 1}`}>
+						<div class="inner {`border-decorative border-${(i % 3) + 1}`}">
 							<blockquote>{@html quote}</blockquote>
 							<div class="source">
-								{title}, {year}
+								&mdash; <em>{title}</em>, {year}
 							</div>
 						</div>
 					</div>
@@ -77,28 +77,16 @@
 		margin-top: 1rem;
 	}
 
-	.border-decorative{
-		height: 100%;
-		box-sizing: border-box;
-		padding: 2.5rem;
-		background: #FFF;
-		border-image-outset: 0px;
-		border-image-repeat: round;
-		border-style: solid;
+	.inner {
+		display: flex;
+		flex-direction: column;
+		/* align-items: center; */
+		justify-content: center;
+		padding: 5rem;
 	}
-	.border-1{
-		border-image-slice: 150 148 148 148;
-		border-image-width: 25px;
-		border-image-source: url("/assets/borders/border-1.png");
-	}
-	.border-2{
-		border-image-slice: 80;
-		border-image-width: 25px;
-		border-image-source: url("/assets/borders/border-2.png");
-	}
-	.border-3{
-		border-image-slice: 120;
-		border-image-width: 30px;
-		border-image-source: url("/assets/borders/border-3.png");
+
+	.source {
+		text-align: right;
+		margin-top: 1rem;
 	}
 </style>

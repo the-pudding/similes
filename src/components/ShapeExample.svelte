@@ -13,7 +13,11 @@
 
 <div class="c graphic">
 	{#if data.length}
-		<Plot grid x={{ tickRotate: -45, label: "nouns" }}>
+		<Plot
+			grid
+			x={{ tickRotate: -45, label: "nouns" }}
+			y={{ label: "occurences" }}
+		>
 			<RuleY data={[0]} />
 			<BarY {data} {x} {y} sort="-count" />
 		</Plot>
@@ -23,5 +27,6 @@
 <style>
 	.c {
 		max-width: var(--chart-max-width-sm);
+		font-family: var(--font-sans);
 	}
 </style>

@@ -33,8 +33,9 @@
 				bind:this={exampleEls[i]}
 			>
 				<span class="before">{before}</span>
-				as <span class="ground color-ground"><strong>{ground}</strong></span>
-				as<span class="vehicle color-vehicle"
+				as
+				<span class="ground color-ground-light"><strong>{ground}</strong></span>
+				as<span class="vehicle color-vehicle-light"
 					>&nbsp;{vehicle}<span class="after">{afterText}</span></span
 				>
 			</div>
@@ -71,8 +72,8 @@
 		max-width: 33vw;
 		display: none;
 		line-height: 1;
-		color: var(--color-fg);
-		background: var(--color-bg);
+		color: var(--color-adjusted-white);
+		background: var(--color-adjusted-black);
 		padding: 0.25rem;
 		transform: translate(0, 0.25rem);
 		font-size: 0.8em;

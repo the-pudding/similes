@@ -83,7 +83,7 @@
 	{/if}
 	{#each images as { src, alt, className }}
 		<div class="page graphic">
-			<img class={className} src={src} alt={alt} />
+			<img class={className} {src} {alt} />
 		</div>
 	{/each}
 </div>
@@ -157,38 +157,38 @@
 
 	/* These are the falling pages that curve down from topper */
 	.page:nth-of-type(2),
-	.page:nth-of-type(3){
+	.page:nth-of-type(3) {
 		z-index: -1;
 		display: block;
 		position: absolute;
-		top: -100%;
-		left: -750px;
-		width: 550px;
-		max-width: max(40vw, 300px);
+		top: -66%;
+		left: -400px;
+		width: 350px;
+		/* max-width: max(40vw, 300px); */
 		height: auto;
 		margin: auto;
 	}
-	.page:nth-of-type(3){
+	.page:nth-of-type(3) {
 		left: auto;
-		right: -750px;
+		right: -400px;
 	}
 	.page:nth-of-type(2) img,
-	.page:nth-of-type(3) img{
+	.page:nth-of-type(3) img {
 		width: auto;
 		height: 100%;
 		opacity: 0.3;
 	}
-	@media(max-width: 1400px){
-		.page:nth-of-type(2){
+	@media (max-width: 1400px) {
+		.page:nth-of-type(2) {
 			left: -550px;
 		}
-		.page:nth-of-type(3){
+		.page:nth-of-type(3) {
 			right: -550px;
 		}
 	}
-	@media(max-width: 900px){
+	@media (max-width: 900px) {
 		.page:nth-of-type(2),
-		.page:nth-of-type(3){
+		.page:nth-of-type(3) {
 			display: none;
 		}
 	}

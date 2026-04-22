@@ -19,11 +19,11 @@
 		{#each grounds as { ground, vehicles }}
 			<div class="ground">
 				<p class="ground-text">
-					as <span class="color-ground"><strong>{ground}</strong></span> as...
+					as <span class="color-ground-light"><strong>{ground}</strong></span> as...
 				</p>
 				<ul>
 					{#each vehicles as vehicle}
-						<li class="color-vehicle"><strong>{vehicle}</strong></li>
+						<li class="color-vehicle-light"><strong>{vehicle}</strong></li>
 					{/each}
 				</ul>
 			</div>

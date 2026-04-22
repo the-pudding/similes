@@ -3,6 +3,8 @@
 	import { ElementSize } from "runed";
 	import useWindowDimensions from "$runes/useWindowDimensions.svelte.js";
 	import { chartData } from "$runes/misc.svelte.js";
+	import variables from "$data/variables.json";
+	import { scaleLinear, extent } from "d3";
 
 	let { axisLabel } = $props();
 
@@ -18,6 +20,12 @@
 	let rRange = $derived([size.width * 0.005, size.width * 0.03]);
 	let height = $derived(rRange[1] * 15);
 
+	let textRange = $derived([12, 20]);
+	let textScale = $derived(
+		scaleLinear()
+			.domain(extent(data, (d) => d[r]))
+			.range(textRange)
+	);
 	// $effect(() => {
 	// 	if (data.length > 0)
 	// 		window.x = JSON.stringify(
@@ -28,7 +36,7 @@
 	// });
 </script>
 
-<div class="c graphic" bind:this={el}>
+<div class="c graphic swarm" bind:this={el}>
 	<div class="annotation">
 		<div>&larr; Generalists</div>
 		<div>Specialiasts &rarr;</div>
@@ -48,6 +56,7 @@
 				y={0}
 				{r}
 				dodgeY={{ anchor: "middle", padding: 3 }}
+				fill={variables.color["adjusted-black"]}
 			/>
 			<Text
 				{data}
@@ -57,6 +66,11 @@
 				{r}
 				text={(d) => d.vehicle}
 				dodgeY={{ anchor: "middle", padding: 3 }}
+				strokeWidth={4}
+				fontSize={(d) => Math.round(textScale(d[r]))}
+				fill={variables.color["adjusted-white"]}
+				stroke={variables.color["adjusted-black"]}
+				fontWeight="bold"
 			/>
 		</Plot>
 	{/if}

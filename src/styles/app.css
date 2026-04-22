@@ -26,13 +26,14 @@
 	--radius-sm: 0.25rem;
 	--radius-md: 0.5rem;
 	--radius-lg: 1rem;
-	
+
+
 	--color-bg: var(--color-white);
-	--color-fg: var(--color-black);
+	--color-fg: var(--color-adjusted-black);
 	--color-fg-light: var(--color-gray-500);
-	--color-primary: var(--color-black);
-	--color-link: var(--color-black);
-	--color-link-hover: var(--color-black);
+	--color-primary: var(--color-adjusted-black);
+	--color-link: var(--color-adjusted-black);
+	--color-link-hover: var(--color-adjusted-black);
 	--color-focus: var(--color-gray-500);
 	--color-mark: var(--color-yellow);
 	--color-selection: var(--color-gray-300);
@@ -44,14 +45,14 @@
 	--color-input-bg: var(--color-gray-50);
 	--color-input-fg: var(--color-gray-900);
 	--color-placeholder: var(--color-gray-500);
-	--color-adjusted-black: #1A1D21;
-	--color-adjusted-white: #D1D2D3;
+
 
 	/* "1" second duration */
 	--1s: 1ms;
 
 	--col-width: 600px;
 	--chart-max-width-sm: 960px;
+	--chart-max-width-md: 1280px;
 	--chart-max-width-lg: 1600px;
 
 }
@@ -119,6 +120,18 @@ p, li, details, blockquote {
 
 .color-vehicle {
 	color: var(--color-purple);
+}
+
+.color-tenor-light {
+	color: var(--color-gold-light);
+}
+
+.color-ground-light {
+	color: var(--color-green-light);
+}
+
+.color-vehicle-light {
+	color: var(--color-purple-light);
 }
 
 section > *:not(.graphic) {
@@ -190,7 +203,7 @@ section > *:not(.graphic) {
 	margin-bottom: 60px;
 }
 #irony::before{
-	height: 456px;
+	height: 438px;
 }
 /* Used for crosshatch bg under last falling pages */
 #irony::after{
@@ -209,10 +222,10 @@ section > *:not(.graphic) {
 }
 #nouns::before{
 	background: var(--color-adjusted-black);
-	height: 595px;
+	height: 594px;
 }
 #adjectives h2{
-	-webkit-text-stroke: 10px var(--color-adjusted-black);
+	-webkit-text-stroke: 8px var(--color-adjusted-black);
 	paint-order: stroke fill;
 	position: relative;
 	z-index: 2;
@@ -226,21 +239,32 @@ section > *:not(.graphic) {
 	width: 100%;
 	max-width: 1000px;
 	margin-bottom: -80px;
+	margin-top: 0;
 }
+
 #irony img:nth-of-type(1){
 	margin-bottom: 0;
 }
 /* Inline illos for 4 nouns */
-#specific img:nth-of-type(odd){
+img.img-cat, img.img-child{
 	float: right;
 	max-width: 250px;
 	margin: 10px 20% 10px 10px;
+	/* display: none; */
 }
-#specific img:nth-of-type(even){
+
+img.img-stone, img.img-hell {
 	float: left;
 	max-width: 250px;
 	margin: 10px 10px 10px 20%;
+	/* display: none; */
 }
+
+#specific img:last-of-type {
+	clear: both;
+}
+
+
 /* Ending falling pages */
 #irony img:nth-last-of-type(1){
 	z-index: 2;
@@ -249,6 +273,42 @@ section > *:not(.graphic) {
 	margin-top: 100px;
 	margin-bottom: 0;
 }
+
+.border-decorative {
+	height: 100%;
+	box-sizing: border-box;
+	padding: 2.5rem;
+	background: #fff;
+	border-image-outset: 0px;
+	border-image-repeat: round;
+	border-style: solid;
+}
+
+.border-1 {
+	border-image-slice: 150 148 148 148;
+	border-image-width: 25px;
+	border-image-source: url("assets/borders/border-1.png");
+}
+.border-2 {
+	border-image-slice: 80;
+	border-image-width: 25px;
+	border-image-source: url("assets/borders/border-2.png");
+}
+.border-3 {
+	border-image-slice: 120;
+	border-image-width: 30px;
+	border-image-source: url("assets/borders/border-3.png");
+}
+
+img.border-decorative {
+	padding: 25px;
+}
+
+#adjectives p:last-of-type {
+	margin-bottom: 0;
+}
+
+
 @media screen and (min-width: 800px) {
 	p, li, blockquote, details {
 		font-size: var(--20px);

@@ -26,17 +26,17 @@
               {
                 "src": "/assets/topper/book.png",
                 "alt": "Illustration of an open book.",
-                "className": "book"
+                "class": "book"
               },
               {
                 "src": "/assets/topper/pages-topleft.png",
                 "alt": "Book pages flying through the air.",
-                "className": "pages-left"
+                "class": "pages-left"
               },
               {
                 "src": "/assets/topper/pages-topright.png",
                 "alt": "Book pages flying through the air.",
-                "className": "pages-right"
+                "class": "pages-right"
               }
             ]
           }
@@ -75,12 +75,12 @@
               {
                 "src": "/assets/topper/pages-bottomleft.png",
                 "alt": "Book pages flying through the air.",
-                "className": "pages-left"
+                "class": "pages-left"
               },
               {
                 "src": "/assets/topper/pages-bottomright.png",
                 "alt": "Book pages flying through the air.",
-                "className": "pages-right"
+                "class": "pages-right"
               }
             ]
           }
@@ -109,13 +109,18 @@
                 "year": "1951"
               },
               {
+                "quote": "They were of a greater variety this time—some <strong>as tiny as kittens</strong>, a few the size of wolves, and their skulls cobbled from every kind of animal.",
+                "title": "Katabasis",
+                "year": "2025"
+              },
+              {
                 "quote": "My mouth has gone <strong>as dry as sawdust.</strong>",
                 "title": "The Hunger Games",
                 "year": "2008"
               },
               {
-                "quote": "And Sunny remembered Ulla, who was so nonchalant about such matters that it made negotiations around sex <strong>as natural as a conversation between children playing in a sandbox.</strong>",
-                "title": "The Loneliness of Sonia and Sunny",
+                "quote": "Sparrows, awake even at night, chittered in the rafters, high above men who sat with meager scatterings of field mushrooms and pond greens, buckets whose bottoms were populated with <strong>shrimp as slender as pins,</strong> and snails collected from village porches.",
+                "title": "A Guardian and a Thief",
                 "year": "2025"
               },
               {
@@ -124,8 +129,8 @@
                 "year": "2014"
               },
               {
-                "quote": "Sparrows, awake even at night, chittered in the rafters, high above men who sat with meager scatterings of field mushrooms and pond greens, buckets whose bottoms were populated with <strong>shrimp as slender as pins,</strong> and snails collected from village porches.",
-                "title": "A Guardian and a Thief",
+                "quote": "And Sunny remembered Ulla, who was so nonchalant about such matters that it made negotiations around sex <strong>as natural as a conversation between children playing in a sandbox.</strong>",
+                "title": "The Loneliness of Sonia and Sunny",
                 "year": "2025"
               }
             ]
@@ -160,7 +165,7 @@
         },
         {
           "type": "text",
-          "value": "So that we’re on the same page, here is a diagram of this form of simile:"
+          "value": "So that we’re on the same page, here is a structural diagram for this form of simile:"
         },
         {
           "type": "Explainer",
@@ -184,11 +189,11 @@
         },
         {
           "type": "text",
-          "value": "First, a notable disclaimer. We’ll mostly just look at a simplified version of this form; <strong class=color-ground>grounds that are adjectives</strong>, and <strong class=color-vehicle>vehicles that are nouns</strong> (specifically mono/bi-grams, i.e., one or two words). This reduces the noise in favor of a clearer signal. For example:"
+          "value": "First, a notable disclaimer. We’ll mostly just look at a simplified version of this form; <strong class=color-ground-light>grounds that are adjectives</strong>, and <strong class=color-vehicle-light>vehicles that are nouns</strong> (specifically mono/bi-grams, i.e., one or two words). This reduces the noise in favor of a clearer signal. For example:"
         },
         {
           "type": "blockquote",
-          "value": "“In the doorway stood Kristen, Dylan, and Alicia, looking <strong>as <span class=color-ground>stunned</span> as <span class=color-vehicle>Taylor Swift during the 2009 VMAs when Kanye stole her acceptance speech.</span></strong>”"
+          "value": "“In the doorway stood Kristen, Dylan, and Alicia, looking <strong>as <span class=color-ground-light>stunned</span> as <span class=color-vehicle-light>Taylor Swift during the 2009 VMAs when Kanye stole her acceptance speech.</span></strong>”"
         },
         {
           "type": "text",
@@ -196,7 +201,7 @@
         },
         {
           "type": "text",
-          "value": "In similes, every adjective has a distinct shape. If you look at the usage of the nouns that follow, you can see whether an adjective is dominated by a single cliché or has range. Here is the shape of <strong class=color-ground>dry</strong> from our pop quiz."
+          "value": "In similes, every adjective has a distinct shape. If you look at the usage of the nouns that follow, you can see whether an adjective is dominated by a single cliché or has range. Here is the shape of <strong class=color-ground-light>dry</strong> from our pop quiz."
         },
         {
           "type": "ShapeExample",
@@ -228,14 +233,19 @@
         },
         {
           "type": "text",
-          "value": "Most similes follow a similar shape. Some writers reach for a novel comparison to make it their own, while most just want one that’s reliable and accessible. Check out this 1964 textbook <em>Examine Your English</em>, which implants the patterns         from the start."
+          "value": "Most similes follow a similar shape. Some writers reach for a novel comparison to make it their own, while most just want one that’s reliable and accessible. Check out this 1964 textbook <em>Examine Your English</em>, which implants the patterns from the start."
         },
         {
           "type": "img",
           "value": {
             "src": "assets/idioms.webp",
-            "alt": "A list of idioms from the 1964 textbook Examine Your English."
+            "alt": "A list of idioms from the 1964 textbook Examine Your English.",
+            "class": "border-decorative border-1"
           }
+        },
+        {
+          "type": "text",
+          "value": "While plenty have endured the test of time, like “as busy as a bee’ or “fit as a fiddle,” many have fallen out of fashion in recent decades, like “as drunk as a lord” or “as rich as Croesus.”"
         }
       ]
     },
@@ -265,7 +275,8 @@
           "type": "img",
           "value": {
             "src": "assets/pippi.webp",
-            "alt": "A box from the comic Pippi Longstocking showing a speech bubble that has “as cool as a cucumber” in it."
+            "alt": "A box from the comic Pippi Longstocking showing a speech bubble that has “as cool as a cucumber” in it.",
+            "class": "border-decorative border-1"
           }
         },
         {
@@ -311,7 +322,8 @@
           "type": "img",
           "value": {
             "src": "assets/cat.png",
-            "alt": "Illustration of a cat stretching."
+            "alt": "Illustration of a cat stretching.",
+            "class": "img-cat"
           }
         },
         {
@@ -334,7 +346,8 @@
           "type": "img",
           "value": {
             "src": "assets/stone.png",
-            "alt": "Illustration of a stone with googly eyes attached."
+            "alt": "Illustration of a stone with googly eyes attached.",
+            "class": "img-stone"
           }
         },
         {
@@ -357,7 +370,8 @@
           "type": "img",
           "value": {
             "src": "assets/child.png",
-            "alt": "Illustration of an anxious kid, looking between two theater masks. One is smiling, the other crying."
+            "alt": "Illustration of an anxious kid, looking between two theater masks. One is smiling, the other crying.",
+            "class": "img-child"
           }
         },
         {
@@ -380,7 +394,8 @@
           "type": "img",
           "value": {
             "src": "assets/hell.png",
-            "alt": "Illustration of the devil, balancing a stack of different hats on his head."
+            "alt": "Illustration of the devil, balancing a stack of different hats on his head.",
+            "class": "img-hell"
           }
         },
         {
@@ -402,7 +417,9 @@
         {
           "type": "img",
           "value": {
-            "src": "assets/innocent-villa-cover.png"
+            "src": "assets/innocent-villa-cover.webp",
+            "alt": "Book cover for The Innocent Villa.",
+            "class": "border-decorative border-1"
           }
         },
         {

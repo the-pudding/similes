@@ -48,6 +48,7 @@
 	.c {
 		max-width: var(--col-width);
 		margin: 2rem auto;
+		font-family: var(--font-sans);
 	}
 
 	td,

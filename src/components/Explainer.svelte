@@ -3,18 +3,21 @@
 </script>
 
 <div class="c">
-	<ul>
-		{#each terms as { term, description }}
-			<li><span>{term}</span> &rarr; {description}</li>
-		{/each}
-	</ul>
+	<div class="inner border-decorative border-1">
+		<ul>
+			{#each terms as { term, description }}
+				<li><span>{term}</span> &rarr; {description}</li>
+			{/each}
+		</ul>
 
-	<p>{@html example}</p>
+		<p>{@html example}</p>
+	</div>
 </div>
 
 <style>
 	.c {
 		font-family: var(--font-sans);
+		color: var(--color-adjusted-black);
 	}
 
 	ul {
@@ -22,9 +25,15 @@
 		padding-left: 0;
 	}
 
+	/* .inner {
+		padding: 2.5rem;
+	} */
+
 	p {
 		font-size: var(--24px);
 		font-weight: bold;
+		margin-bottom: 0;
+		padding: 0;
 	}
 
 	p :global(span) {
