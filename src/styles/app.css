@@ -141,6 +141,7 @@ section > *:not(.graphic) {
 
 .graphic {
 	margin: 2rem auto;
+	clear: both;
 }
 
 /* HERO */
@@ -249,14 +250,14 @@ section > *:not(.graphic) {
 img.img-cat, img.img-child{
 	float: right;
 	max-width: 250px;
-	margin: 10px 20% 10px 10px;
+	margin-right: calc(50vw - var(--col-width));
 	/* display: none; */
 }
 
 img.img-stone, img.img-hell {
 	float: left;
 	max-width: 250px;
-	margin: 10px 10px 10px 20%;
+	margin-left: calc(50vw - var(--col-width));
 	/* display: none; */
 }
 

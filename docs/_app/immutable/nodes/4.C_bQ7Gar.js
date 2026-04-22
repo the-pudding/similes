@@ -1,4 +1,4 @@
-import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as C,t as k,K as l,a0 as h,ar as E,Z as L,F as M,_ as B,a2 as z,M as q,aH as N,ag as T,bb as Y,L as Q}from"../chunks/B92FeS2C.js";import{b as v,f as g,c as F,t as Z}from"../chunks/BvRfo2l_.js";import{a as w,f as X,e as O}from"../chunks/BwpuD7DB.js";import{e as H,i as R,c as ee,d as te}from"../chunks/C2Vtx1Y2.js";import{e as ne}from"../chunks/DD47trRG.js";import{c as ae,b as se,i as oe}from"../chunks/DxeqRFj7.js";import{s as re,p as A}from"../chunks/C2wkIQ8G.js";import{s as P}from"../chunks/DGiPyN0h.js";import{c as ie,C as le,a as ce}from"../chunks/B9Tt5bCr.js";import{b as ue}from"../chunks/CnFujpot.js";import"../chunks/HvopnIf4.js";var he=g('<section id="demo-link"><h2>Link</h2> <p><a href="elements">Default element styles demo</a></p> <p><a href="fonts">Pudding-hosted font previews</a></p> <p><a href="ui">BitsUI styled components</a></p></section>');function de(r){var t=he();v(r,t)}var me=g('<section id="demo-image"><h2>Image</h2> <p>img tag</p> <img src="../assets/demo/test.jpg" alt="cat" class="svelte-b56t42"/> <p>background image</p> <div class="svelte-b56t42"></div></section>');function pe(r){var t=me();v(r,t)}var ve=g('<section id="demo-element"><h2>Dynamic Svelte Element</h2> <!></section>');function fe(r){const t=[{tag:"h3",text:"I am a h3 tag."},{tag:"p",text:"I am p tag."}];var n=ve(),e=p(m(n),2);H(e,17,()=>t,R,(i,s)=>{let c=()=>l(s).tag,d=()=>l(s).text;var f=F(),a=C(f);ne(a,c,!1,(o,u)=>{var y=Z();k(()=>w(y,d())),v(u,y)}),v(i,f)}),h(n),v(r,n)}var ge=g("<p> </p>");function ye(r,t){var n=ge(),e=m(n);h(n),k(()=>w(e,`I am component A and my favorite number is ${t.number??""}.`)),v(r,n)}var be=g("<p> </p>");function we(r,t){var n=be(),e=m(n);h(n),k(()=>w(e,`I am component B and my name is ${t.name??""}.`)),v(r,n)}var xe=g('<section id="demo-component"><h2>Dynamic Svelte Component</h2> <!></section>');function _e(r){const t={A:ye,B:we},n=[{component:"A",number:42},{component:"B",name:"Russell"}];var e=xe(),i=p(m(e),2);H(i,17,()=>n,R,(s,c)=>{const d=E(()=>t[l(c).component]);var f=F(),a=C(f);ae(a,()=>l(d),(o,u)=>{u(o,re(()=>l(c)))}),v(s,f)}),h(e),v(r,e)}var ke=g("<div><!></div>");function Se(r,t){L(t,!0);let n=A(t,"root",3,null),e=A(t,"top",3,0),i=A(t,"bottom",3,0),s=A(t,"increments",3,100),c=A(t,"value",15,void 0),d=[],f=[],a=[],o=[],u;function y(){let b=0,_=0;for(let I=0;I<d.length;I++)d[I]>b&&(b=d[I],_=I);b>0?c(_):c(void 0)}function S(b,_){const I=J=>{J[0].isIntersecting;const K=J[0].intersectionRatio;d[_]=K,y()},$=e()?e()*-1:0,U=i()?i()*-1:0,V=`${$}px 0px ${U}px 0px`,W={root:n(),rootMargin:V,threshold:f};o[_]&&o[_].disconnect();const G=new IntersectionObserver(I,W);G.observe(b),o[_]=G}function j(){a.length&&a.forEach(S)}M(()=>{for(let b=0;b<s()+1;b++)f.push(b/s());a=u.querySelectorAll(":scope > *:not(iframe)"),j()}),M(()=>{e(),i(),j()});var x=ke(),D=m(x);P(D,()=>t.children??z),h(x),se(x,b=>u=b,()=>u),v(r,x),B()}var Ie=g('<div><p class="svelte-1sxgmm9"> </p></div>'),qe=g('<section id="scrolly"><h2 class="svelte-1sxgmm9">Scrolly <span> </span></h2> <div class="spacer svelte-1sxgmm9"></div> <!> <div class="spacer svelte-1sxgmm9"></div></section>');function je(r){let t=T(void 0);var n=qe(),e=m(n),i=p(m(e)),s=m(i,!0);h(i),h(e);var c=p(e,4);Se(c,{get value(){return l(t)},set value(d){q(t,d,!0)},children:(d,f)=>{var a=F(),o=C(a);H(o,16,()=>[0,1,2,3,4],R,(u,y,S)=>{const j=E(()=>l(t)===S);var x=Ie();let D;var b=m(x),_=m(b,!0);h(b),h(x),k(()=>{D=ee(x,1,"step svelte-1sxgmm9",null,D,{active:l(j)}),w(_,y)}),v(u,x)}),v(d,a)},$$slots:{default:!0}}),N(2),h(n),k(()=>w(s,l(t)||"-")),v(r,n)}const Ae=`{
+import"../chunks/DsnmJJEf.js";import{aq as m,$ as d,a1 as C,t as _,K as l,a0 as u,ar as E,Z as B,F as M,_ as L,a2 as z,M as q,aH as N,ag as D,bb as Y,L as Q}from"../chunks/B92FeS2C.js";import{b as v,f,c as O,t as Z}from"../chunks/BvRfo2l_.js";import{a as w,f as X,e as J}from"../chunks/BwpuD7DB.js";import{e as H,i as R,c as ee,d as te}from"../chunks/C2Vtx1Y2.js";import{e as ne}from"../chunks/DD47trRG.js";import{c as ae,b as se,i as oe}from"../chunks/DxeqRFj7.js";import{s as re,p as j}from"../chunks/C2wkIQ8G.js";import{s as P}from"../chunks/DGiPyN0h.js";import{c as ie,C as le,a as ce}from"../chunks/DQFSSKiQ.js";import{b as he}from"../chunks/7uJV0vNM.js";import"../chunks/HvopnIf4.js";var ue=f('<section id="demo-link"><h2>Link</h2> <p><a href="elements">Default element styles demo</a></p> <p><a href="fonts">Pudding-hosted font previews</a></p> <p><a href="ui">BitsUI styled components</a></p></section>');function pe(r){var t=ue();v(r,t)}var de=f('<section id="demo-image"><h2>Image</h2> <p>img tag</p> <img src="../assets/demo/test.jpg" alt="cat" class="svelte-b56t42"/> <p>background image</p> <div class="svelte-b56t42"></div></section>');function me(r){var t=de();v(r,t)}var ve=f('<section id="demo-element"><h2>Dynamic Svelte Element</h2> <!></section>');function ge(r){const t=[{tag:"h3",text:"I am a h3 tag."},{tag:"p",text:"I am p tag."}];var n=ve(),e=m(d(n),2);H(e,17,()=>t,R,(i,s)=>{let c=()=>l(s).tag,p=()=>l(s).text;var g=O(),a=C(g);ne(a,c,!1,(o,h)=>{var y=Z();_(()=>w(y,p())),v(h,y)}),v(i,g)}),u(n),v(r,n)}var fe=f("<p> </p>");function ye(r,t){var n=fe(),e=d(n);u(n),_(()=>w(e,`I am component A and my favorite number is ${t.number??""}.`)),v(r,n)}var be=f("<p> </p>");function we(r,t){var n=be(),e=d(n);u(n),_(()=>w(e,`I am component B and my name is ${t.name??""}.`)),v(r,n)}var xe=f('<section id="demo-component"><h2>Dynamic Svelte Component</h2> <!></section>');function ke(r){const t={A:ye,B:we},n=[{component:"A",number:42},{component:"B",name:"Russell"}];var e=xe(),i=m(d(e),2);H(i,17,()=>n,R,(s,c)=>{const p=E(()=>t[l(c).component]);var g=O(),a=C(g);ae(a,()=>l(p),(o,h)=>{h(o,re(()=>l(c)))}),v(s,g)}),u(e),v(r,e)}var _e=f("<div><!></div>");function Ie(r,t){B(t,!0);let n=j(t,"root",3,null),e=j(t,"top",3,0),i=j(t,"bottom",3,0),s=j(t,"increments",3,100),c=j(t,"value",15,void 0),p=[],g=[],a=[],o=[],h;function y(){let b=0,k=0;for(let S=0;S<p.length;S++)p[S]>b&&(b=p[S],k=S);b>0?c(k):c(void 0)}function I(b,k){const S=G=>{G[0].isIntersecting;const K=G[0].intersectionRatio;p[k]=K,y()},$=e()?e()*-1:0,U=i()?i()*-1:0,V=`${$}px 0px ${U}px 0px`,W={root:n(),rootMargin:V,threshold:g};o[k]&&o[k].disconnect();const F=new IntersectionObserver(S,W);F.observe(b),o[k]=F}function T(){a.length&&a.forEach(I)}M(()=>{for(let b=0;b<s()+1;b++)g.push(b/s());a=h.querySelectorAll(":scope > *:not(iframe)"),T()}),M(()=>{e(),i(),T()});var x=_e(),A=d(x);P(A,()=>t.children??z),u(x),se(x,b=>h=b,()=>h),v(r,x),L()}var Se=f('<div><p class="svelte-1sxgmm9"> </p></div>'),qe=f('<section id="scrolly"><h2 class="svelte-1sxgmm9">Scrolly <span> </span></h2> <div class="spacer svelte-1sxgmm9"></div> <!> <div class="spacer svelte-1sxgmm9"></div></section>');function Te(r){let t=D(void 0);var n=qe(),e=d(n),i=m(d(e)),s=d(i,!0);u(i),u(e);var c=m(e,4);Ie(c,{get value(){return l(t)},set value(p){q(t,p,!0)},children:(p,g)=>{var a=O(),o=C(a);H(o,16,()=>[0,1,2,3,4],R,(h,y,I)=>{const T=E(()=>l(t)===I);var x=Se();let A;var b=d(x),k=d(b,!0);u(b),u(x),_(()=>{A=ee(x,1,"step svelte-1sxgmm9",null,A,{active:l(T)}),w(k,y)}),v(h,x)}),v(p,a)},$$slots:{default:!0}}),N(2),u(n),_(()=>w(s,l(t)||"-")),v(r,n)}const je=`{
   "meta": {
     "title": "Comparisons as predictable as the sunrise",
     "description": "An analysis of 200,000 similes from popular fiction."
@@ -17,13 +17,42 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as C,t as k,K as l,a0 as 
         },
         {
           "type": "text",
-          "value": "<span class=byline>By <a href=https://pudding.cool/author/russell-samora>Russell Samora.</a> Design by <a href=https://pudding.cool/author/shelly-tan>Shelly Tan.</a>"
+          "value": "<span class=byline>By <a href=https://pudding.cool/author/russell-samora>Russell Samora.</a> Design &amp; Illustration by <a href=https://pudding.cool/author/shelly-tan>Shelly Tan.</a>"
+        },
+        {
+          "type": "TopperImages",
+          "value": {
+            "images": [
+              {
+                "src": "/assets/topper/book.png",
+                "alt": "Illustration of an open book.",
+                "class": "book"
+              },
+              {
+                "src": "/assets/topper/pages-topleft.png",
+                "alt": "Book pages flying through the air.",
+                "class": "pages-left"
+              },
+              {
+                "src": "/assets/topper/pages-topright.png",
+                "alt": "Book pages flying through the air.",
+                "class": "pages-right"
+              }
+            ]
+          }
         }
       ]
     },
     {
       "section": "intro",
       "content": [
+        {
+          "type": "img",
+          "value": {
+            "src": "assets/pages-intro.png",
+            "alt": "Illustration of book pages floating through the air."
+          }
+        },
         {
           "type": "text",
           "value": "I pulled every simile in the form <strong>“as ___ as ___”</strong> from tens of thousands of books for the top 500 most common adjectives."
@@ -41,6 +70,18 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as C,t as k,K as l,a0 as 
               "as common as dirt",
               "as familiar as a friend",
               "as rare as a unicorn"
+            ],
+            "images": [
+              {
+                "src": "/assets/topper/pages-bottomleft.png",
+                "alt": "Book pages flying through the air.",
+                "class": "pages-left"
+              },
+              {
+                "src": "/assets/topper/pages-bottomright.png",
+                "alt": "Book pages flying through the air.",
+                "class": "pages-right"
+              }
             ]
           }
         },
@@ -68,13 +109,18 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as C,t as k,K as l,a0 as 
                 "year": "1951"
               },
               {
+                "quote": "They were of a greater variety this time—some <strong>as tiny as kittens</strong>, a few the size of wolves, and their skulls cobbled from every kind of animal.",
+                "title": "Katabasis",
+                "year": "2025"
+              },
+              {
                 "quote": "My mouth has gone <strong>as dry as sawdust.</strong>",
                 "title": "The Hunger Games",
                 "year": "2008"
               },
               {
-                "quote": "And Sunny remembered Ulla, who was so nonchalant about such matters that it made negotiations around sex <strong>as natural as a conversation between children playing in a sandbox.</strong>",
-                "title": "The Loneliness of Sonia and Sunny",
+                "quote": "Sparrows, awake even at night, chittered in the rafters, high above men who sat with meager scatterings of field mushrooms and pond greens, buckets whose bottoms were populated with <strong>shrimp as slender as pins,</strong> and snails collected from village porches.",
+                "title": "A Guardian and a Thief",
                 "year": "2025"
               },
               {
@@ -83,8 +129,8 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as C,t as k,K as l,a0 as 
                 "year": "2014"
               },
               {
-                "quote": "Sparrows, awake even at night, chittered in the rafters, high above men who sat with meager scatterings of field mushrooms and pond greens, buckets whose bottoms were populated with <strong>shrimp as slender as pins,</strong> and snails collected from village porches.",
-                "title": "A Guardian and a Thief",
+                "quote": "And Sunny remembered Ulla, who was so nonchalant about such matters that it made negotiations around sex <strong>as natural as a conversation between children playing in a sandbox.</strong>",
+                "title": "The Loneliness of Sonia and Sunny",
                 "year": "2025"
               }
             ]
@@ -107,12 +153,19 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as C,t as k,K as l,a0 as 
       "section": "adjectives",
       "content": [
         {
+          "type": "img",
+          "value": {
+            "src": "assets/section-illos/shakespeare.png",
+            "alt": "Illustration of Shakespeare, stacking blocks with words to form the quote “To be or not to be, that is the question.”"
+          }
+        },
+        {
           "type": "h2",
           "value": "Every adjective has a fingerprint"
         },
         {
           "type": "text",
-          "value": "So that we’re on the same page, here is a diagram of this form of simile:"
+          "value": "So that we’re on the same page, here is a structural diagram for this form of simile:"
         },
         {
           "type": "Explainer",
@@ -136,11 +189,11 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as C,t as k,K as l,a0 as 
         },
         {
           "type": "text",
-          "value": "First, a notable disclaimer. We’ll mostly just look at a simplified version of this form; <strong class=color-ground>grounds that are adjectives</strong>, and <strong class=color-vehicle>vehicles that are nouns</strong> (specifically mono/bi-grams, i.e., one or two words). This reduces the noise in favor of a clearer signal. For example:"
+          "value": "First, a notable disclaimer. We’ll mostly just look at a simplified version of this form; <strong class=color-ground-light>grounds that are adjectives</strong>, and <strong class=color-vehicle-light>vehicles that are nouns</strong> (specifically mono/bi-grams, i.e., one or two words). This reduces the noise in favor of a clearer signal. For example:"
         },
         {
           "type": "blockquote",
-          "value": "“In the doorway stood Kristen, Dylan, and Alicia, looking <strong>as <span class=color-ground>stunned</span> as <span class=color-vehicle>Taylor Swift during the 2009 VMAs when Kanye stole her acceptance speech.</span></strong>”"
+          "value": "“In the doorway stood Kristen, Dylan, and Alicia, looking <strong>as <span class=color-ground-light>stunned</span> as <span class=color-vehicle-light>Taylor Swift during the 2009 VMAs when Kanye stole her acceptance speech.</span></strong>”"
         },
         {
           "type": "text",
@@ -148,7 +201,7 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as C,t as k,K as l,a0 as 
         },
         {
           "type": "text",
-          "value": "In similes, every adjective has a distinct shape. If you look at the usage of the nouns that follow, you can see whether an adjective is dominated by a single cliché or has range. Here is the shape of <strong class=color-ground>dry</strong> from our pop quiz."
+          "value": "In similes, every adjective has a distinct shape. If you look at the usage of the nouns that follow, you can see whether an adjective is dominated by a single cliché or has range. Here is the shape of <strong class=color-ground-light>dry</strong> from our pop quiz."
         },
         {
           "type": "ShapeExample",
@@ -180,20 +233,32 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as C,t as k,K as l,a0 as 
         },
         {
           "type": "text",
-          "value": "Most similes follow a similar shape. Some writers reach for a novel comparison to make it their own, while most just want one that’s reliable and accessible. Check out this 1964 textbook <em>Examine Your English</em>, which implants the patterns         from the start."
+          "value": "Most similes follow a similar shape. Some writers reach for a novel comparison to make it their own, while most just want one that’s reliable and accessible. Check out this 1964 textbook <em>Examine Your English</em>, which implants the patterns from the start."
         },
         {
           "type": "img",
           "value": {
             "src": "assets/idioms.webp",
-            "alt": "A list of idioms from the 1964 textbook Examine Your English."
+            "alt": "A list of idioms from the 1964 textbook Examine Your English.",
+            "class": "border-decorative border-1"
           }
+        },
+        {
+          "type": "text",
+          "value": "While plenty have endured the test of time, like “as busy as a bee’ or “fit as a fiddle,” many have fallen out of fashion in recent decades, like “as drunk as a lord” or “as rich as Croesus.”"
         }
       ]
     },
     {
       "section": "nouns",
       "content": [
+        {
+          "type": "img",
+          "value": {
+            "src": "assets/section-illos/devil-cucumber.png",
+            "alt": "Illustration of the Devil and an anthropomorphic cucumber, having tea together. The Devil’s tea cup is on fire, and the cucumber’s is cooling as the cucumber blows on it."
+          }
+        },
         {
           "type": "h2",
           "value": "Specialist and generalists"
@@ -210,7 +275,8 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as C,t as k,K as l,a0 as 
           "type": "img",
           "value": {
             "src": "assets/pippi.webp",
-            "alt": "A box from the comic Pippi Longstocking showing a speech bubble that has “as cool as a cucumber” in it."
+            "alt": "A box from the comic Pippi Longstocking showing a speech bubble that has “as cool as a cucumber” in it.",
+            "class": "border-decorative border-1"
           }
         },
         {
@@ -253,6 +319,14 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as C,t as k,K as l,a0 as 
           "value": "Cat"
         },
         {
+          "type": "img",
+          "value": {
+            "src": "assets/cat.png",
+            "alt": "Illustration of a cat stretching.",
+            "class": "img-cat"
+          }
+        },
+        {
           "type": "text",
           "value": "Cat is a noun that covers serious ground. Writers use it to mean everything from graceful to weak."
         },
@@ -267,6 +341,14 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as C,t as k,K as l,a0 as 
         {
           "type": "h3",
           "value": "Stone"
+        },
+        {
+          "type": "img",
+          "value": {
+            "src": "assets/stone.png",
+            "alt": "Illustration of a stone with googly eyes attached.",
+            "class": "img-stone"
+          }
         },
         {
           "type": "text",
@@ -285,6 +367,14 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as C,t as k,K as l,a0 as 
           "value": "Child"
         },
         {
+          "type": "img",
+          "value": {
+            "src": "assets/child.png",
+            "alt": "Illustration of an anxious kid, looking between two theater masks. One is smiling, the other crying.",
+            "class": "img-child"
+          }
+        },
+        {
           "type": "text",
           "value": "In fiction, a child has become shorthand for two things; being defenseless and wholesome."
         },
@@ -299,6 +389,14 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as C,t as k,K as l,a0 as 
         {
           "type": "h3",
           "value": "Hell"
+        },
+        {
+          "type": "img",
+          "value": {
+            "src": "assets/hell.png",
+            "alt": "Illustration of the devil, balancing a stack of different hats on his head.",
+            "class": "img-hell"
+          }
         },
         {
           "type": "text",
@@ -319,7 +417,9 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as C,t as k,K as l,a0 as 
         {
           "type": "img",
           "value": {
-            "src": "assets/innocent-villa-cover.png"
+            "src": "assets/innocent-villa-cover.webp",
+            "alt": "Book cover for The Innocent Villa.",
+            "class": "border-decorative border-1"
           }
         },
         {
@@ -340,6 +440,13 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as C,t as k,K as l,a0 as 
       "section": "irony",
       "content": [
         {
+          "type": "img",
+          "value": {
+            "src": "assets/section-illos/dad-swift.png",
+            "alt": "Illustration of a tired and bored dad at a Taylor Swift concert. He’s leaning against a barricade, looking off into the distance as the crowd behind him cheers and dances."
+          }
+        },
+        {
           "type": "h2",
           "value": "The funny ones"
         },
@@ -358,6 +465,12 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as C,t as k,K as l,a0 as 
         {
           "type": "Irony",
           "value": {}
+        },
+        {
+          "type": "img",
+          "value": {
+            "src": "assets/pages-ender.png"
+          }
         }
       ]
     },
@@ -379,4 +492,4 @@ import"../chunks/DsnmJJEf.js";import{aq as p,$ as m,a1 as C,t as k,K as l,a0 as 
       ]
     }
   ]
-}`;var Te=g('<p> </p> <progress max="100"></progress>',1);function De(r,t){let n=A(t,"label",3,"A"),e=A(t,"value",3,0);var i=Te(),s=C(i),c=m(s,!0);h(s);var d=p(s,2);k(()=>{w(c,n()),te(d,e())}),v(r,i)}var Ce=g('<section id="cms"><h2>MicroCMS</h2> <code><pre> </pre></code> <!></section>');function Me(r,t){L(t,!0);const{body:n}=ie,e={Test:De};var i=Ce(),s=p(m(i),2),c=m(s),d=m(c,!0);h(c),h(s);var f=p(s,2);le(f,{get components(){return e},get body(){return n}}),h(i),k(a=>w(d,a),[()=>Ae.replace(/\t/g," ")]),v(r,i),B()}const Ee=(r,t=z)=>{var n=Le(),e=m(n),i=m(e,!0);h(e);var s=p(e,2),c=m(s,!0);h(s),h(n),k(()=>{w(i,t().name),w(c,t().age)}),v(r,n)};var Le=g('<div class="person svelte-q3gttf"><p class="svelte-q3gttf"> </p> <p class="svelte-q3gttf"> </p></div>'),Be=g('<h2>Svelte5</h2> <h3>Reactive variables 3 ways:</h3> <button class="svelte-q3gttf">count++</button> <p class="svelte-q3gttf"> </p> <p class="svelte-q3gttf"> </p> <p class="svelte-q3gttf"> </p> <h3>Children (previously slots):</h3> <div class="children"><!></div> <h3>Dispatch Event</h3> <button class="svelte-q3gttf">Random</button>  <h3>Snippets</h3> <div class="people svelte-q3gttf"></div>',1);function He(r,t){L(t,!0),A(t,"age",3,30);const n=[{name:"John",age:30},{name:"Jill",age:45}];let e=T(0),i=E(()=>l(e)*2),s=E(()=>l(e)*2),c=T(0);M(()=>{q(c,l(e)*2)});var d=Be(),f=p(C(d),4),a=p(f,2),o=m(a);h(a);var u=p(a,2),y=m(u);h(u);var S=p(u,2),j=m(S);h(S);var x=p(S,4),D=m(x);P(D,()=>t.children??z),h(x);var b=p(x,4),_=p(b,4);H(_,21,()=>n,R,(I,$)=>{Ee(I,()=>l($))}),h(_),k(()=>{w(o,`${l(e)??""} doubled is ${l(i)??""} (derived)`),w(y,`${l(e)??""} doubled is ${l(s)??""} (derived by)`),w(j,`${l(e)??""} doubled is ${l(c)??""} ($effect)`)}),O("click",f,()=>Y(e)),O("click",b,()=>t.random(Math.floor(Math.random()*10))),v(r,d),B()}X(["click"]);const Re=(r,t)=>{let n=T(Q(r)),e=T(null),i=T(!0),s=T(void 0);const c=(a=!0)=>{q(i,a,!0),a===!0&&(q(s,null),q(e,null))},d=async()=>{try{const a=await fetch(l(n),t);if(!a.ok)throw new Error(`Unexpected error occurred (status ${a.status})`);let o;if(l(n).includes(".csv")){const u=await a.text();o=ce(u)}else o=await a.json();return[null,o]}catch(a){const{errorMessage:o="Unexpected error eccurred"}=a;return[o,null]}},f=async a=>{c(!0);const[o,u]=await d();if(a===l(n)){if(o){c(!1),q(s,o,!0);return}c(!1),q(e,u,!0)}};return M(()=>{f(l(n))}),{get data(){return l(e)},get loading(){return l(i)},get error(){return l(s)},get url(){return l(n)},set url(a){l(n)!==a&&q(n,a,!0)}}};var $e=g("<p>loading data...</p>"),ze=g("<p> </p>"),Fe=g("<p>data loaded</p> <pre> </pre>",1),Ge=g('<div class="c"><h2>Load Data</h2> <div class="response"><!></div></div>');function Je(r,t){L(t,!0);const n=`${ue}/assets/demo/test.csv`,e=Re(n);M(()=>{});var i=Ge(),s=p(m(i),2),c=m(s);{var d=o=>{var u=$e();v(o,u)},f=o=>{var u=ze(),y=m(u);h(u),k(()=>w(y,`error: ${e.error??""}`)),v(o,u)},a=o=>{var u=Fe(),y=p(C(u),2),S=m(y,!0);h(y),k(j=>w(S,j),[()=>JSON.stringify(e.data,null,2)]),v(o,u)};oe(c,o=>{e.loading?o(d):e.error?o(f,1):o(a,-1)})}h(s),h(i),v(r,i),B()}var Oe=g('<div id="demo" class="svelte-15aotx7"><h1>Demo</h1> <!> <!> <!> <!> <!> <!> <!> <!></div>');function Pe(r){let t=T(0);function n(y){console.log(y)}var e=Oe(),i=p(m(e),2);de(i);var s=p(i,2);pe(s);var c=p(s,2);fe(c);var d=p(c,2);_e(d);var f=p(d,2);Me(f,{});var a=p(f,2);Je(a,{});var o=p(a,2);je(o);var u=p(o,2);He(u,{random:n,get value(){return l(t)},set value(y){q(t,y,!0)}}),h(e),v(r,e)}function at(r){Pe(r)}export{at as component};
+}`;var De=f('<p> </p> <progress max="100"></progress>',1);function Ae(r,t){let n=j(t,"label",3,"A"),e=j(t,"value",3,0);var i=De(),s=C(i),c=d(s,!0);u(s);var p=m(s,2);_(()=>{w(c,n()),te(p,e())}),v(r,i)}var Ce=f('<section id="cms"><h2>MicroCMS</h2> <code><pre> </pre></code> <!></section>');function Me(r,t){B(t,!0);const{body:n}=ie,e={Test:Ae};var i=Ce(),s=m(d(i),2),c=d(s),p=d(c,!0);u(c),u(s);var g=m(s,2);le(g,{get components(){return e},get body(){return n}}),u(i),_(a=>w(p,a),[()=>je.replace(/\t/g," ")]),v(r,i),L()}const Ee=(r,t=z)=>{var n=Be(),e=d(n),i=d(e,!0);u(e);var s=m(e,2),c=d(s,!0);u(s),u(n),_(()=>{w(i,t().name),w(c,t().age)}),v(r,n)};var Be=f('<div class="person svelte-q3gttf"><p class="svelte-q3gttf"> </p> <p class="svelte-q3gttf"> </p></div>'),Le=f('<h2>Svelte5</h2> <h3>Reactive variables 3 ways:</h3> <button class="svelte-q3gttf">count++</button> <p class="svelte-q3gttf"> </p> <p class="svelte-q3gttf"> </p> <p class="svelte-q3gttf"> </p> <h3>Children (previously slots):</h3> <div class="children"><!></div> <h3>Dispatch Event</h3> <button class="svelte-q3gttf">Random</button>  <h3>Snippets</h3> <div class="people svelte-q3gttf"></div>',1);function He(r,t){B(t,!0),j(t,"age",3,30);const n=[{name:"John",age:30},{name:"Jill",age:45}];let e=D(0),i=E(()=>l(e)*2),s=E(()=>l(e)*2),c=D(0);M(()=>{q(c,l(e)*2)});var p=Le(),g=m(C(p),4),a=m(g,2),o=d(a);u(a);var h=m(a,2),y=d(h);u(h);var I=m(h,2),T=d(I);u(I);var x=m(I,4),A=d(x);P(A,()=>t.children??z),u(x);var b=m(x,4),k=m(b,4);H(k,21,()=>n,R,(S,$)=>{Ee(S,()=>l($))}),u(k),_(()=>{w(o,`${l(e)??""} doubled is ${l(i)??""} (derived)`),w(y,`${l(e)??""} doubled is ${l(s)??""} (derived by)`),w(T,`${l(e)??""} doubled is ${l(c)??""} ($effect)`)}),J("click",g,()=>Y(e)),J("click",b,()=>t.random(Math.floor(Math.random()*10))),v(r,p),L()}X(["click"]);const Re=(r,t)=>{let n=D(Q(r)),e=D(null),i=D(!0),s=D(void 0);const c=(a=!0)=>{q(i,a,!0),a===!0&&(q(s,null),q(e,null))},p=async()=>{try{const a=await fetch(l(n),t);if(!a.ok)throw new Error(`Unexpected error occurred (status ${a.status})`);let o;if(l(n).includes(".csv")){const h=await a.text();o=ce(h)}else o=await a.json();return[null,o]}catch(a){const{errorMessage:o="Unexpected error eccurred"}=a;return[o,null]}},g=async a=>{c(!0);const[o,h]=await p();if(a===l(n)){if(o){c(!1),q(s,o,!0);return}c(!1),q(e,h,!0)}};return M(()=>{g(l(n))}),{get data(){return l(e)},get loading(){return l(i)},get error(){return l(s)},get url(){return l(n)},set url(a){l(n)!==a&&q(n,a,!0)}}};var $e=f("<p>loading data...</p>"),ze=f("<p> </p>"),Oe=f("<p>data loaded</p> <pre> </pre>",1),Fe=f('<div class="c"><h2>Load Data</h2> <div class="response"><!></div></div>');function Ge(r,t){B(t,!0);const n=`${he}/assets/demo/test.csv`,e=Re(n);M(()=>{});var i=Fe(),s=m(d(i),2),c=d(s);{var p=o=>{var h=$e();v(o,h)},g=o=>{var h=ze(),y=d(h);u(h),_(()=>w(y,`error: ${e.error??""}`)),v(o,h)},a=o=>{var h=Oe(),y=m(C(h),2),I=d(y,!0);u(y),_(T=>w(I,T),[()=>JSON.stringify(e.data,null,2)]),v(o,h)};oe(c,o=>{e.loading?o(p):e.error?o(g,1):o(a,-1)})}u(s),u(i),v(r,i),L()}var Je=f('<div id="demo" class="svelte-15aotx7"><h1>Demo</h1> <!> <!> <!> <!> <!> <!> <!> <!></div>');function Pe(r){let t=D(0);function n(y){console.log(y)}var e=Je(),i=m(d(e),2);pe(i);var s=m(i,2);me(s);var c=m(s,2);ge(c);var p=m(c,2);ke(p);var g=m(p,2);Me(g,{});var a=m(g,2);Ge(a,{});var o=m(a,2);Te(o);var h=m(o,2);He(h,{random:n,get value(){return l(t)},set value(y){q(t,y,!0)}}),u(e),v(r,e)}function at(r){Pe(r)}export{at as component};
