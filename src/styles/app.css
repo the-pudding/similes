@@ -8,7 +8,7 @@
 :root {
 	/* font */
 	--font-sans: "Atlas Grotesk", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-	--font-serif: "Tiempos Text", Iowan Old Style, Times New Roman, Times, serif;
+	--font-serif: "Publico Text", Iowan Old Style, Times New Roman, Times, serif;
 	--font-mono: Menlo, Consolas, Monaco, monospace;
 
 	/* z-index */
@@ -44,6 +44,8 @@
 	--color-input-bg: var(--color-gray-50);
 	--color-input-fg: var(--color-gray-900);
 	--color-placeholder: var(--color-gray-500);
+	--color-adjusted-black: #1A1D21;
+	--color-adjusted-white: #D1D2D3;
 
 	/* "1" second duration */
 	--1s: 1ms;
@@ -66,12 +68,17 @@
 		--1s: 1s;
 	}
 }
+body{
+	overflow-x: hidden;
+}
 
 h1 {
 	font-size: var(--48px, 48px);
 }
 
 h2 {
+	z-index: 3;
+	position: relative;
 	font-size: var(--36px, 36px);
 }
 
@@ -126,6 +133,7 @@ section > *:not(.graphic) {
 /* HERO */
 #hero h1 {
 	font-weight: bold;
+	font-size: 3.6em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -141,9 +149,127 @@ section > *:not(.graphic) {
 	color: var(--color-gold);
 }
 
+#hero p{
+	font-family: var(--font-sans);
+	font-weight: 300;
+	text-align: center;
+}
+#hero p:nth-of-type(2) {
+	font-size: 1em;
+}
+#intro > img:nth-of-type(1){
+	display: none;
+	width: 100%;
+	max-width: 70px;
+	margin: 15px auto 20px auto;
+	opacity: 0.5;
+}
+/* Sections with black bgs, white text */
+#adjectives,
+#irony{
+	position: relative;
+	background: var(--color-adjusted-black);
+	color: var(--color-adjusted-white);
+}
+/* These are needed for the section illo bgs to help blend page color transitions */
+#adjectives::before,
+#irony::before,
+#nouns::before{
+	z-index: 0;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 404px;
+	background: #FFF;
+	top: 0;
+	left: 0;
+	margin: auto;
+}
+#irony{
+	position: relative;
+	margin-bottom: 60px;
+}
+#irony::before{
+	height: 456px;
+}
+/* Used for crosshatch bg under last falling pages */
+#irony::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 500px;
+	margin: auto;
+	background-image: url('assets/crosshatch.png');
+	background-repeat: repeat no-repeat;
+	background-size: 50% 100%;
+}
+#nouns{
+	position: relative;
+}
+#nouns::before{
+	background: var(--color-adjusted-black);
+	height: 595px;
+}
+#adjectives h2{
+	-webkit-text-stroke: 10px var(--color-adjusted-black);
+	paint-order: stroke fill;
+	position: relative;
+	z-index: 2;
+}
+/* Section topper illos */
+#adjectives img:nth-of-type(1),
+#nouns img:nth-of-type(1),
+#irony img:nth-of-type(1){
+	z-index: 2;
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	margin-bottom: -80px;
+}
+#irony img:nth-of-type(1){
+	margin-bottom: 0;
+}
+/* Inline illos for 4 nouns */
+#specific img:nth-of-type(odd){
+	float: right;
+	max-width: 250px;
+	margin: 10px 20% 10px 10px;
+}
+#specific img:nth-of-type(even){
+	float: left;
+	max-width: 250px;
+	margin: 10px 10px 10px 20%;
+}
+/* Ending falling pages */
+#irony img:nth-last-of-type(1){
+	z-index: 2;
+	position: relative;
+	width: 130px;
+	margin-top: 100px;
+	margin-bottom: 0;
+}
 @media screen and (min-width: 800px) {
 	p, li, blockquote, details {
 		font-size: var(--20px);
 	}
 }
+@media screen and (max-width: 1000px) {
+	#adjectives::before,
+	#irony::before,
+	#nouns::before{
+		display: none;
+	}
+}
+@media screen and (max-width: 900px) {
+	#intro > img:nth-of-type(1){
+		display: block;
+	}
+}
+@media screen and (max-width: 500px) {
+	#irony img:nth-last-of-type(1){
+		width: 100px;
+	}
+}
+
 
