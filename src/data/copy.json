@@ -479,15 +479,35 @@
       "content": [
         {
           "type": "h2",
-          "value": "Data and method"
+          "value": "Data and methods"
         },
         {
           "type": "text",
-          "value": "TK some note about this is all pre-AI books."
+          "value": "For this project, we focused on the most recognizable form: classic \"as ___ as ___\" similes. Those give us a clean ground (e.g., “white”) paired with a clean vehicle (e.g., “snow”) which makes them easier to count, compare, and cluster."
         },
         {
           "type": "text",
-          "value": "Used 100+ occurrences for most noun stats."
+          "value": "I used a natural language library to scan grammatical patterns looking for the simile form, restricted to the top 500 most-used adjectives according to this <a href=https://www.wordfrequency.info/intro.asp target=_blank rel=noreferrer>word frequency corpus.</a>"
+        },
+        {
+          "type": "text",
+          "value": "A lot of time was spent filtering out junk. Common idioms (“as soon as”), structural stuff, like ending in pronouns (“as tall as him”) or proper nouns (“as fast as John”) or possessives (“as nasty as their reputation”). Basically similes that weren’t figurative comparisons. A second pass was done via three LLMs (Gemini, OpenAI, Anthropic) to help detect false positives, and flag whether it was a figurative or literal simile. LLMs were also used to extract and normalize the tenor and vehicle."
+        },
+        {
+          "type": "text",
+          "value": "A handful of genuine similes probably got caught in the net and filtered out, but I did a lot of spot-checking and refining the scripts to minimize these occurrences."
+        },
+        {
+          "type": "text",
+          "value": "The most involved part of the pipeline was vehicle aggregation. It can be both an obvious and blurry line of what should get binned together. For example, “wolf, “the wolves,” and “a pack of wolves,” are the same figurative image to humans, but to a computer, those are four different items. Alternatively, is a “kitten” the same or different from a “cat?” (I chose different). There were many techniques I combined to solve this problem, including normalization, embedding similarity, synonym detection, containment checks, and LLM judging. Generally speaking I leaned towards being conservative so things weren’t falsely merged."
+        },
+        {
+          "type": "text",
+          "value": "The dataset is not perfect, but a good sample of how writers compare things in English-language fiction. It is accurate in aggregate but imperfect at the sentence level."
+        },
+        {
+          "type": "text",
+          "value": "Most ranking stats referenced in the text related to noun usage was based on filtering down to the ones with 100+ occurrences in the dataset."
         }
       ]
     }

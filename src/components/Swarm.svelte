@@ -26,14 +26,6 @@
 			.domain(extent(data, (d) => d[r]))
 			.range(textRange)
 	);
-	// $effect(() => {
-	// 	if (data.length > 0)
-	// 		window.x = JSON.stringify(
-	// 			data.map((d) => ({ value: +d.score, size: +d.totalCount })),
-	// 			null,
-	// 			2
-	// 		);
-	// });
 </script>
 
 <div class="c graphic swarm" bind:this={el}>
@@ -68,7 +60,7 @@
 				dodgeY={{ anchor: "middle", padding: 3 }}
 				strokeWidth={4}
 				fontSize={(d) => Math.round(textScale(d[r]))}
-				fill={variables.color["adjusted-white"]}
+				fill={"#fff"}
 				stroke={variables.color["adjusted-black"]}
 				fontWeight="bold"
 			/>
@@ -82,6 +74,7 @@
 		max-width: var(--chart-max-width-lg);
 		margin: 1rem auto;
 		font-family: var(--font-sans);
+		user-select: none;
 	}
 
 	.axis-label {

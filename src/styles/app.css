@@ -318,6 +318,10 @@ img.border-decorative {
 }
 
 
+#method p {
+	font-size: var(--16px);
+}
+
 @media screen and (min-width: 800px) {
 	p, li, blockquote, details {
 		font-size: var(--20px);

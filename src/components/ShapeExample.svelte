@@ -1,5 +1,5 @@
 <script>
-	import { Plot, BarY, RuleY } from "svelteplot";
+	import { Plot, BarY, RuleY, AxisX } from "svelteplot";
 	import { chartData } from "$runes/misc.svelte.js";
 
 	const maxToShow = 30;
@@ -18,6 +18,7 @@
 			x={{ tickRotate: -45, label: "nouns" }}
 			y={{ label: "occurences" }}
 		>
+			<AxisX tickFontSize={12} />
 			<RuleY data={[0]} />
 			<BarY {data} {x} {y} sort="-count" />
 		</Plot>
@@ -28,5 +29,10 @@
 	.c {
 		max-width: var(--chart-max-width-sm);
 		font-family: var(--font-sans);
+	}
+
+	.c :global(.tick text) {
+		font-weight: bold;
+		fill: #fff !important;
 	}
 </style>
