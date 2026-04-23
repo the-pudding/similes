@@ -39,10 +39,11 @@
 			</div>
 		</div>
 
-		<div class="embla-buttons">
+		<p><small><em>Swipe to see examples.</em></small></p>
+		<!-- <div class="embla-buttons">
 			<button class="embla-prev" onclick={goToPrev}>Prev</button>
 			<button class="embla-next" onclick={goToNext}>Next</button>
-		</div>
+		</div> -->
 	</div>
 </div>
 
@@ -88,5 +89,9 @@
 	.source {
 		text-align: right;
 		margin-top: 1rem;
+	}
+
+	p {
+		text-align: center;
 	}
 </style>

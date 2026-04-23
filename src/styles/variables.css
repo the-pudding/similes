@@ -27,11 +27,11 @@
   --color-red: oklch(0.677 0.2117 30.54);
   --color-yellow: oklch(0.8897 0.1781 108.83);
   --color-gold: oklch(0.66 0.12 86);
-  --color-gold-light: oklch(0.76 0.12 86);
+  --color-gold-light: oklch(0.78 0.14 86);
   --color-green: oklch(0.6 0.06 202);
-  --color-green-light: oklch(0.7 0.08 202);
+  --color-green-light: oklch(0.72 0.1 202);
   --color-purple: oklch(0.55 0.14 301);
-  --color-purple-light: oklch(0.65 0.16 301);
+  --color-purple-light: oklch(0.67 0.18 301);
   --color-adjusted-black: #1A1D21;
   --color-adjusted-white: #e6e6e7;
   --12px: 0.75rem;

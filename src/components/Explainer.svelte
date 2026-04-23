@@ -21,6 +21,10 @@
 		margin: 2rem auto;
 	}
 
+	.inner {
+		padding: 2.5rem 3rem;
+	}
+
 	ul {
 		list-style-type: none;
 		padding-left: 0;

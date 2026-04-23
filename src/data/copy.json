@@ -87,7 +87,7 @@
         },
         {
           "type": "text",
-          "value": "Above are real results from my extensive analysis of this specific form of simile. Once you start looking, you see them everywhere, from the classics <em>Jane Eyre</em> to last year’s darling <em>Heart the Lover</em>."
+          "value": "Above are real results from my extensive analysis of this specific form of simile. Once you start looking, you see them everywhere, from the classics like <em>Jane Eyre</em> to last year’s darling <em>Heart the Lover</em>."
         },
         {
           "type": "Quotes",
@@ -138,14 +138,11 @@
         },
         {
           "type": "text",
-          "value": "I thought it would be a trivial exercise, but the more I poked around, the more questions I had. Let’s explore what I learned."
+          "value": "I thought it would be a trivial exercise, but the more I poked around, the more questions I had."
         },
         {
-          "type": "Details",
-          "value": {
-            "summary": "Why <strong>as ___ as ___</strong>?",
-            "content": "English has lots of ways to make comparisons. “Eyes like daggers,” “razor-sharp wit.” Most of these figurative forms are difficult to extract from text at scale. “As ___ as ___” is the exception because of its rigid structure. This makes it the most reliable to parse programmatically while minimizing the need for human judgement. It’s also surprisingly common in all forms of fiction. So while it’s just a sample of figurative language, it provides a quantifiable glimpse into the topic."
-          }
+          "type": "text",
+          "value": "<small><strong>Why “as ___ as ___”:</strong> English has lots of ways to make comparisons. “Eyes like daggers,” “razor-sharp wit.” Most of these figurative forms are difficult to extract from text at scale. “As ___ as ___” is the exception because of its rigid structure. This makes it the most reliable to parse programmatically while minimizing the need for human judgement. It’s also surprisingly common in all forms of fiction. So while it’s just a sample of figurative language, it provides a quantifiable glimpse into the topic.</small>"
         }
       ]
     },
@@ -212,7 +209,7 @@
         },
         {
           "type": "text",
-          "value": "You’ll notice that the top 3–bone, desert, and dust–make up 43% of all usage, and there is a pretty quick drop-off after that with a long tail of rarer choices. Let’s zoom out to see the shape of more adjectives. Here are the top 20 nouns for every adjective with at least 200 occurrences."
+          "value": "You’ll notice that the top 3&mdash;bone, desert, and dust&mdash;make up 43% of all usage, and there is a pretty quick drop-off after that with a long tail of rarer choices. Let’s zoom out to see the shape of more adjectives. Here are the top 20 nouns for every adjective with at least 200 occurrences."
         },
         {
           "type": "ShapeAll",
@@ -287,7 +284,7 @@
         },
         {
           "type": "text",
-          "value": "To quantify this, I looked at the diversity of adjectives for each noun using the <a href=https://en.wikipedia.org/wiki/Diversity_index#Simpson_index target=_blank rel=noreferrer>Simpson index.</a> Put plainly: if you pick two similes for a noun at random, what is the chance the adjectives match?"
+          "value": "To quantify this, I looked at the diversity of adjectives for each noun using the <a href=https://en.wikipedia.org/wiki/Diversity_index#Simpson_index target=_blank rel=noreferrer>Simpson index.</a> Put plainly: if you pick two similes for a noun at random, what is the chance that the adjectives match?"
         },
         {
           "type": "Swarm",
@@ -297,11 +294,11 @@
         },
         {
           "type": "text",
-          "value": "Most nouns land somewhere in between. They have some reliable pairings, sometimes because of distinct qualities (e.g., glass is smooth, fragile, transparent) or amplified because of similar adjectives (e.g., the sun is bright, brilliant, radiant)."
+          "value": "Most nouns land somewhere in the middle. Sometimes because they have some reliable pairings because of distinct qualities (e.g., glass is smooth, fragile, transparent) or because of conceptually similar adjectives (e.g., the sun is bright, brilliant, radiant)."
         },
         {
           "type": "text",
-          "value": "But like most things, the interesting stuff lies at the extremes–nouns so tightly coupled with a single adjective they’ve become idioms, or so plamigerent that they’ve lost all meaning."
+          "value": "But like most things, the interesting stuff lies at the extremes. Certain nouns are so tightly coupled with a single adjective that they’ve become idioms. While others are so versatile or overused they’ve become plamigerent."
         }
       ]
     },
@@ -334,7 +331,7 @@
         },
         {
           "type": "text",
-          "value": "While most animals are pigeon-holed–think stubborn as a mule–cats span a huge range of observed behavior. And cat is the most used noun for four different adjectives; nervous, active, agile, nimble."
+          "value": "While most animals are pigeon-holed&mdash;think stubborn as a mule&mdash;cats span a huge range of observed behavior. And cat is the most used noun for four different adjectives; nervous, active, agile, nimble."
         },
         {
           "type": "Cat",

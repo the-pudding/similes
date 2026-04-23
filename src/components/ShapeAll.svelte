@@ -2,6 +2,8 @@
 	import { Plot, BarY, RuleY, Text } from "svelteplot";
 	import { chartData } from "$runes/misc.svelte.js";
 	import * as d3 from "d3";
+	import { formatHex, oklch } from "culori";
+	import variables from "$data/variables.json";
 
 	const maxToShow = 20;
 	const x = "vehicle";
@@ -58,15 +60,25 @@
 				y={{ axis: false, insetTop: 10, insetBottom: 16 }}
 				height={(w) => w / 1.5}
 			>
-				<BarY {data} {x} {y} sort="-count" />
+				<BarY
+					{data}
+					{x}
+					{y}
+					sort="-count"
+					fill={(d, i) =>
+						i === 0
+							? formatHex(oklch(variables.color["purple-light"]))
+							: formatHex(oklch(variables.color["adjusted-white"]))}
+				/>
 				<Text
 					data={textData}
 					{x}
-					{y}
+					y={0}
 					text={(d) => `${d.vehicle}: ${d.count}`}
-					lineAnchor="bottom"
+					lineAnchor="top"
 					textAnchor="start"
-					dy={-4}
+					fill={formatHex(oklch(variables.color["purple-light"]))}
+					dy={4}
 					dx={-4}
 				/>
 			</Plot>
@@ -79,9 +91,8 @@
 		max-width: var(--chart-max-width-lg);
 		display: flex;
 		flex-wrap: wrap;
-		gap: 1rem;
+		gap: 2rem 1rem;
 		font-family: var(--font-sans);
-		padding: 0 1rem;
 	}
 
 	.chart {
@@ -91,7 +102,7 @@
 
 	.chart-title {
 		position: absolute;
-		bottom: 0;
+		top: 0;
 		left: 50%;
 		transform: translate(-50%, 0);
 		font-size: var(--14px);

@@ -81,10 +81,14 @@
 	.axis-label {
 		text-align: center;
 		margin-top: 1rem;
+		font-size: var(--12px);
+		text-transform: uppercase;
 	}
 
 	.annotation {
 		display: flex;
 		justify-content: space-between;
+		text-transform: uppercase;
+		font-size: var(--12px);
 	}
 </style>
