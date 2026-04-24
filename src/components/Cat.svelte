@@ -55,10 +55,18 @@
 	td,
 	th {
 		text-align: right;
+		vertical-align: bottom;
+		line-height: 1;
+		padding: 0.5rem 0.25rem;
 	}
 
 	td:first-of-type,
 	th:first-of-type {
 		text-align: left;
+		width: 5rem;
+	}
+
+	tbody tr:nth-of-type(odd) {
+		background: var(--color-adjusted-white);
 	}
 </style>
