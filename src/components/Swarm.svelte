@@ -5,6 +5,7 @@
 	import { chartData } from "$runes/misc.svelte.js";
 	import variables from "$data/variables.json";
 	import { scaleLinear, scaleSqrt, extent, max, format } from "d3";
+	import { hex } from "$runes/misc.svelte.js";
 	let { axisLabel } = $props();
 
 	const x = "score";
@@ -77,7 +78,7 @@
 				y={0}
 				{r}
 				dodgeY={{ anchor: "middle", padding: 3 }}
-				fill={variables.color["adjusted-black"]}
+				fill={hex.purpleLight}
 				onmouseover={onmouseenter}
 				onmouseleave={() => (tooltipVisible = false)}
 				onmousemove={onmouseenter}
@@ -94,7 +95,7 @@
 				strokeWidth={4}
 				fontSize={(d) => Math.round(textScale(d[r]))}
 				fill={"#fff"}
-				stroke={variables.color["adjusted-black"]}
+				stroke={hex.purpleDark}
 				fontWeight="bold"
 			/>
 		</Plot>
@@ -172,7 +173,7 @@
 
 	.legend-circle {
 		border-radius: 50%;
-		background: var(--color-adjusted-black);
+		background: var(--color-purple-light);
 	}
 
 	.legend-title {

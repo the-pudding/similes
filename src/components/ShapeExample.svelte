@@ -1,6 +1,7 @@
 <script>
 	import { Plot, BarY, RuleY, AxisX } from "svelteplot";
 	import { chartData } from "$runes/misc.svelte.js";
+	import { hex } from "$runes/misc.svelte.js";
 
 	const maxToShow = 30;
 	const x = "vehicle";
@@ -12,6 +13,14 @@
 </script>
 
 <div class="c graphic">
+	<div class="chart-title">
+		<strong
+			>As <span class="underline-ground-light">dry</span> as
+			<span class="underline-vehicle-light"
+				>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+			></strong
+		>
+	</div>
 	{#if data.length}
 		<Plot
 			grid
@@ -19,8 +28,7 @@
 			y={{ label: "occurences" }}
 		>
 			<AxisX tickFontSize={12} />
-			<RuleY data={[0]} />
-			<BarY {data} {x} {y} sort="-count" />
+			<BarY {data} {x} {y} sort="-count" fill={hex.purpleLight} />
 		</Plot>
 	{/if}
 </div>
@@ -35,5 +43,15 @@
 	.c :global(.tick text) {
 		font-weight: bold;
 		fill: #fff !important;
+	}
+
+	.c :global(.axis-y .tick:first-of-type) {
+		display: none;
+	}
+
+	.chart-title {
+		font-size: var(--24px);
+		margin: 1rem 0;
+		text-align: center;
 	}
 </style>

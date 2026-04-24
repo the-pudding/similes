@@ -47,7 +47,7 @@
 				/>
 			</p>
 			<!-- <p class="note"><small><em>Note: {@html note}</em></small></p> -->
-			<Button onclick={submit}>Submit</Button>
+			<div class="submit"><Button onclick={submit}>Submit</Button></div>
 		</div>
 	{:else if phase === "result"}
 		<div class="result">
@@ -92,6 +92,7 @@
 	.c {
 		min-height: 400px;
 		position: relative;
+		font-family: var(--font-sans);
 	}
 
 	.game {
@@ -102,10 +103,23 @@
 
 	.example {
 		margin: 0;
+		display: flex;
+		align-items: center;
+	}
+
+	.example :global(strong) {
+		margin-left: 0.325em;
 	}
 
 	input {
 		margin-left: 0.5rem;
+		border-radius: 0;
+		flex: 1;
+	}
+
+	.submit {
+		display: flex;
+		justify-content: center;
 	}
 
 	.note {
@@ -139,7 +153,7 @@
 		gap: 0.25rem;
 		padding: 0.25rem 0.5rem;
 		border: 1px solid currentColor;
-		border-radius: var(--radius-sm);
+		border-radius: 0;
 		font-size: var(--14px);
 		user-select: none;
 	}

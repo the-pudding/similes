@@ -2,8 +2,7 @@
 	import { Plot, BarY, RuleY, Text } from "svelteplot";
 	import { chartData } from "$runes/misc.svelte.js";
 	import * as d3 from "d3";
-	import { formatHex, oklch } from "culori";
-	import variables from "$data/variables.json";
+	import { hex } from "$runes/misc.svelte.js";
 
 	const maxToShow = 20;
 	const x = "vehicle";
@@ -54,22 +53,13 @@
 	{#each byGround as { ground, data }}
 		{@const textData = data.slice(0, 1)}
 		<div class="chart">
-			<div class="chart-title">{ground}</div>
+			<div class="chart-title underline-ground-light">{ground}</div>
 			<Plot
 				x={{ axis: false, insetLeft: 0 }}
 				y={{ axis: false, insetTop: 10, insetBottom: 16 }}
 				height={(w) => w / 1.5}
 			>
-				<BarY
-					{data}
-					{x}
-					{y}
-					sort="-count"
-					fill={(d, i) =>
-						i === 0
-							? formatHex(oklch(variables.color["purple-light"]))
-							: formatHex(oklch(variables.color["adjusted-white"]))}
-				/>
+				<BarY {data} {x} {y} sort="-count" fill={hex.purpleLight} />
 				<Text
 					data={textData}
 					{x}
@@ -77,7 +67,7 @@
 					text={(d) => `${d.vehicle}: ${d.count}`}
 					lineAnchor="top"
 					textAnchor="start"
-					fill={formatHex(oklch(variables.color["purple-light"]))}
+					fill={hex.purpleLight}
 					dy={4}
 					dx={-4}
 				/>
@@ -108,5 +98,6 @@
 		font-size: var(--14px);
 		font-weight: bold;
 		font-family: var(--font-sans);
+		text-decoration-thickness: 2px;
 	}
 </style>

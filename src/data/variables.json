@@ -31,6 +31,7 @@
     "green-light": "oklch(0.72 0.1 202)",
     "purple": "oklch(0.55 0.14 301)",
     "purple-light": "oklch(0.67 0.18 301)",
+    "purple-dark": "oklch(0.45 0.12 301)",
     "adjusted-black": "#1A1D21",
     "adjusted-white": "#e6e6e7"
   },

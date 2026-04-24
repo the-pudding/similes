@@ -21,7 +21,7 @@
 	}
 
 	.inner {
-		padding: 2.5rem 3rem;
+		padding: 0;
 	}
 
 	ul {
@@ -44,29 +44,29 @@
 	}
 
 	p :global(span:nth-of-type(1)) {
-		text-decoration-color: var(--color-gold);
+		text-decoration-color: var(--color-gold-light);
 	}
 
 	p :global(span:nth-of-type(2)) {
-		text-decoration-color: var(--color-green);
+		text-decoration-color: var(--color-green-light);
 	}
 
 	p :global(span:nth-of-type(3)) {
-		text-decoration-color: var(--color-purple);
+		text-decoration-color: var(--color-purple-light);
 	}
 
 	li:nth-of-type(1) span {
-		color: var(--color-gold);
+		color: var(--color-gold-light);
 		font-weight: bold;
 	}
 
 	li:nth-of-type(2) span {
-		color: var(--color-green);
+		color: var(--color-green-light);
 		font-weight: bold;
 	}
 
 	li:nth-of-type(3) span {
-		color: var(--color-purple);
+		color: var(--color-purple-light);
 		font-weight: bold;
 	}
 </style>

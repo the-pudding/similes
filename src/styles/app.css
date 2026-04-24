@@ -38,8 +38,8 @@
 	--color-mark: var(--color-yellow);
 	--color-selection: var(--color-gray-300);
 	--color-border: var(--color-gray-300);
-	--color-button-fg-primary: var(--color-white);
-	--color-button-bg-primary: var(--color-gray-900);
+	--color-button-fg-primary: var(--color-black);
+	--color-button-bg-primary: var(--color-gold);
 	--color-button-fg-secondary: var(--color-white);
 	--color-button-bg-secondary: var(--color-gray-500);
 	--color-input-bg: var(--color-gray-50);
@@ -99,6 +99,12 @@ h6 {
 	font-size: var(--20px, 20px);
 }
 
+.bits-button[data-button-root] {
+	border-radius: 0;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
 svg {
 	display: block;
 	width: 100%;
@@ -146,6 +152,71 @@ details .content {
 	color: var(--color-purple-light);
 }
 
+.underline-tenor {
+	text-decoration: underline;
+	text-decoration-thickness: 4px;
+	text-underline-offset: 4px;
+	text-decoration-skip-ink: none;
+	text-decoration-color: var(--color-gold);
+
+}
+
+.underline-ground {
+	text-decoration: underline;
+	text-decoration-thickness: 4px;
+	text-underline-offset: 4px;
+	text-decoration-skip-ink: none;
+	text-decoration-color: var(--color-green);
+
+}
+
+.underline-vehicle {
+	text-decoration: underline;
+	text-decoration-thickness: 4px;
+	text-underline-offset: 4px;
+	text-decoration-skip-ink: none;
+	text-decoration-color: var(--color-purple);
+
+}
+
+.underline-tenor-light {
+	text-decoration: underline;
+	text-decoration-thickness: 4px;
+	text-underline-offset: 4px;
+	text-decoration-skip-ink: none;
+	text-decoration-color: var(--color-gold-light);
+
+}
+
+.underline-ground-light {
+	text-decoration: underline;
+	text-decoration-thickness: 4px;
+	text-underline-offset: 4px;
+	text-decoration-skip-ink: none;
+	text-decoration-color: var(--color-green-light);
+
+}
+
+.underline-vehicle-light {
+	text-decoration: underline;
+	text-decoration-thickness: 4px;
+	text-underline-offset: 4px;
+	text-decoration-skip-ink: none;
+	text-decoration-color: var(--color-purple-light);
+
+}
+
+.font-sans {
+	font-family: var(--font-sans);
+}
+
+#method {
+	font-family: var(--font-sans);
+}
+
+section {
+	padding-bottom: 8rem;
+}
 
 section > *:not(.graphic) {
 	max-width: var(--col-width);
@@ -154,7 +225,7 @@ section > *:not(.graphic) {
 } 
 
 .graphic {
-	margin: 2rem auto;
+	margin: 4rem auto;
 	clear: both;
 }
 

@@ -5,12 +5,22 @@
 <div class="c">
 	{#each data as { category, values }}
 		<div class="group">
-			<div class="category"><strong>{category}</strong></div>
-			<div class="values">
-				{#each values as { ground, rank }}
-					<div class="ground">{ground} <span>#{rank}</span></div>
-				{/each}
-			</div>
+			<table>
+				<thead>
+					<tr>
+						<th>Adj.</th>
+						<th>Rank</th>
+					</tr>
+				</thead>
+				<tbody>
+					{#each values as { ground, rank }}
+						<tr>
+							<td>{ground}</td>
+							<td>#{rank}</td>
+						</tr>
+					{/each}
+				</tbody>
+			</table>
 		</div>
 	{/each}
 </div>
@@ -25,32 +35,33 @@
 	}
 
 	.group {
-		width: 10rem;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		gap: 0.25rem;
+		width: 25%;
 	}
 
-	.values {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 0.25rem;
-	}
-
-	.ground {
-		position: relative;
+	td,
+	th {
+		vertical-align: bottom;
 		line-height: 1;
-		display: inline-block;
+		padding: 0.5rem;
 	}
 
-	.ground span {
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		transform: translateX(calc(100% + 0.5em));
-		color: var(--color-gray-500);
-		font-size: 0.75em;
+	th {
+		font-size: var(--14px);
+	}
+
+	td:last-of-type,
+	th:last-of-type {
+		text-align: right;
+		width: 3.5rem;
+		padding-left: 0;
+	}
+
+	tbody tr:nth-of-type(odd) {
+		background: color-mix(in oklch, var(--color-green-light), white 80%);
+	}
+
+	/* every group after the first  (n+1) */
+	.group:not(:first-of-type) thead {
+		visibility: hidden;
 	}
 </style>

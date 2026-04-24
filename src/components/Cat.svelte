@@ -57,16 +57,19 @@
 		text-align: right;
 		vertical-align: bottom;
 		line-height: 1;
-		padding: 0.5rem 0.25rem;
+		padding: 0.5rem;
 	}
-
 	td:first-of-type,
 	th:first-of-type {
 		text-align: left;
 		width: 5rem;
 	}
 
+	th {
+		font-size: var(--14px);
+	}
+
 	tbody tr:nth-of-type(odd) {
-		background: var(--color-adjusted-white);
+		background: color-mix(in oklch, var(--color-purple-light), white 80%);
 	}
 </style>

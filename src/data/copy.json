@@ -142,7 +142,7 @@
         },
         {
           "type": "text",
-          "value": "<small><strong>Why “as ___ as ___”:</strong> English has lots of ways to make comparisons. “Eyes like daggers,” “razor-sharp wit.” Most of these figurative forms are difficult to extract from text at scale. “As ___ as ___” is the exception because of its rigid structure. This makes it the most reliable to parse programmatically while minimizing the need for human judgement. It’s also surprisingly common in all forms of fiction. So while it’s just a sample of figurative language, it provides a quantifiable glimpse into the topic.</small>"
+          "value": "<small class=font-sans><strong>Why “as ___ as ___”:</strong> English has lots of ways to make comparisons. “Eyes like daggers,” “razor-sharp wit.” Most of these figurative forms are difficult to extract from text at scale. “As ___ as ___” is the exception because of its rigid structure. This makes it the most reliable to parse programmatically while minimizing the need for human judgement. It’s also surprisingly common in all forms of fiction. So while it’s just a sample of figurative language, it provides a quantifiable glimpse into the topic.</small>"
         }
       ]
     },
@@ -187,11 +187,11 @@
         },
         {
           "type": "text",
-          "value": "First, a notable disclaimer. We’ll mostly just look at a simplified version of this form; <strong class=color-ground-light>grounds that are adjectives</strong>, and <strong class=color-vehicle-light>vehicles that are nouns</strong> (specifically mono/bi-grams, i.e., one or two words). This reduces the noise in favor of a clearer signal. For example:"
+          "value": "First, a notable disclaimer. We’ll mostly just look at a simplified version of this form; <strong class=underline-ground-light>grounds that are adjectives</strong>, and <strong class=underline-vehicle-light>vehicles that are nouns</strong> (specifically mono/bi-grams, i.e., one or two words). This reduces the noise in favor of a clearer signal. For example:"
         },
         {
           "type": "blockquote",
-          "value": "“In the doorway stood Kristen, Dylan, and Alicia, looking <strong>as <span class=color-ground-light>stunned</span> as <span class=color-vehicle-light>Taylor Swift during the 2009 VMAs when Kanye stole her acceptance speech.</span></strong>”"
+          "value": "“In the doorway stood Kristen, Dylan, and Alicia, looking <strong>as <span class=underline-ground-light>stunned</span> as <span class=underline-vehicle-light>Taylor Swift during the 2009 VMAs when Kanye stole her acceptance speech.</span></strong>”"
         },
         {
           "type": "text",
@@ -199,7 +199,7 @@
         },
         {
           "type": "text",
-          "value": "In similes, every adjective has a distinct shape. If you look at the usage of the nouns that follow, you can see whether an adjective is dominated by a single cliché or has range. Here is the shape of <strong class=color-ground-light>dry</strong> from our pop quiz."
+          "value": "In similes, every adjective has a distinct shape. If you look at the usage of the nouns that follow, you can see whether an adjective is dominated by a single cliché or has range. Here is the shape of <strong class=underline-ground-light>dry</strong> from our pop quiz."
         },
         {
           "type": "ShapeExample",
@@ -209,7 +209,7 @@
         },
         {
           "type": "text",
-          "value": "You’ll notice that the top 3&mdash;bone, desert, and dust&mdash;make up 43% of all usage, and there is a pretty quick drop-off after that with a long tail of rarer choices. Let’s zoom out to see the shape of more adjectives. Here are the top 20 nouns for every adjective with at least 200 occurrences."
+          "value": "You’ll notice that the top 3&mdash;bone, desert, and dust&mdash;make up 43% of all usage, and there is a pretty quick drop-off after that with a long tail of rarer choices. Let’s zoom out to see the shape of more adjectives. Below, each tiny chart is an <span class=underline-ground-light>adjective</span>, and its bars show the top 20 <span class=underline-vehicle-light>nouns</span> it pairs with. I’ve included every adjective with at least 200 occurrences."
         },
         {
           "type": "ShapeAll",
@@ -217,7 +217,7 @@
         },
         {
           "type": "text",
-          "value": "Each tiny chart is one adjective’s fingerprint. Most have a similar skewed distribution, with some key distinctions:"
+          "value": "Most adjectives’ shape have a similar skewed distribution, with some key distinctions:"
         },
         {
           "type": "Ul",
@@ -231,7 +231,7 @@
         },
         {
           "type": "text",
-          "value": "Most similes follow a similar shape. Some writers reach for a novel comparison to make it their own, while most just want one that’s reliable and accessible. Check out this 1964 textbook <em>Examine Your English</em>, which implants the patterns from the start."
+          "value": "While some writers reach for a novel comparison to make it their own, most just want one that’s reliable and accessible. Check out this 1964 textbook <em>Examine Your English</em>, which implants the patterns from the start."
         },
         {
           "type": "img",
@@ -243,7 +243,7 @@
         },
         {
           "type": "text",
-          "value": "While plenty have endured the test of time, like “as busy as a bee’ or “fit as a fiddle,” many have fallen out of fashion in recent decades, like “as drunk as a lord” or “as rich as Croesus.”"
+          "value": "Plenty of these idioms have endured the test of time, like <strong>“as busy as a bee”</strong> or <strong>“fit as a fiddle,”</strong> though many have fallen out of fashion in recent decades, like <strong>“as drunk as a lord”</strong> or <strong>“as rich as Croesus.”</strong>"
         }
       ]
     },
@@ -268,7 +268,7 @@
         },
         {
           "type": "text",
-          "value": "Nothing exemplifies the specialist better than the cucumber. <strong>As cool as a cucumber</strong> is the paragon specialist."
+          "value": "Nothing exemplifies the specialist better than the cucumber. <strong>“As cool as a cucumber”</strong> is the paragon specialist."
         },
         {
           "type": "img",
@@ -280,7 +280,7 @@
         },
         {
           "type": "text",
-          "value": "Cucumber (or as I learned that it sometimes was referred to as “cowcumber”) doesn’t even crack the top ten in usage for any other adjective. On the other hand, you have <strong>hell</strong> which is a top-10 noun for 17 different adjectives."
+          "value": "Cucumber (or as I learned that it sometimes was referred to as “cowcumber”) doesn’t even crack the top ten in usage for any other adjective. On the other hand, you have the noun hell, which is a top-10 noun for 17 different adjectives."
         },
         {
           "type": "text",
@@ -375,7 +375,7 @@
         },
         {
           "type": "text",
-          "value": "In fiction, a child has become shorthand for two things; being defenseless and wholesome."
+          "value": "In fiction, a child has become shorthand for two things; being defenseless and wholesome. The scale tips towards the defenseless side with the highest usage being helpless and innocent."
         },
         {
           "type": "Child",
@@ -383,7 +383,7 @@
         },
         {
           "type": "text",
-          "value": "The scale tips towards the defenseless side with the highest usage being helpless and innocent. Interestingly, child is still just second in usage in both of those adjectives to the even more defenseless baby."
+          "value": "Interestingly, child is still just second in usage in both of those adjectives to the even more defenseless baby."
         },
         {
           "type": "h3",
@@ -403,7 +403,7 @@
         },
         {
           "type": "text",
-          "value": "<strong>As hot as hell</strong> makes sense, if you subscribe to the religious imagery. But as cute as hell? As sexy as hell? Similes usually work because the noun possesses the quality. Hell often functions more as an amplifier."
+          "value": "<strong>“As hot as hell”</strong> makes sense, if you subscribe to the religious imagery. But as cute as hell? As sexy as hell? Similes usually work because the noun possesses the quality. Hell often functions more as an amplifier."
         },
         {
           "type": "text",
@@ -411,7 +411,7 @@
         },
         {
           "type": "blockquote",
-          "value": "“She looks like an old harpy but thinks she’s <strong>sexy as hell.”</strong>"
+          "value": "“She looks like an old harpy but thinks she’s <span class=underline-ground>sexy</span> as <span class=underline-vehicle>hell</span>.”</strong>"
         },
         {
           "type": "img",
@@ -427,7 +427,7 @@
         },
         {
           "type": "blockquote",
-          "value": "“‘Any woman with eyes like hers gets a reputation for being <strong>as sexy as hell,</strong> old boy.’”"
+          "value": "“‘Any woman with eyes like hers gets a reputation for being as  <span class=underline-ground>sexy</span> as  <span class=underline-vehicle>hell</span>, old boy.’”"
         },
         {
           "type": "text",
@@ -456,7 +456,7 @@
         },
         {
           "type": "blockquote",
-          "value": "“He looks about <strong>as happy as a dad at a Taylor Swift concert</strong>, but at least he’s in control of his rage.”"
+          "value": "“He looks about as  <span class=underline-ground>happy</span> as  <span class=underline-vehicle>a dad at a Taylor Swift concert</span>, but at least he’s in control of his rage.”"
         },
         {
           "type": "text",
