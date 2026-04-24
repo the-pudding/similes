@@ -1,6 +1,7 @@
 <script>
 	import Button from "$components/ui/Button.svelte";
 	import data from "$data/dry.csv";
+	import Flower from "$svg/button-flower.svg";
 
 	let { example, note, responses, images } = $props();
 
@@ -47,7 +48,11 @@
 				/>
 			</p>
 			<!-- <p class="note"><small><em>Note: {@html note}</em></small></p> -->
-			<div class="submit"><Button onclick={submit}>Submit</Button></div>
+			<div class="submit">
+				<span>{@html Flower}</span><Button onclick={submit}>Submit</Button><span
+					>{@html Flower}</span
+				>
+			</div>
 		</div>
 	{:else if phase === "result"}
 		<div class="result">
@@ -120,6 +125,7 @@
 	.submit {
 		display: flex;
 		justify-content: center;
+		margin-top: 2rem;
 	}
 
 	.note {
@@ -167,6 +173,12 @@
 	.chip-count {
 		font-size: var(--12px);
 		color: var(--color-gray-500);
+	}
+
+	.submit span {
+		display: inline-block;
+		width: 2rem;
+		margin: 0 0.5rem;
 	}
 
 	/* These are the falling pages that curve down from topper */

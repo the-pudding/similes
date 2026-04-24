@@ -37,13 +37,13 @@
 	--color-focus: var(--color-gray-500);
 	--color-mark: var(--color-yellow);
 	--color-selection: var(--color-gray-300);
-	--color-border: var(--color-gray-300);
+	--color-border: var(--color-adjusted-black);
 	--color-button-fg-primary: var(--color-black);
 	--color-button-bg-primary: var(--color-gold);
 	--color-button-fg-secondary: var(--color-white);
 	--color-button-bg-secondary: var(--color-gray-500);
-	--color-input-bg: var(--color-gray-50);
-	--color-input-fg: var(--color-gray-900);
+	--color-input-bg: var(--color-adjusted-white);
+	--color-input-fg: var(--color-adjusted-black);
 	--color-placeholder: var(--color-gray-500);
 
 
@@ -154,8 +154,8 @@ details .content {
 
 .underline-tenor {
 	text-decoration: underline;
-	text-decoration-thickness: 4px;
-	text-underline-offset: 4px;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 2px;
 	text-decoration-skip-ink: none;
 	text-decoration-color: var(--color-gold);
 
@@ -163,8 +163,8 @@ details .content {
 
 .underline-ground {
 	text-decoration: underline;
-	text-decoration-thickness: 4px;
-	text-underline-offset: 4px;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 2px;
 	text-decoration-skip-ink: none;
 	text-decoration-color: var(--color-green);
 
@@ -172,8 +172,8 @@ details .content {
 
 .underline-vehicle {
 	text-decoration: underline;
-	text-decoration-thickness: 4px;
-	text-underline-offset: 4px;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 2px;
 	text-decoration-skip-ink: none;
 	text-decoration-color: var(--color-purple);
 
@@ -181,8 +181,8 @@ details .content {
 
 .underline-tenor-light {
 	text-decoration: underline;
-	text-decoration-thickness: 4px;
-	text-underline-offset: 4px;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 2px;
 	text-decoration-skip-ink: none;
 	text-decoration-color: var(--color-gold-light);
 
@@ -190,8 +190,8 @@ details .content {
 
 .underline-ground-light {
 	text-decoration: underline;
-	text-decoration-thickness: 4px;
-	text-underline-offset: 4px;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 2px;
 	text-decoration-skip-ink: none;
 	text-decoration-color: var(--color-green-light);
 
@@ -199,8 +199,8 @@ details .content {
 
 .underline-vehicle-light {
 	text-decoration: underline;
-	text-decoration-thickness: 4px;
-	text-underline-offset: 4px;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 2px;
 	text-decoration-skip-ink: none;
 	text-decoration-color: var(--color-purple-light);
 

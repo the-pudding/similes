@@ -2,11 +2,15 @@
 	import { Plot, BarY, RuleY, AxisX } from "svelteplot";
 	import { chartData } from "$runes/misc.svelte.js";
 	import { hex } from "$runes/misc.svelte.js";
+	import { range } from "d3";
 
 	const maxToShow = 30;
 	const x = "vehicle";
 	const y = "count";
 
+	const filler = range(16)
+		.map(() => "&nbsp;")
+		.join("");
 	let data = $derived(
 		chartData.shape.filter((d, i) => d.ground === "dry").slice(0, maxToShow)
 	);
@@ -16,9 +20,7 @@
 	<div class="chart-title">
 		<strong
 			>As <span class="underline-ground-light">dry</span> as
-			<span class="underline-vehicle-light"
-				>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
-			></strong
+			<span class="underline-vehicle-light">{@html filler}</span></strong
 		>
 	</div>
 	{#if data.length}

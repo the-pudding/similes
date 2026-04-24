@@ -21,7 +21,7 @@
 	}
 
 	.inner {
-		padding: 0;
+		padding: 2rem;
 	}
 
 	ul {
