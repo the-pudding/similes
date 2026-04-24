@@ -3,7 +3,7 @@
 </script>
 
 <div class="c">
-	<div class="inner border-decorative border-1">
+	<div class="inner">
 		<ul>
 			{#each terms as { term, description }}
 				<li><span>{term}</span> &rarr; {description}</li>
@@ -17,7 +17,6 @@
 <style>
 	.c {
 		font-family: var(--font-sans);
-		color: var(--color-adjusted-black);
 		margin: 2rem auto;
 	}
 
@@ -29,10 +28,6 @@
 		list-style-type: none;
 		padding-left: 0;
 	}
-
-	/* .inner {
-		padding: 2.5rem;
-	} */
 
 	p {
 		font-size: var(--24px);
