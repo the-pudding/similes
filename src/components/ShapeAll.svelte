@@ -83,6 +83,7 @@
 		flex-wrap: wrap;
 		gap: 2rem 1rem;
 		font-family: var(--font-sans);
+		padding: 0 1rem;
 	}
 
 	.chart {
