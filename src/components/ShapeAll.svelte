@@ -88,8 +88,7 @@
 	}
 
 	.chart {
-		/* width: calc(10% - 1rem); */
-		width: 150px;
+		width: calc(33.33% - 1rem);
 		position: relative;
 	}
 
@@ -102,5 +101,11 @@
 		font-weight: bold;
 		font-family: var(--font-sans);
 		text-decoration-thickness: 2px;
+	}
+
+	@media (min-width: 550px) {
+		.chart {
+			width: 150px;
+		}
 	}
 </style>

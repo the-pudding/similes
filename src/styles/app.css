@@ -80,7 +80,7 @@ h1 {
 h2 {
 	z-index: 3;
 	position: relative;
-	font-size: var(--36px, 36px);
+	font-size: var(--24px, 24px);
 }
 
 h3 {
@@ -328,7 +328,6 @@ img.section-illo {
 	position: relative;
 	width: 100%;
 	max-width: 1000px;
-	margin-bottom: -80px;
 	margin-top: 0;
 }
 
@@ -337,17 +336,15 @@ img.section-illo {
 }
 /* Inline illos for 4 nouns */
 img.img-cat, img.img-child{
-	float: right;
 	max-width: 250px;
+	float: right;
 	margin-right: calc(50vw - var(--col-width));
-	/* display: none; */
 }
 
 img.img-stone, img.img-hell {
-	float: left;
 	max-width: 250px;
+	float: left;
 	margin-left: calc(50vw - var(--col-width));
-	/* display: none; */
 }
 
 #specific img:last-of-type {
@@ -422,6 +419,16 @@ img.border-decorative {
 	section {
 		padding-bottom: 6rem;
 	}
+
+	h2 {
+		font-size: var(--36px, 36px);
+	}
+
+	#adjectives img:nth-of-type(1),
+	#nouns img:nth-of-type(1),
+	#irony img:nth-of-type(1){
+		margin-bottom: -80px;
+	}
 }
 @media screen and (max-width: 1000px) {
 	#adjectives::before,
@@ -429,7 +436,18 @@ img.border-decorative {
 	#nouns::before{
 		display: none;
 	}
+
+	img.img-stone, img.img-hell {
+		float: none;
+		margin: 0 auto;
+	}
+
+	img.img-cat, img.img-child{
+		float: none;
+		margin: 0 auto;
+	}
 }
+
 @media screen and (max-width: 900px) {
 	#intro > img:nth-of-type(1){
 		display: block;
