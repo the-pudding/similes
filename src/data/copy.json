@@ -57,11 +57,11 @@
         },
         {
           "type": "text",
-          "value": "I pulled every simile in the form <strong>“as ___ as ___”</strong> from tens of thousands of books for the top 500 most common adjectives."
+          "value": "Similes are all around us. But, if you haven’t considered this figure of speech since grade school, here’s a refresher: similes compare two distinct things, often using “like” or “as.”"
         },
         {
           "type": "text",
-          "value": "Maybe you haven’t considered the simile since grade school, so here is a pop-quiz to get you in a writer’s mindset: <strong>Fill in the blank.</strong>"
+          "value": "To put you in a writer’s mindset, fill in the blank of the simile below."
         },
         {
           "type": "Game",
@@ -86,6 +86,10 @@
               }
             ]
           }
+        },
+        {
+          "type": "text",
+          "value": "I pulled every simile in the form <strong>“as ___ as ___”</strong> from tens of thousands of books for the top 500 most common adjectives."
         },
         {
           "type": "text",
@@ -193,7 +197,7 @@
         },
         {
           "type": "blockquote",
-          "value": "“In the doorway stood Kristen, Dylan, and Alicia, looking <strong>as <span class=underline-ground-light>stunned</span> as <span class=underline-vehicle-light>Taylor Swift during the 2009 VMAs when Kanye stole her acceptance speech.</span></strong>”"
+          "value": "“You looked as <span class=underline-ground-light>surprised</span> as <span class=underline-vehicle-light>a senator who’s passed a lie detector test</span>.”"
         },
         {
           "type": "text",
@@ -245,7 +249,7 @@
         },
         {
           "type": "text",
-          "value": "Plenty of these idioms have endured the test of time, like <strong>“as busy as a bee”</strong> or <strong>“fit as a fiddle,”</strong> though many have fallen out of fashion in recent decades, like <strong>“as drunk as a lord”</strong> or <strong>“as rich as Croesus.”</strong>"
+          "value": "Plenty of these idioms have endured the test of time, like “as <span class=underline-ground-light>busy</span> as a <span class=underline-vehicle-light>bee</span>” or “as <span class=underline-ground-light>fit</span> as a <span class=underline-vehicle-light>fiddle</span>,” though many have fallen out of fashion in recent decades, like “as <span class=underline-ground-light>drunk</span> as a <span class=underline-vehicle-light>lord</span>” or “as <span class=underline-ground-light>rich</span> as <span class=underline-vehicle-light>Croesus</span>.”"
         }
       ]
     },
@@ -262,11 +266,11 @@
         },
         {
           "type": "h2",
-          "value": "Specialist and Generalists"
+          "value": "Specialists and Generalists"
         },
         {
           "type": "text",
-          "value": "Now let’s flip it around and look at similes from the noun’s perspective. Some nouns are wielded as a common comparison for dozens of different adjectives (generalists), while some are uniquely tied to a single quality (specialists)."
+          "value": "Now let’s flip it around. While most adjectives lean on a small set of go-to comparisons, the nouns do the opposite work: a handful get reused constantly, often to make different points. Some are wielded as comparisons for dozens of different adjectives (generalists), while others are uniquely tied to a single quality (specialists)."
         },
         {
           "type": "text",
@@ -296,7 +300,7 @@
         },
         {
           "type": "text",
-          "value": "Most nouns land somewhere in the middle. Sometimes because they have some reliable pairings because of distinct qualities (e.g., glass is smooth, fragile, transparent) or because of conceptually similar adjectives (e.g., the sun is bright, brilliant, radiant)."
+          "value": "Most nouns are closer to being generalists, sometimes because they have some reliable pairings because of distinct qualities (e.g., glass is smooth, fragile, transparent) or because of conceptually similar adjectives (e.g., the sun is bright, brilliant, radiant)."
         },
         {
           "type": "text",
@@ -313,11 +317,11 @@
         },
         {
           "type": "text",
-          "value": "Let’s focus on four nouns that each reveal something different about how writers use comparisons."
+          "value": "Let’s focus on four of the generalist nouns that each reveal something different about how writers use comparisons."
         },
         {
           "type": "h3",
-          "value": "Cat"
+          "value": "As ___ as a Cat"
         },
         {
           "type": "img",
@@ -329,7 +333,7 @@
         },
         {
           "type": "text",
-          "value": "Cat is a noun that covers serious ground. Writers use it to mean everything from graceful to weak."
+          "value": "Cat is a noun that is used to represent all sorts of different qualities. Writers use it to mean everything from graceful to weak."
         },
         {
           "type": "text",
@@ -341,7 +345,7 @@
         },
         {
           "type": "h3",
-          "value": "Stone"
+          "value": "As ___ as a Stone"
         },
         {
           "type": "img",
@@ -365,7 +369,7 @@
         },
         {
           "type": "h3",
-          "value": "Child"
+          "value": "As ___ as a Child"
         },
         {
           "type": "img",
@@ -389,7 +393,7 @@
         },
         {
           "type": "h3",
-          "value": "Hell"
+          "value": "As ___ as a Hell"
         },
         {
           "type": "img",
@@ -450,19 +454,23 @@
         },
         {
           "type": "h2",
-          "value": "The Funny Ones"
+          "value": "The Ironic Ones"
         },
         {
           "type": "text",
-          "value": "But not all similes are used as intended. Take the classic expression “as <span class=underline-ground-light>clear</span> as <span class=underline-vehicle-light>mud</span>.” It inverts the expectation by using a contrasting quality of the noun, often for humor. This becomes more of an art form as the comparison gets more specific."
+          "value": "Not all similes play it straight. Take the classic “as <span class=underline-ground-light>clear</span> as <span class=underline-vehicle-light>mud</span>.” It inverts the expectation by using a contrasting quality of the noun, usually for humor. The artistry deepens as the comparison gets more specific."
         },
         {
           "type": "blockquote",
-          "value": "“He looks about as  <span class=underline-ground-light>happy</span> as  <span class=underline-vehicle-light>a dad at a Taylor Swift concert</span>, but at least he’s in control of his rage.”"
+          "value": "“He looks about as <span class=underline-ground-light>happy</span> as <span class=underline-vehicle-light>a dad at a Taylor Swift concert</span>, but at least he’s in control of his rage.”"
         },
         {
           "type": "text",
-          "value": "While these are a small subset of the dataset, a kind of plamigerent counterculture of the simile world, they often paint a more vivid and memorable picture. These tend to work best with positive-sentiment adjectives to set up a punch line."
+          "value": "<em>(As a dad, this would be me.) </em>"
+        },
+        {
+          "type": "text",
+          "value": "While these are a small subset of the dataset, a kind of plamigerent counterculture of the simile world, they often paint more vivid and memorable pictures. They tend to work best with positive-sentiment adjectives, setting up the noun as the punch line."
         },
         {
           "type": "Irony",

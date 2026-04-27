@@ -31,7 +31,7 @@
 						<div class="inner {`border-decorative border-${(i % 3) + 1}`}">
 							<blockquote>{@html quote}</blockquote>
 							<div class="source">
-								&mdash; <em>{title}</em>, {year}
+								&mdash; <cite>{title}</cite>, {year}
 							</div>
 						</div>
 					</div>

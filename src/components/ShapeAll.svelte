@@ -50,10 +50,16 @@
 </script>
 
 <div class="c graphic">
-	{#each byGround as { ground, data }}
+	{#each byGround as { ground, data }, i}
+		{@const prefix = i === 0 ? "As " : ""}
+		{@const suffix1 = i === 0 ? " a " : ""}
+		{@const suffix2 = i === 0 ? "___" : ""}
 		{@const textData = data.slice(0, 1)}
 		<div class="chart">
-			<div class="chart-title underline-ground-light">{ground}</div>
+			<div class="chart-title">
+				{prefix}<span class="underline-ground-light">{ground}</span
+				>{suffix1}<span class="underline-vehicle-light">{suffix2}</span>
+			</div>
 			<Plot
 				x={{ axis: false, insetLeft: 0 }}
 				y={{ axis: false, insetTop: 10, insetBottom: 16 }}
@@ -101,6 +107,8 @@
 		font-weight: bold;
 		font-family: var(--font-sans);
 		text-decoration-thickness: 2px;
+		width: 100%;
+		text-align: center;
 	}
 
 	@media (min-width: 550px) {

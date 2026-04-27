@@ -2,7 +2,7 @@
 	import { getContext } from "svelte";
 	import CMS from "$components/helpers/CMS.svelte";
 	import Footer from "$components/Footer.svelte";
-	import TopperImages from "$components/TopperImages.svelte"
+	import TopperImages from "$components/TopperImages.svelte";
 	import Game from "$components/Game.svelte";
 	import Quotes from "$components/Quotes.svelte";
 	import Explainer from "$components/Explainer.svelte";
@@ -90,9 +90,11 @@
 </script>
 
 <div class="c">
-	<CMS {body} {components}></CMS>
+	<article>
+		<CMS {body} {components}></CMS>
+	</article>
 </div>
 
 <svelte:boundary onerror={(e) => console.error(e)}>
-	<!-- <Footer recirc={true} /> -->
+	<Footer recirc={true} />
 </svelte:boundary>

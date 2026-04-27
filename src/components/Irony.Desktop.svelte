@@ -64,7 +64,7 @@
 		font-family: var(--font-sans);
 		gap: 0.75rem;
 		overflow: hidden;
-		cursor: pointer;
+		cursor: default;
 		user-select: none;
 		padding: 1rem 0 2rem 0;
 	}

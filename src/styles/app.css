@@ -116,7 +116,7 @@ p, li, details, blockquote {
 	line-height: 1.6;
 }
 
-section > ul:not(.graphic) {
+article section > ul:not(.graphic) {
 	padding: 0 3rem;
 }
 
@@ -158,6 +158,7 @@ details .content {
 	text-underline-offset: 2px;
 	text-decoration-skip-ink: none;
 	text-decoration-color: var(--color-gold);
+	color: var(--color-gold);
 
 }
 
@@ -167,6 +168,7 @@ details .content {
 	text-underline-offset: 2px;
 	text-decoration-skip-ink: none;
 	text-decoration-color: var(--color-green);
+	color: var(--color-green);
 
 }
 
@@ -176,6 +178,7 @@ details .content {
 	text-underline-offset: 2px;
 	text-decoration-skip-ink: none;
 	text-decoration-color: var(--color-purple);
+	color: var(--color-purple);
 
 }
 
@@ -185,6 +188,7 @@ details .content {
 	text-underline-offset: 2px;
 	text-decoration-skip-ink: none;
 	text-decoration-color: var(--color-gold-light);
+	color: var(--color-gold-light);
 
 }
 
@@ -194,6 +198,7 @@ details .content {
 	text-underline-offset: 2px;
 	text-decoration-skip-ink: none;
 	text-decoration-color: var(--color-green-light);
+	color: var(--color-green-light);
 
 }
 
@@ -203,6 +208,7 @@ details .content {
 	text-underline-offset: 2px;
 	text-decoration-skip-ink: none;
 	text-decoration-color: var(--color-purple-light);
+	color: var(--color-purple-light);
 
 }
 
@@ -214,11 +220,11 @@ details .content {
 	font-family: var(--font-sans);
 }
 
-section {
+article section {
 	padding-bottom: 4rem;
 }
 
-section > *:not(.graphic) {
+article section > *:not(.graphic) {
 	max-width: var(--col-width);
 	margin: 1rem auto;
 	padding: 0 1rem;
@@ -286,6 +292,7 @@ img.section-illo {
 	position: relative;
 	background: var(--color-adjusted-black);
 	color: var(--color-adjusted-white);
+	--color-selection: var(--color-gray-600);
 }
 /* These are needed for the section illo bgs to help blend page color transitions */
 #adjectives::before,
@@ -439,7 +446,7 @@ img.border-decorative {
 
 	#adjectives img:nth-of-type(1),
 	#nouns img:nth-of-type(1),
-	#irony img:nth-of-type(1){
+	{
 		margin-bottom: -80px;
 	}
 }
