@@ -1,7 +1,9 @@
-import"../chunks/DsnmJJEf.js";import{aq as m,$ as p,a1 as M,t as _,K as l,a0 as u,ar as B,Z as L,F as D,_ as E,a2 as O,M as q,aH as K,ag as A,bb as Y,L as Q}from"../chunks/B92FeS2C.js";import{b as v,f,c as R,t as Z}from"../chunks/BvRfo2l_.js";import{a as w,f as X,e as P}from"../chunks/BwpuD7DB.js";import{e as z,i as F,c as ee,d as te}from"../chunks/C2Vtx1Y2.js";import{e as ne}from"../chunks/DD47trRG.js";import{c as ae,b as se,i as oe}from"../chunks/DxeqRFj7.js";import{s as re,p as j}from"../chunks/C2wkIQ8G.js";import{s as J}from"../chunks/DGiPyN0h.js";import{c as ie,C as le,a as ce}from"../chunks/JZgaW3xB.js";import{b as he}from"../chunks/F4IMGVJU.js";import"../chunks/HvopnIf4.js";var ue=f('<section id="demo-link"><h2>Link</h2> <p><a href="elements">Default element styles demo</a></p> <p><a href="fonts">Pudding-hosted font previews</a></p> <p><a href="ui">BitsUI styled components</a></p></section>');function de(r){var t=ue();v(r,t)}var pe=f('<section id="demo-image"><h2>Image</h2> <p>img tag</p> <img src="../assets/demo/test.jpg" alt="cat" class="svelte-b56t42"/> <p>background image</p> <div class="svelte-b56t42"></div></section>');function me(r){var t=pe();v(r,t)}var ve=f('<section id="demo-element"><h2>Dynamic Svelte Element</h2> <!></section>');function ge(r){const t=[{tag:"h3",text:"I am a h3 tag."},{tag:"p",text:"I am p tag."}];var n=ve(),e=m(p(n),2);z(e,17,()=>t,F,(i,s)=>{let c=()=>l(s).tag,d=()=>l(s).text;var g=R(),a=M(g);ne(a,c,!1,(o,h)=>{var y=Z();_(()=>w(y,d())),v(h,y)}),v(i,g)}),u(n),v(r,n)}var fe=f("<p> </p>");function ye(r,t){var n=fe(),e=p(n);u(n),_(()=>w(e,`I am component A and my favorite number is ${t.number??""}.`)),v(r,n)}var be=f("<p> </p>");function we(r,t){var n=be(),e=p(n);u(n),_(()=>w(e,`I am component B and my name is ${t.name??""}.`)),v(r,n)}var xe=f('<section id="demo-component"><h2>Dynamic Svelte Component</h2> <!></section>');function ke(r){const t={A:ye,B:we},n=[{component:"A",number:42},{component:"B",name:"Russell"}];var e=xe(),i=m(p(e),2);z(i,17,()=>n,F,(s,c)=>{const d=B(()=>t[l(c).component]);var g=R(),a=M(g);ae(a,()=>l(d),(o,h)=>{h(o,re(()=>l(c)))}),v(s,g)}),u(e),v(r,e)}var _e=f("<div><!></div>");function Ie(r,t){L(t,!0);let n=j(t,"root",3,null),e=j(t,"top",3,0),i=j(t,"bottom",3,0),s=j(t,"increments",3,100),c=j(t,"value",15,void 0),d=[],g=[],a=[],o=[],h;function y(){let b=0,k=0;for(let S=0;S<d.length;S++)d[S]>b&&(b=d[S],k=S);b>0?c(k):c(void 0)}function I(b,k){const S=G=>{G[0].isIntersecting;const U=G[0].intersectionRatio;d[k]=U,y()},H=e()?e()*-1:0,W=i()?i()*-1:0,V=`${H}px 0px ${W}px 0px`,N={root:n(),rootMargin:V,threshold:g};o[k]&&o[k].disconnect();const $=new IntersectionObserver(S,N);$.observe(b),o[k]=$}function T(){a.length&&a.forEach(I)}D(()=>{for(let b=0;b<s()+1;b++)g.push(b/s());a=h.querySelectorAll(":scope > *:not(iframe)"),T()}),D(()=>{e(),i(),T()});var x=_e(),C=p(x);J(C,()=>t.children??O),u(x),se(x,b=>h=b,()=>h),v(r,x),E()}var Se=f('<div><p class="svelte-1sxgmm9"> </p></div>'),qe=f('<section id="scrolly"><h2 class="svelte-1sxgmm9">Scrolly <span> </span></h2> <div class="spacer svelte-1sxgmm9"></div> <!> <div class="spacer svelte-1sxgmm9"></div></section>');function Te(r){let t=A(void 0);var n=qe(),e=p(n),i=m(p(e)),s=p(i,!0);u(i),u(e);var c=m(e,4);Ie(c,{get value(){return l(t)},set value(d){q(t,d,!0)},children:(d,g)=>{var a=R(),o=M(a);z(o,16,()=>[0,1,2,3,4],F,(h,y,I)=>{const T=B(()=>l(t)===I);var x=Se();let C;var b=p(x),k=p(b,!0);u(b),u(x),_(()=>{C=ee(x,1,"step svelte-1sxgmm9",null,C,{active:l(T)}),w(k,y)}),v(h,x)}),v(d,a)},$$slots:{default:!0}}),K(2),u(n),_(()=>w(s,l(t)||"-")),v(r,n)}const je=`{
+import"../chunks/DsnmJJEf.js";import{aq as m,$ as p,a1 as M,t as _,K as l,a0 as u,ar as B,Z as L,F as D,_ as E,a2 as O,M as q,aH as K,ag as A,bb as Y,L as Q}from"../chunks/B92FeS2C.js";import{b as v,f,c as R,t as Z}from"../chunks/BvRfo2l_.js";import{a as w,f as X,e as P}from"../chunks/BwpuD7DB.js";import{e as z,i as F,c as ee,d as te}from"../chunks/C2Vtx1Y2.js";import{e as ne}from"../chunks/DD47trRG.js";import{c as ae,b as se,i as oe}from"../chunks/DxeqRFj7.js";import{s as re,p as j}from"../chunks/C2wkIQ8G.js";import{s as J}from"../chunks/DGiPyN0h.js";import{c as ie,C as le,a as ce}from"../chunks/PIPTANm9.js";import{b as he}from"../chunks/C_n5ggIA.js";import"../chunks/HvopnIf4.js";var ue=f('<section id="demo-link"><h2>Link</h2> <p><a href="elements">Default element styles demo</a></p> <p><a href="fonts">Pudding-hosted font previews</a></p> <p><a href="ui">BitsUI styled components</a></p></section>');function de(r){var t=ue();v(r,t)}var pe=f('<section id="demo-image"><h2>Image</h2> <p>img tag</p> <img src="../assets/demo/test.jpg" alt="cat" class="svelte-b56t42"/> <p>background image</p> <div class="svelte-b56t42"></div></section>');function me(r){var t=pe();v(r,t)}var ve=f('<section id="demo-element"><h2>Dynamic Svelte Element</h2> <!></section>');function ge(r){const t=[{tag:"h3",text:"I am a h3 tag."},{tag:"p",text:"I am p tag."}];var n=ve(),e=m(p(n),2);z(e,17,()=>t,F,(i,s)=>{let c=()=>l(s).tag,d=()=>l(s).text;var g=R(),a=M(g);ne(a,c,!1,(o,h)=>{var y=Z();_(()=>w(y,d())),v(h,y)}),v(i,g)}),u(n),v(r,n)}var fe=f("<p> </p>");function ye(r,t){var n=fe(),e=p(n);u(n),_(()=>w(e,`I am component A and my favorite number is ${t.number??""}.`)),v(r,n)}var be=f("<p> </p>");function we(r,t){var n=be(),e=p(n);u(n),_(()=>w(e,`I am component B and my name is ${t.name??""}.`)),v(r,n)}var xe=f('<section id="demo-component"><h2>Dynamic Svelte Component</h2> <!></section>');function ke(r){const t={A:ye,B:we},n=[{component:"A",number:42},{component:"B",name:"Russell"}];var e=xe(),i=m(p(e),2);z(i,17,()=>n,F,(s,c)=>{const d=B(()=>t[l(c).component]);var g=R(),a=M(g);ae(a,()=>l(d),(o,h)=>{h(o,re(()=>l(c)))}),v(s,g)}),u(e),v(r,e)}var _e=f("<div><!></div>");function Ie(r,t){L(t,!0);let n=j(t,"root",3,null),e=j(t,"top",3,0),i=j(t,"bottom",3,0),s=j(t,"increments",3,100),c=j(t,"value",15,void 0),d=[],g=[],a=[],o=[],h;function y(){let b=0,k=0;for(let S=0;S<d.length;S++)d[S]>b&&(b=d[S],k=S);b>0?c(k):c(void 0)}function I(b,k){const S=G=>{G[0].isIntersecting;const U=G[0].intersectionRatio;d[k]=U,y()},H=e()?e()*-1:0,W=i()?i()*-1:0,V=`${H}px 0px ${W}px 0px`,N={root:n(),rootMargin:V,threshold:g};o[k]&&o[k].disconnect();const $=new IntersectionObserver(S,N);$.observe(b),o[k]=$}function T(){a.length&&a.forEach(I)}D(()=>{for(let b=0;b<s()+1;b++)g.push(b/s());a=h.querySelectorAll(":scope > *:not(iframe)"),T()}),D(()=>{e(),i(),T()});var x=_e(),C=p(x);J(C,()=>t.children??O),u(x),se(x,b=>h=b,()=>h),v(r,x),E()}var Se=f('<div><p class="svelte-1sxgmm9"> </p></div>'),qe=f('<section id="scrolly"><h2 class="svelte-1sxgmm9">Scrolly <span> </span></h2> <div class="spacer svelte-1sxgmm9"></div> <!> <div class="spacer svelte-1sxgmm9"></div></section>');function Te(r){let t=A(void 0);var n=qe(),e=p(n),i=m(p(e)),s=p(i,!0);u(i),u(e);var c=m(e,4);Ie(c,{get value(){return l(t)},set value(d){q(t,d,!0)},children:(d,g)=>{var a=R(),o=M(a);z(o,16,()=>[0,1,2,3,4],F,(h,y,I)=>{const T=B(()=>l(t)===I);var x=Se();let C;var b=p(x),k=p(b,!0);u(b),u(x),_(()=>{C=ee(x,1,"step svelte-1sxgmm9",null,C,{active:l(T)}),w(k,y)}),v(h,x)}),v(d,a)},$$slots:{default:!0}}),K(2),u(n),_(()=>w(s,l(t)||"-")),v(r,n)}const je=`{
   "meta": {
     "title": "Comparisons as Predictable as the Sunrise",
-    "description": "An analysis of 200,000 similes from popular fiction."
+    "description": "An analysis of 200,000 similes from popular fiction.",
+    "url": "https://pudding.cool/2026/05/similes",
+    "keywords": "simile, fiction, book, figurative, comparison"
   },
   "body": [
     {
@@ -268,7 +270,7 @@ import"../chunks/DsnmJJEf.js";import{aq as m,$ as p,a1 as M,t as _,K as l,a0 as 
         },
         {
           "type": "text",
-          "value": "Nothing exemplifies the specialist better than the cucumber. <strong>“As cool as a cucumber”</strong> is the paragon specialist."
+          "value": "Nothing exemplifies the specialist better than the cucumber. “As <span class=underline-ground>cool</span> as a <span class=underline-vehicle>cucumber</span>”</strong> is the paragon specialist."
         },
         {
           "type": "img",
@@ -280,7 +282,7 @@ import"../chunks/DsnmJJEf.js";import{aq as m,$ as p,a1 as M,t as _,K as l,a0 as 
         },
         {
           "type": "text",
-          "value": "Cucumber (or as I learned that it sometimes was referred to as “cowcumber”) doesn’t even crack the top ten in usage for any other adjective. On the other hand, you have the noun hell, which is a top-10 noun for 17 different adjectives."
+          "value": "Cucumber (or as I learned that it sometimes was referred to as <a href=https://historyfacts.com/world-history/fact/cucumbers-used-to-be-called-cowcumbers/ target=_blank rel=noreferrer>cowcumber</a>) doesn’t even crack the top ten in usage for any other adjective. On the other hand, you have the noun hell, which is a top-10 noun for 17 different adjectives."
         },
         {
           "type": "text",
@@ -298,7 +300,7 @@ import"../chunks/DsnmJJEf.js";import{aq as m,$ as p,a1 as M,t as _,K as l,a0 as 
         },
         {
           "type": "text",
-          "value": "But like most things, the interesting stuff lies at the extremes. Certain nouns are so tightly coupled with a single adjective that they’ve become idioms. While others are so versatile or overused they’ve become plamigerent."
+          "value": "But like most things, the interesting stuff lies at the extremes. Certain nouns are so tightly coupled with a single adjective that they’ve become idioms. While others are so versatile or overused they’ve become generic."
         }
       ]
     },
@@ -403,7 +405,7 @@ import"../chunks/DsnmJJEf.js";import{aq as m,$ as p,a1 as M,t as _,K as l,a0 as 
         },
         {
           "type": "text",
-          "value": "<strong>“As hot as hell”</strong> makes sense, if you subscribe to the religious imagery. But as cute as hell? As sexy as hell? Similes usually work because the noun possesses the quality. Hell often functions more as an amplifier."
+          "value": "“As <span class=underline-ground>hot</span> as <span class=underline-vehicle>hell</span>” makes sense, if you subscribe to the religious imagery. But as cute as hell? As sexy as hell? Similes usually work because the noun possesses the quality. Hell often functions more as an amplifier."
         },
         {
           "type": "text",
@@ -452,15 +454,15 @@ import"../chunks/DsnmJJEf.js";import{aq as m,$ as p,a1 as M,t as _,K as l,a0 as 
         },
         {
           "type": "text",
-          "value": "But not all similes are used as intended. Take the classic expression <strong>“as clear as mud.”</strong> It inverts the expectation by using a contrasting quality of the noun, often for humor. This becomes more of an art form as the comparison gets more specific."
+          "value": "But not all similes are used as intended. Take the classic expression “as <span class=underline-ground-light>clear</span> as <span class=underline-vehicle-light>mud</span>.” It inverts the expectation by using a contrasting quality of the noun, often for humor. This becomes more of an art form as the comparison gets more specific."
         },
         {
           "type": "blockquote",
-          "value": "“He looks about as  <span class=underline-ground>happy</span> as  <span class=underline-vehicle>a dad at a Taylor Swift concert</span>, but at least he’s in control of his rage.”"
+          "value": "“He looks about as  <span class=underline-ground-light>happy</span> as  <span class=underline-vehicle-light>a dad at a Taylor Swift concert</span>, but at least he’s in control of his rage.”"
         },
         {
           "type": "text",
-          "value": "While these are a small subset of the dataset, a kind of counter-culture of the simile world, they often paint a more vivid and memorable picture. These tend to work best with positive-sentiment adjectives to set up a punch line."
+          "value": "While these are a small subset of the dataset, a kind of plamigerent counterculture of the simile world, they often paint a more vivid and memorable picture. These tend to work best with positive-sentiment adjectives to set up a punch line."
         },
         {
           "type": "Irony",
