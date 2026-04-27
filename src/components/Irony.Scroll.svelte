@@ -66,7 +66,7 @@
 		overflow: hidden;
 		cursor: pointer;
 		user-select: none;
-		padding: 1.5rem 0;
+		padding: 1rem 0 2rem 0;
 	}
 
 	.example {
@@ -114,6 +114,7 @@
 	.example.is-visible {
 		opacity: 1;
 		transform: scale(1.2);
+		z-index: 1;
 	}
 
 	.example.is-visible .before {
@@ -126,16 +127,17 @@
 
 	.tooltip {
 		position: absolute;
-		top: 0;
+		bottom: 0;
 		left: 50%;
-		transform: translate(-50%, -100%);
+		transform: translate(-50%, 125%);
 		display: none;
 		font-size: var(--12px);
 		background: var(--color-adjusted-black);
-		padding: 0.5rem 0;
+		padding: 0.25rem 0;
 		line-height: 1;
 		width: 90vw;
 		text-align: center;
+		color: var(--color-adjusted-white);
 	}
 
 	.example.is-visible .tooltip {

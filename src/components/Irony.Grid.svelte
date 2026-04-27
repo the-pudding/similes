@@ -7,23 +7,44 @@
 			.groups(data, (d) => d.ground)
 			.map(([ground, items]) => ({
 				ground,
-				vehicles: [...new Set(items.map((d) => d.vehicle))],
+				vehicles: items.map((d) => ({
+					vehicle: d.vehicle,
+					title: d.title,
+					author: d.author
+				})),
 				count: items.length
 			}))
 			.sort((a, b) => d3.descending(a.count, b.count))
 	);
+
+	let activeTooltip = $state(null);
+
+	function toggleTooltip(id) {
+		activeTooltip = activeTooltip === id ? null : id;
+	}
 </script>
 
 <div class="c">
 	<div class="grid">
-		{#each grounds as { ground, vehicles }}
+		{#each grounds as { ground, vehicles }, gi}
 			<div class="ground">
 				<p class="ground-text">
 					as <span class="color-ground-light"><strong>{ground}</strong></span> as...
 				</p>
 				<ul>
-					{#each vehicles as vehicle}
-						<li class="color-vehicle-light"><strong>{vehicle}</strong></li>
+					{#each vehicles as { vehicle, title, author }, vi}
+						{@const id = `${gi}-${vi}`}
+						{@const isActive = activeTooltip === id}
+						<li class="color-vehicle-light" class:is-active={isActive}>
+							<button onclick={() => toggleTooltip(id)}>
+								&#9642; <strong>{vehicle}</strong>
+							</button>
+							{#if isActive}
+								<span class="tooltip">
+									<em>{title}</em>{#if author}&nbsp;by {author}{/if}
+								</span>
+							{/if}
+						</li>
 					{/each}
 				</ul>
 			</div>
@@ -32,6 +53,11 @@
 </div>
 
 <style>
+	.c {
+		max-width: var(--col-width);
+		margin: 0 auto;
+	}
+
 	.grid {
 		display: flex;
 		flex-wrap: wrap;
@@ -55,16 +81,26 @@
 
 	ul {
 		margin: 0;
-		list-style: disc;
+		padding: 0;
+		list-style-type: none;
 	}
 
 	li {
 		line-height: 1.325;
+		position: relative;
 	}
 
-	@media (min-width: 480px) {
-		.ground {
-			width: calc(50% - 1rem);
-		}
+	button {
+		all: unset;
+		cursor: pointer;
+		color: inherit;
+	}
+
+	.tooltip {
+		display: block;
+		font-size: var(--12px);
+		color: var(--color-adjusted-white);
+		padding: 0.25rem;
+		line-height: 1;
 	}
 </style>
