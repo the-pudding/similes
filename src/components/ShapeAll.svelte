@@ -81,13 +81,15 @@
 		max-width: var(--chart-max-width-lg);
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 		gap: 2rem 1rem;
 		font-family: var(--font-sans);
 		padding: 0 1rem;
 	}
 
 	.chart {
-		width: calc(10% - 1rem);
+		/* width: calc(10% - 1rem); */
+		width: 150px;
 		position: relative;
 	}
 

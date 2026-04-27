@@ -83,7 +83,7 @@
 		flex-direction: column;
 		/* align-items: center; */
 		justify-content: center;
-		padding: 5rem;
+		padding: 4rem 6rem;
 	}
 
 	.source {
@@ -93,5 +93,23 @@
 
 	p {
 		text-align: center;
+	}
+
+	blockquote {
+		position: relative;
+		font-size: var(--24px);
+		line-height: 1.325;
+	}
+
+	blockquote:before {
+		content: "“";
+		position: absolute;
+		top: 1.125rem;
+		right: 100%;
+		font-size: 4rem;
+		line-height: 0;
+		vertical-align: -0.5rem;
+		margin-right: 0.25rem;
+		color: var(--color-gold);
 	}
 </style>
