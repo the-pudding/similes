@@ -7,7 +7,7 @@
 	let data = $derived(chartData.irony);
 </script>
 
-<div class="graphic">
+<div class="c graphic">
 	<div class="scroll-view">
 		<Scroll {data}></Scroll>
 	</div>
@@ -17,7 +17,7 @@
 </div>
 
 <style>
-	.graphic{
+	.c {
 		position: relative;
 		z-index: 3;
 	}

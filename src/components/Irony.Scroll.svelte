@@ -1,9 +1,13 @@
 <script>
 	import { AnimationFrames } from "runed";
+	import useWindowDimensions from "$runes/useWindowDimensions.svelte.js";
+	let dimensions = new useWindowDimensions();
 
 	let { data } = $props();
 	let exampleEls = $state([]);
 	let activeIndex = $state(0);
+
+	let widthThreshold = $derived(dimensions.width / 25);
 
 	new AnimationFrames(() => {
 		const centerY = window.innerHeight / 2;
@@ -25,11 +29,14 @@
 
 <div class="c">
 	<div class="irony">
-		{#each data as { before, after, ground, vehicle, title, author }, i}
+		{#each data as { before, ground, vehicle, after, title, author }, i}
 			{@const afterText = after.length > 2 ? "..." : after}
+			{@const hide = vehicle.length > widthThreshold}
+
 			<div
 				class="example"
 				class:is-visible={i === activeIndex}
+				class:hide
 				bind:this={exampleEls[i]}
 			>
 				<span class="before">{before}</span>
@@ -38,6 +45,11 @@
 				as<span class="vehicle color-vehicle-light"
 					>&nbsp;{vehicle}<span class="after">{afterText}</span></span
 				>
+				<div class="tooltip">
+					<span class="title"><em>{title}</em></span>
+					{#if author}by
+						<span class="author">{author}</span>{/if}
+				</div>
 			</div>
 		{/each}
 	</div>
@@ -50,8 +62,11 @@
 		flex-direction: column;
 		align-items: center;
 		font-family: var(--font-sans);
-		gap: 0.5rem;
+		gap: 0.75rem;
 		overflow: hidden;
+		cursor: pointer;
+		user-select: none;
+		padding: 1.5rem 0;
 	}
 
 	.example {
@@ -89,14 +104,11 @@
 	}
 
 	.after {
-		position: absolute;
-		left: 100%;
-		bottom: 0;
 		display: none;
-		color: var(--color-fg);
-		width: 2rem;
-		font-size: 0.8em;
-		font-weight: normal;
+	}
+
+	.example.hide {
+		display: none;
 	}
 
 	.example.is-visible {
@@ -110,5 +122,23 @@
 
 	.example.is-visible .after {
 		display: inline;
+	}
+
+	.tooltip {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -100%);
+		display: none;
+		font-size: var(--12px);
+		background: var(--color-adjusted-black);
+		padding: 0.5rem 0;
+		line-height: 1;
+		width: 90vw;
+		text-align: center;
+	}
+
+	.example.is-visible .tooltip {
+		display: block;
 	}
 </style>

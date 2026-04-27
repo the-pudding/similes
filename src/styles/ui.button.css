@@ -49,7 +49,7 @@
 }
 
 .bits-button[data-button-root][data-variant="default"]:hover {
-	background: oklch(from var(--bg) calc(l + 0.2) c h);
+	background: oklch(from var(--bg) calc(l + 0.1) c h);
 }
 
 .bits-button[data-button-root][data-variant="outline"] {

@@ -1,7 +1,9 @@
 {
   "meta": {
     "title": "Comparisons as Predictable as the Sunrise",
-    "description": "An analysis of 200,000 similes from popular fiction."
+    "description": "An analysis of 200,000 similes from popular fiction.",
+    "url": "https://pudding.cool/2026/05/similes",
+    "keywords": "simile, fiction, book, figurative, comparison"
   },
   "body": [
     {
@@ -268,7 +270,7 @@
         },
         {
           "type": "text",
-          "value": "Nothing exemplifies the specialist better than the cucumber. <strong>“As cool as a cucumber”</strong> is the paragon specialist."
+          "value": "Nothing exemplifies the specialist better than the cucumber. “As <span class=underline-ground>cool</span> as a <span class=underline-vehicle>cucumber</span>”</strong> is the paragon specialist."
         },
         {
           "type": "img",
@@ -280,7 +282,7 @@
         },
         {
           "type": "text",
-          "value": "Cucumber (or as I learned that it sometimes was referred to as “cowcumber”) doesn’t even crack the top ten in usage for any other adjective. On the other hand, you have the noun hell, which is a top-10 noun for 17 different adjectives."
+          "value": "Cucumber (or as I learned that it sometimes was referred to as <a href=https://historyfacts.com/world-history/fact/cucumbers-used-to-be-called-cowcumbers/ target=_blank rel=noreferrer>cowcumber</a>) doesn’t even crack the top ten in usage for any other adjective. On the other hand, you have the noun hell, which is a top-10 noun for 17 different adjectives."
         },
         {
           "type": "text",
@@ -298,7 +300,7 @@
         },
         {
           "type": "text",
-          "value": "But like most things, the interesting stuff lies at the extremes. Certain nouns are so tightly coupled with a single adjective that they’ve become idioms. While others are so versatile or overused they’ve become plamigerent."
+          "value": "But like most things, the interesting stuff lies at the extremes. Certain nouns are so tightly coupled with a single adjective that they’ve become idioms. While others are so versatile or overused they’ve become generic."
         }
       ]
     },
@@ -403,7 +405,7 @@
         },
         {
           "type": "text",
-          "value": "<strong>“As hot as hell”</strong> makes sense, if you subscribe to the religious imagery. But as cute as hell? As sexy as hell? Similes usually work because the noun possesses the quality. Hell often functions more as an amplifier."
+          "value": "“As <span class=underline-ground>hot</span> as <span class=underline-vehicle>hell</span>” makes sense, if you subscribe to the religious imagery. But as cute as hell? As sexy as hell? Similes usually work because the noun possesses the quality. Hell often functions more as an amplifier."
         },
         {
           "type": "text",
@@ -452,15 +454,15 @@
         },
         {
           "type": "text",
-          "value": "But not all similes are used as intended. Take the classic expression <strong>“as clear as mud.”</strong> It inverts the expectation by using a contrasting quality of the noun, often for humor. This becomes more of an art form as the comparison gets more specific."
+          "value": "But not all similes are used as intended. Take the classic expression “as <span class=underline-ground-light>clear</span> as <span class=underline-vehicle-light>mud</span>.” It inverts the expectation by using a contrasting quality of the noun, often for humor. This becomes more of an art form as the comparison gets more specific."
         },
         {
           "type": "blockquote",
-          "value": "“He looks about as  <span class=underline-ground>happy</span> as  <span class=underline-vehicle>a dad at a Taylor Swift concert</span>, but at least he’s in control of his rage.”"
+          "value": "“He looks about as  <span class=underline-ground-light>happy</span> as  <span class=underline-vehicle-light>a dad at a Taylor Swift concert</span>, but at least he’s in control of his rage.”"
         },
         {
           "type": "text",
-          "value": "While these are a small subset of the dataset, a kind of counter-culture of the simile world, they often paint a more vivid and memorable picture. These tend to work best with positive-sentiment adjectives to set up a punch line."
+          "value": "While these are a small subset of the dataset, a kind of plamigerent counterculture of the simile world, they often paint a more vivid and memorable picture. These tend to work best with positive-sentiment adjectives to set up a punch line."
         },
         {
           "type": "Irony",
