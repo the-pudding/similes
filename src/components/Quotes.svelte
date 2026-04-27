@@ -50,7 +50,7 @@
 <style>
 	.embla {
 		--slide-spacing: 2rem;
-		--slide-size: min(100%, calc(600px + var(--slide-spacing)));
+		--slide-size: min(90%, calc(600px + var(--slide-spacing)));
 	}
 
 	.embla-viewport {
@@ -81,9 +81,8 @@
 	.inner {
 		display: flex;
 		flex-direction: column;
-		/* align-items: center; */
 		justify-content: center;
-		padding: 4rem 6rem;
+		padding: 3rem 5rem;
 	}
 
 	.source {
@@ -97,7 +96,7 @@
 
 	blockquote {
 		position: relative;
-		font-size: var(--24px);
+		font-size: var(--20px);
 		line-height: 1.325;
 	}
 
@@ -111,5 +110,15 @@
 		vertical-align: -0.5rem;
 		margin-right: 0.25rem;
 		color: var(--color-gold);
+	}
+
+	@media (min-width: 800px) {
+		blockquote {
+			font-size: var(--24px);
+		}
+
+		.inner {
+			padding: 4rem 6rem;
+		}
 	}
 </style>

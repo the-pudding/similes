@@ -23,7 +23,7 @@
 
 	let match = $derived(matchIndex >= 0 ? data[matchIndex] : null);
 	let rank = $derived(matchIndex >= 0 ? matchIndex + 1 : null);
-	let empty = $derived(() => cleaned === "");
+	let empty = $derived(cleaned === "");
 
 	let responseIndex = $derived(
 		!match ? null : +match.count >= 80 ? 0 : +match.count >= 10 ? 1 : 2
@@ -64,23 +64,22 @@
 				</p>
 			{:else if empty}
 				<p class="no-match">
-					You chose not to play. Shame. The most common answer was <strong
+					You chose not to play. What a shame. The most common answer was <strong
 						>as dry as {data[0].vehicle}</strong
 					>.
 				</p>
 			{:else}
 				<p class="no-match">
 					Your answer wasn't found in my dataset. The most common answer was
-					<strong>as dry as {data[0].vehicle}</strong>. Obvious in hindsight,
-					right?
+					<strong>as dry as {data[0].vehicle}</strong>.
 				</p>
 			{/if}
 
 			<div class="chips">
 				{#each data as d, i}
 					<span class="chip" class:yours={d === match}>
+						<span class="chip-count">{i + 1}.</span>
 						{d.prefix ? `${d.prefix} ` : ""}{d.vehicle}
-						<span class="chip-count">{d.count}</span>
 					</span>
 				{/each}
 			</div>
@@ -95,7 +94,7 @@
 
 <style>
 	.c {
-		min-height: 400px;
+		min-height: 380px;
 		position: relative;
 		font-family: var(--font-sans);
 	}
@@ -142,6 +141,7 @@
 	.placement,
 	.no-match {
 		margin: 0;
+		font-size: var(--14px);
 	}
 
 	.chips {
@@ -170,6 +170,9 @@
 		background: var(--color-gold);
 	}
 
+	.chip.yours .chip-count {
+		color: var(--color-adjusted-black);
+	}
 	.chip-count {
 		font-size: var(--12px);
 		color: var(--color-gray-500);
@@ -216,6 +219,18 @@
 		.page:nth-of-type(2),
 		.page:nth-of-type(3) {
 			display: none;
+		}
+	}
+
+	@media (min-width: 640px) {
+		.c {
+			min-height: 320px;
+		}
+
+		.response-label,
+		.placement,
+		.no-match {
+			font-size: var(--16px);
 		}
 	}
 </style>
