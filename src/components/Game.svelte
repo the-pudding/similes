@@ -34,7 +34,7 @@
 	}
 </script>
 
-<div class="c">
+<div class="c border-decorative border-2">
 	{#if phase === "playing"}
 		<div class="game">
 			<p class="example">
@@ -97,6 +97,7 @@
 		min-height: 380px;
 		position: relative;
 		font-family: var(--font-sans);
+		padding: 2.5rem;
 	}
 
 	.game {

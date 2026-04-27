@@ -11,7 +11,7 @@
       "content": [
         {
           "type": "h1",
-          "value": "<span>Comparisons</span> <span>as Predictable as</span> <span>the Sunrise</span>"
+          "value": "<span>Comparisons</span><small><br>as <span>Predictable</span>  as<br> <span>the Sunrise</span></small>"
         },
         {
           "type": "text",

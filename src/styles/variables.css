@@ -31,7 +31,8 @@
   --color-green: oklch(0.6 0.06 202);
   --color-green-light: oklch(0.72 0.1 202);
   --color-purple: oklch(0.55 0.14 301);
-  --color-purple-light: oklch(0.67 0.18 301);
+  --color-purple-mid: oklch(0.67 0.18 301);
+  --color-purple-light: oklch(0.79 0.20 301);
   --color-purple-dark: oklch(0.45 0.12 301);
   --color-adjusted-black: #1A1D21;
   --color-adjusted-white: #e6e6e7;

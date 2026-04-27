@@ -65,7 +65,13 @@
 				y={{ axis: false, insetTop: 10, insetBottom: 16 }}
 				height={(w) => w / 1.5}
 			>
-				<BarY {data} {x} {y} sort="-count" fill={hex.purpleLight} />
+				<BarY
+					{data}
+					{x}
+					{y}
+					sort="-count"
+					fill={(d, j) => (j === 0 ? hex.purpleMid : hex.purpleLight)}
+				/>
 				<Text
 					data={textData}
 					{x}

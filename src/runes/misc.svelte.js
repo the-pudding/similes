@@ -16,6 +16,7 @@ export const hex = {
 	green: formatHex(oklch(variables.color.green)),
 	gold: formatHex(oklch(variables.color.gold)),
 	purpleLight: formatHex(oklch(variables.color["purple-light"])),
+	purpleMid: formatHex(oklch(variables.color["purple-mid"])),
 	greenLight: formatHex(oklch(variables.color["green-light"])),
 	goldLight: formatHex(oklch(variables.color["gold-light"])),
 	adjustedBlack: variables.color["adjusted-black"],
