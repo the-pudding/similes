@@ -1,18 +1,18 @@
 <script>
 	import { AnimationFrames } from "runed";
 	import { chartData } from "$runes/misc.svelte.js";
-	import Scroll from "$components/Irony.Scroll.svelte";
-	import Grid from "$components/Irony.Grid.svelte";
+	import Desktop from "$components/Irony.Desktop.svelte";
+	import Mobile from "$components/Irony.Mobile.svelte";
 
 	let data = $derived(chartData.irony);
 </script>
 
 <div class="c graphic">
-	<div class="scroll-view">
-		<Scroll {data}></Scroll>
+	<div class="desktop-view">
+		<Desktop {data}></Desktop>
 	</div>
-	<div class="grid-view">
-		<Grid {data}></Grid>
+	<div class="mobile-view">
+		<Mobile {data}></Mobile>
 	</div>
 </div>
 
@@ -21,19 +21,19 @@
 		position: relative;
 		z-index: 3;
 	}
-	.scroll-view {
+	.desktop-view {
 		display: none;
 	}
 
-	.grid-view {
+	.mobile-view {
 		display: block;
 	}
 
 	@media (min-width: 1024px) {
-		.scroll-view {
+		.desktop-view {
 			display: block;
 		}
-		.grid-view {
+		.mobile-view {
 			display: none;
 		}
 	}

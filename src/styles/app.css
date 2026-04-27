@@ -215,7 +215,7 @@ details .content {
 }
 
 section {
-	padding-bottom: 8rem;
+	padding-bottom: 4rem;
 }
 
 section > *:not(.graphic) {
@@ -418,6 +418,10 @@ img.border-decorative {
 	p, li, blockquote, details {
 		font-size: var(--20px);
 	}
+
+	section {
+		padding-bottom: 6rem;
+	}
 }
 @media screen and (max-width: 1000px) {
 	#adjectives::before,
@@ -436,5 +440,4 @@ img.border-decorative {
 		width: 100px;
 	}
 }
-
 

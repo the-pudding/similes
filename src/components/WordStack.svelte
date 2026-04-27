@@ -28,6 +28,7 @@
 <style>
 	.c {
 		display: flex;
+		flex-wrap: wrap;
 		gap: 1rem;
 		justify-content: center;
 		font-family: var(--font-sans);
@@ -35,7 +36,7 @@
 	}
 
 	.group {
-		width: 25%;
+		width: calc(50% - 1rem);
 	}
 
 	td,
@@ -46,6 +47,10 @@
 	}
 
 	th {
+		font-size: var(--12px);
+	}
+
+	td {
 		font-size: var(--14px);
 	}
 
@@ -63,5 +68,19 @@
 	/* every group after the first  (n+1) */
 	.group:not(:first-of-type) thead {
 		visibility: hidden;
+	}
+
+	@media (min-width: 800px) {
+		th {
+			font-size: var(--14px);
+		}
+
+		td {
+			font-size: var(--16px);
+		}
+
+		.group {
+			width: calc(25% - 1rem);
+		}
 	}
 </style>
