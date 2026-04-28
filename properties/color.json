@@ -55,10 +55,10 @@
 			"value": "oklch(0.78 0.14 86)"
 		},
 		"green": {
-			"value": "oklch(0.6 0.06 202)"
+			"value": "oklch(0.56 0.06 202)"
 		},
 		"green-light": {
-			"value": "oklch(0.72 0.1 202)"
+			"value": "oklch(0.68 0.1 202)"
 		},
 		"purple": {
 			"value": "oklch(0.55 0.14 301)"

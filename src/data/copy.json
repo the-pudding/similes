@@ -57,7 +57,7 @@
         },
         {
           "type": "text",
-          "value": "Similes are all around us. But, if you haven’t considered this figure of speech since grade school, here’s a refresher: similes compare two distinct things, often using “like” or “as.”"
+          "value": "Similes are all around us. But, if you haven’t considered this figure of speech since grade school, here’s a refresher: similes compare a shared quality of two things, often using “like” or “as.”"
         },
         {
           "type": "text",
@@ -333,7 +333,7 @@
         },
         {
           "type": "text",
-          "value": "<span class=underline-vehicle>Cat</span> is a noun that is used to represent all sorts of different qualities. Writers use it to mean everything from <span class=underline-ground>graceful</span> to <span class=underline-ground>weak</span>."
+          "value": "<span class=underline-vehicle>Cat</span> is a noun that is used to represent all sorts of different qualities. Writers use it to mean everything from graceful to weak."
         },
         {
           "type": "text",
@@ -479,7 +479,8 @@
         {
           "type": "img",
           "value": {
-            "src": "assets/pages-ender.png"
+            "src": "assets/pages-ender.png",
+            "alt": "Book pages flying through the air."
           }
         }
       ]
