@@ -37,7 +37,7 @@
 <div class="c border-decorative border-2">
 	{#if phase === "playing"}
 		<div class="game">
-			<p class="example">
+			<div class="example">
 				{@html example}<!-- svelte-ignore a11y_autofocus --><input
 					type="text"
 					bind:value={inputValue}
@@ -46,7 +46,7 @@
 					size={15}
 					maxlength={15}
 				/>
-			</p>
+			</div>
 			<!-- <p class="note"><small><em>Note: {@html note}</em></small></p> -->
 			<div class="submit">
 				<span>{@html Flower}</span><Button onclick={submit}>Submit</Button><span
@@ -60,18 +60,18 @@
 				<p class="response-label">
 					Your answer, <strong>{cleaned}</strong>, was {responses[
 						responseIndex
-					]}. It was <strong>#{rank}</strong> out of {total}.
+					]}. It ranked <strong>#{rank}</strong> out of {total} of the most commonly
+					used nouns.
 				</p>
 			{:else if empty}
 				<p class="no-match">
-					You chose not to play. What a shame. The most common answer was <strong
-						>as dry as {data[0].vehicle}</strong
-					>.
+					You chose not to play. What a shame. The most commonly used noun was
+					“as dry as a <strong>{data[0].vehicle}</strong>.”
 				</p>
 			{:else}
 				<p class="no-match">
-					Your answer wasn't found in my dataset. The most common answer was
-					<strong>as dry as {data[0].vehicle}</strong>.
+					Your answer wasn't found in my dataset. The most commonly used noun
+					was as “dry as a <strong>{data[0].vehicle}</strong>.”
 				</p>
 			{/if}
 
@@ -98,9 +98,14 @@
 		position: relative;
 		font-family: var(--font-sans);
 		padding: 2.5rem;
+		margin: 2rem auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.game {
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		gap: 0.75rem;
@@ -110,6 +115,8 @@
 		margin: 0;
 		display: flex;
 		align-items: center;
+		justify-content: center;
+		font-size: var(--16px);
 	}
 
 	.example :global(strong) {
@@ -119,7 +126,8 @@
 	input {
 		margin-left: 0.5rem;
 		border-radius: 0;
-		flex: 1;
+		max-width: 10rem;
+		width: 100%;
 	}
 
 	.submit {

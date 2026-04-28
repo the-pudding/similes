@@ -370,13 +370,13 @@ img.section-illo {
 	margin-bottom: 0;
 }
 /* Inline illos for 4 nouns */
-img.img-cat, img.img-child{
+article section img.img-cat, article section  img.img-child {
 	max-width: 250px;
 	float: right;
 	margin-right: calc(50vw - var(--col-width));
 }
 
-img.img-stone, img.img-hell {
+article section  img.img-stone, article section  img.img-hell {
 	max-width: 250px;
 	float: left;
 	margin-left: calc(50vw - var(--col-width));

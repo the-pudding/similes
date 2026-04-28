@@ -54,6 +54,7 @@
 		{@const prefix = i === 0 ? "As " : ""}
 		{@const suffix1 = i === 0 ? " a " : ""}
 		{@const suffix2 = i === 0 ? "___" : ""}
+		{@const suffixAnnotation = i === 0 ? " (most-used noun)" : ""}
 		{@const textData = data.slice(0, 1)}
 		<div class="chart">
 			<div class="chart-title">
@@ -76,7 +77,7 @@
 					data={textData}
 					{x}
 					y={0}
-					text={(d) => `${d.vehicle}: ${d.count}`}
+					text={(d) => `${d.vehicle}: ${d.count}${suffixAnnotation}`}
 					lineAnchor="top"
 					textAnchor="start"
 					fill={hex.purpleLight}
