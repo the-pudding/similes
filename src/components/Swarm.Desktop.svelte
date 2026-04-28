@@ -20,8 +20,6 @@
 
 	const debouncedWidth = new Debounced(() => size?.width || 800, 250);
 
-	$inspect(debouncedWidth.current);
-
 	let data = $derived(chartData.swarm.filter((d) => d[r] >= 200));
 
 	let rRange = $derived([

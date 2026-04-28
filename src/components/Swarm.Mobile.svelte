@@ -42,8 +42,6 @@
 			.range(textRange)
 	);
 
-	$inspect(debouncedWidth.current);
-
 	// function onmouseenter(e, datum) {
 	// 	tooltip.vehicle = datum.vehicle;
 	// 	tooltip.totalCount = datum.totalCount;
