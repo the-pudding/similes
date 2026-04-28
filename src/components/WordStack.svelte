@@ -69,7 +69,7 @@
 	}
 
 	tbody tr:nth-of-type(odd) {
-		background: color-mix(in oklch, var(--color-green-light), white 80%);
+		background: color-mix(in srgb, var(--color-green-light), white 80%);
 	}
 
 	/* every group after the first  (n+1) */

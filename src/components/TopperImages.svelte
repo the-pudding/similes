@@ -39,7 +39,7 @@
 	}
 	.img:nth-of-type(2) img,
 	.img:nth-of-type(3) img {
-		width: auto;
+		width: 100%;
 		height: 100%;
 		opacity: 0.3;
 	}

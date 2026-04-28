@@ -70,6 +70,6 @@
 	}
 
 	tbody tr:nth-of-type(odd) {
-		background: color-mix(in oklch, var(--color-purple-light), white 80%);
+		background: color-mix(in srgb, var(--color-purple-light), white 80%);
 	}
 </style>
