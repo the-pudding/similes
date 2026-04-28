@@ -45,14 +45,17 @@
 
 	p :global(span:nth-of-type(1)) {
 		text-decoration-color: var(--color-gold-light);
+		color: var(--color-gold-light);
 	}
 
 	p :global(span:nth-of-type(2)) {
 		text-decoration-color: var(--color-green-light);
+		color: var(--color-green-light);
 	}
 
 	p :global(span:nth-of-type(3)) {
 		text-decoration-color: var(--color-purple-light);
+		color: var(--color-purple-light);
 	}
 
 	li:nth-of-type(1) span {
