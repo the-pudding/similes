@@ -94,7 +94,7 @@
 
 <style>
 	.c {
-		min-height: 380px;
+		min-height: 460px;
 		position: relative;
 		font-family: var(--font-sans);
 		padding: 2.5rem;
@@ -233,7 +233,7 @@
 
 	@media (min-width: 640px) {
 		.c {
-			min-height: 320px;
+			min-height: 410px;
 		}
 
 		.response-label,

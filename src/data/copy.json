@@ -93,7 +93,7 @@
         },
         {
           "type": "text",
-          "value": "Above are real results from my extensive analysis of this specific form of simile. Once you start looking, you see them everywhere, from the classics like <em>Jane Eyre</em> to last year’s darling <em>Heart the Lover</em>."
+          "value": "Above are real results from my extensive analysis of this specific form of simile. Once you start looking, you see them everywhere, from the classics like <cite>Jane Eyre</cite> to last year’s darling <cite>Heart the Lover</cite>."
         },
         {
           "type": "Quotes",
@@ -237,7 +237,7 @@
         },
         {
           "type": "text",
-          "value": "While some writers reach for a novel comparison to make it their own, most just want one that’s reliable and accessible. Check out this 1964 textbook <em>Examine Your English</em>, which implants the patterns from the start."
+          "value": "While some writers reach for a novel comparison to make it their own, most just want one that’s reliable and accessible. Check out this 1964 textbook <cite>Examine Your English</cite>, which implants the patterns from the start."
         },
         {
           "type": "img",
@@ -333,11 +333,11 @@
         },
         {
           "type": "text",
-          "value": "Cat is a noun that is used to represent all sorts of different qualities. Writers use it to mean everything from graceful to weak."
+          "value": "<span class=underline-vehicle>Cat</span> is a noun that is used to represent all sorts of different qualities. Writers use it to mean everything from <span class=underline-ground>graceful</span> to <span class=underline-ground>weak</span>."
         },
         {
           "type": "text",
-          "value": "While most animals are pigeon-holed&mdash;think stubborn as a mule&mdash;cats span a huge range of observed behavior. And cat is the most used noun for four different adjectives: nervous, active, agile, nimble."
+          "value": "While most animals are pigeon-holed&mdash;think stubborn as a mule&mdash;cats span a huge range of observed behavior. And <span class=underline-vehicle>cat</span> is the most used noun for four different adjectives: nervous, active, agile, nimble."
         },
         {
           "type": "Cat",
@@ -357,11 +357,11 @@
         },
         {
           "type": "text",
-          "value": "Although stone has one dominant physical quality where it tops seven adjectives (hard/solid/impenetrable, etc.,), where a cat is defined by the range of things it does, stone is often defined by what it lacks."
+          "value": "Although <span class=underline-vehicle>stone</span> has one dominant physical quality where it tops seven adjectives (hard/solid/impenetrable, etc.,), where a cat is defined by the range of things it does, stone is often defined by what it lacks."
         },
         {
           "type": "text",
-          "value": "These four buckets are mostly a bunch of different ways to say “nothing is happening here,” which makes it a perfectly blank, and oft-used canvas for a simile."
+          "value": "These four buckets are mostly a bunch of different ways to say “nothing is happening here,” which makes <span class=underline-vehicle>stone</span> a perfectly blank, and oft-used canvas for a simile."
         },
         {
           "type": "Stone",
@@ -381,7 +381,7 @@
         },
         {
           "type": "text",
-          "value": "In fiction, a child has become shorthand for two things; being defenseless and wholesome. The scale tips towards the defenseless side with the highest usage coming with “as helpless as a child.”"
+          "value": "In fiction, <span class=underline-vehicle>a child</span> has become shorthand for two things; being defenseless and wholesome. The scale tips towards the defenseless side with the highest usage coming with “as <span class=underline-ground>helpless</span> as <span class=underline-vehicle>a child</span>.”"
         },
         {
           "type": "Child",
@@ -389,7 +389,7 @@
         },
         {
           "type": "text",
-          "value": "On the wholesome side, the top usage is “as innocent as a child.” But child is only the second most-used noun for both of these adjectives, trailing the less evolved form: baby."
+          "value": "On the wholesome side, the top usage is “as <span class=underline-ground>innocent</span> as <span class=underline-vehicle>a child</span>.” But <span class=underline-vehicle>child</span> is only the second most-used noun for both of these adjectives, trailing the less evolved form: <span class=underline-vehicle>baby</span>."
         },
         {
           "type": "h3",
@@ -405,15 +405,15 @@
         },
         {
           "type": "text",
-          "value": "Hell is one of the most versatile nouns in the dataset. However, most of them have nothing to do with hell."
+          "value": "<span class=underline-vehicle>Hell</span> is one of the most versatile nouns in the dataset. However, most of them have nothing to do with hell itself."
         },
         {
           "type": "text",
-          "value": "“As <span class=underline-ground>hot</span> as <span class=underline-vehicle>hell</span>” makes sense, if you subscribe to the religious imagery. But as cute as hell? As sexy as hell? Similes usually work because the noun possesses the quality. Hell often functions more as an amplifier."
+          "value": "“As <span class=underline-ground>hot</span> as <span class=underline-vehicle>hell</span>” makes sense, if you subscribe to the religious imagery. But “as <span class=underline-ground>cute</span> as <span class=underline-vehicle>hell</span>?” “As <span class=underline-ground>sexy</span> as <span class=underline-vehicle>hell</span>?” Similes usually work because the noun possesses the quality. <span class=underline-vehicle>Hell</span> often functions more as an amplifier."
         },
         {
           "type": "text",
-          "value": "I was curious about when this phenomenon started. According to <a href=https://books.google.com/ngrams/ target=_blank rel=noreferrer>Google Books Ngram Viewer</a>, the first use of “sexy as hell” that I could verify was from the 1948 novel <em>Innocent Villa</em>:"
+          "value": "I was curious about when this phenomenon started. According to <a href=https://books.google.com/ngrams/ target=_blank rel=noreferrer>Google Books Ngram Viewer</a>, the first use of “sexy as hell” that I could verify was from the 1948 novel <cite>Innocent Villa</cite>:"
         },
         {
           "type": "blockquote",
@@ -429,7 +429,7 @@
         },
         {
           "type": "text",
-          "value": "If we want to get pedantic, the first use with the exact structure (“as _ as _”) was from the 1954 novel <em>The Refuge:</em>"
+          "value": "If we want to get pedantic, the first use with the exact structure (“as _ as _”) was from the 1954 novel <cite>The Refuge:</cite>"
         },
         {
           "type": "blockquote",
@@ -437,7 +437,7 @@
         },
         {
           "type": "text",
-          "value": "This makes hell pretty unique in the dataset. Most nouns earn their place by embodying something, whereas hell just became another way to say “very.”"
+          "value": "This makes <span class=underline-vehicle>hell</span> pretty unique in the dataset. Most nouns earn their place by embodying something, whereas hell just became another way to say “very.”"
         }
       ]
     },
