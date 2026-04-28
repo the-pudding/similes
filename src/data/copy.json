@@ -321,7 +321,7 @@
         },
         {
           "type": "h3",
-          "value": "As ___ as a Cat"
+          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as a <span class=underline-vehicle>Cat</span>"
         },
         {
           "type": "img",
@@ -345,7 +345,7 @@
         },
         {
           "type": "h3",
-          "value": "As ___ as a Stone"
+          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as a <span class=underline-vehicle>Stone</span>"
         },
         {
           "type": "img",
@@ -369,7 +369,7 @@
         },
         {
           "type": "h3",
-          "value": "As ___ as a Child"
+          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as a <span class=underline-vehicle>Child</span>"
         },
         {
           "type": "img",
@@ -393,7 +393,7 @@
         },
         {
           "type": "h3",
-          "value": "As ___ as a Hell"
+          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as <span class=underline-vehicle>Hell</span>"
         },
         {
           "type": "img",
