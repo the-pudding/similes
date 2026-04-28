@@ -1,6 +1,6 @@
 <script>
 	import { Plot, Dot, Text, HTMLTooltip, usePlot } from "svelteplot";
-	import { ElementSize } from "runed";
+	import { ElementSize, Debounced } from "runed";
 	import useWindowDimensions from "$runes/useWindowDimensions.svelte.js";
 	import { chartData } from "$runes/misc.svelte.js";
 	import variables from "$data/variables.json";
@@ -17,11 +17,15 @@
 	let el = $state();
 
 	const size = new ElementSize(() => el);
+	const debouncedWidth = new Debounced(() => size?.width || 375, 250);
 
 	let data = $derived(chartData.swarm.filter((d) => d[r] >= 200));
 
-	let rRange = $derived([size.width * 0.02, size.width * 0.04]);
-	let height = $derived(Math.max(800, size.width * 2));
+	let rRange = $derived([
+		debouncedWidth.current * 0.02,
+		debouncedWidth.current * 0.04
+	]);
+	let height = $derived(Math.max(800, debouncedWidth.current * 2));
 
 	const legendCounts = [50, 100, 200];
 	let rScale = $derived(
@@ -37,6 +41,8 @@
 			.domain(extent(data, (d) => d[r]))
 			.range(textRange)
 	);
+
+	$inspect(debouncedWidth.current);
 
 	// function onmouseenter(e, datum) {
 	// 	tooltip.vehicle = datum.vehicle;

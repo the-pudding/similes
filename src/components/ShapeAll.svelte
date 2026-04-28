@@ -1,5 +1,5 @@
 <script>
-	import { Plot, BarY, RuleY, Text } from "svelteplot";
+	import { Plot, BarY, Text } from "svelteplot";
 	import { chartData } from "$runes/misc.svelte.js";
 	import * as d3 from "d3";
 	import { hex } from "$runes/misc.svelte.js";
@@ -80,7 +80,7 @@
 					text={(d) => `${d.vehicle}: ${d.count}${suffixAnnotation}`}
 					lineAnchor="top"
 					textAnchor="start"
-					fill={hex.purpleLight}
+					fill={hex.purpleMid}
 					dy={4}
 					dx={-4}
 				/>

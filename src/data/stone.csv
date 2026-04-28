@@ -10,30 +10,30 @@ rigid,57,2,hard
 stiff,23,6,hard
 tough,9,7,hard
 strong,25,9,hard
-steady,214,1,still
-immovable,30,1,still
-still,483,2,still
-motionless,42,2,still
-calm,10,5,still
-dumb,41,1,silent
-deaf,10,2,silent
-mute,12,3,silent
-silent,51,4,silent
-quiet,16,10,silent
-blank,26,1,blank
-impassive,22,1,blank
-expressionless,12,1,blank
-dull,13,3,blank
-ignorant,5,4,blank
-stupid,5,7,blank
-plain,3,10,blank
-lifeless,6,2,lifeless
-sober,4,2,lifeless
-cold,131,3,lifeless
-dead,51,3,lifeless
-gray,21,3,lifeless
-bald,7,5,lifeless
-bare,3,9,lifeless
+steady,214,1,no motion
+immovable,30,1,no motion
+still,483,2,no motion
+motionless,42,2,no motion
+calm,10,5,no motion
+dumb,41,1,no sound
+deaf,10,2,no sound
+mute,12,3,no sound
+silent,51,4,no sound
+quiet,16,10,no sound
+blank,26,1,no expression
+impassive,22,1,no expression
+expressionless,12,1,no expression
+dull,13,3,no expression
+ignorant,5,4,no expression
+stupid,5,7,no expression
+plain,3,10,no expression
+lifeless,6,2,no life
+sober,4,2,no life
+cold,131,3,no life
+dead,51,3,no life
+gray,21,3,no life
+bald,7,5,no life
+bare,3,9,no life
 real,8,2,other
 comfortable,4,2,other
 stubborn,8,4,other

@@ -5,6 +5,7 @@
 <div class="c">
 	{#each data as { category, values }}
 		<div class="group">
+			<div class="label">{category}</div>
 			<table>
 				<thead>
 					<tr>
@@ -37,6 +38,12 @@
 
 	.group {
 		width: calc(50% - 1rem);
+	}
+
+	.label {
+		font-size: var(--12px);
+		text-transform: uppercase;
+		text-align: center;
 	}
 
 	td,

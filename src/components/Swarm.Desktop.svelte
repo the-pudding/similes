@@ -1,6 +1,6 @@
 <script>
 	import { Plot, Dot, Text, HTMLTooltip, usePlot } from "svelteplot";
-	import { ElementSize } from "runed";
+	import { ElementSize, Debounced } from "runed";
 	import useWindowDimensions from "$runes/useWindowDimensions.svelte.js";
 	import { chartData } from "$runes/misc.svelte.js";
 	import variables from "$data/variables.json";
@@ -18,9 +18,16 @@
 
 	const size = new ElementSize(() => el);
 
+	const debouncedWidth = new Debounced(() => size?.width || 800, 250);
+
+	$inspect(debouncedWidth.current);
+
 	let data = $derived(chartData.swarm.filter((d) => d[r] >= 200));
 
-	let rRange = $derived([size.width * 0.005, size.width * 0.03]);
+	let rRange = $derived([
+		debouncedWidth.current * 0.005,
+		debouncedWidth.current * 0.03
+	]);
 	let height = $derived(rRange[1] * 15);
 
 	const legendCounts = [50, 100, 200];

@@ -8,7 +8,7 @@
 :root {
 	/* font */
 	--font-sans: "Atlas Grotesk", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-	--font-serif: "Publico Text", Iowan Old Style, Times New Roman, Times, serif;
+	--font-serif: "Tiempos Text", Iowan Old Style, Times New Roman, Times, serif;
 	--font-mono: Menlo, Consolas, Monaco, monospace;
 
 	/* z-index */
@@ -396,7 +396,7 @@ article section  img.img-stone, article section  img.img-hell {
 	margin-bottom: 0;
 }
 
-.border-decorative {
+article section .border-decorative {
 	height: 100%;
 	box-sizing: border-box;
 	padding: 2.5rem;
@@ -406,10 +406,11 @@ article section  img.img-stone, article section  img.img-hell {
 	border-style: solid;
 }
 
-img.border-decorative {
+article section  img.border-decorative {
 	width: calc(100% - 2rem);
 	margin: 2rem auto;
 	max-width: calc(var(--col-width) - 2rem);
+	padding: 25px;
 }
 
 .border-1 {
@@ -426,10 +427,6 @@ img.border-decorative {
 	border-image-slice: 120;
 	border-image-width: 30px;
 	border-image-source: url("/assets/borders/border-3.png");
-}
-
-img.border-decorative {
-	padding: 25px;
 }
 
 #adjectives p:last-of-type {
@@ -460,7 +457,7 @@ img.border-decorative {
 	}
 
 	#adjectives img:nth-of-type(1),
-	#nouns img:nth-of-type(1),
+	#nouns img:nth-of-type(1) 
 	{
 		margin-bottom: -80px;
 	}

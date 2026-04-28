@@ -31,12 +31,12 @@
 		Explainer,
 		ShapeExample,
 		ShapeAll,
-		Swarm,
-		Cat,
-		Child,
-		Stone,
-		Irony,
-		TopperImages
+		Swarm
+		// Cat,
+		// Child,
+		// Stone,
+		// Irony,
+		// TopperImages
 	};
 
 	$effect(async () => {

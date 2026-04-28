@@ -1,8 +1,11 @@
 <script>
-	import { Plot, BarY, RuleY, AxisX } from "svelteplot";
+	import { Plot, BarY, BarX, AxisX, AxisY } from "svelteplot";
 	import { chartData } from "$runes/misc.svelte.js";
 	import { hex } from "$runes/misc.svelte.js";
 	import { range } from "d3";
+	import useWindowDimensions from "$runes/useWindowDimensions.svelte.js";
+
+	let dimensions = new useWindowDimensions();
 
 	const maxToShow = 30;
 	const x = "vehicle";
@@ -14,6 +17,8 @@
 	let data = $derived(
 		chartData.shape.filter((d, i) => d.ground === "dry").slice(0, maxToShow)
 	);
+
+	let vertical = $derived(dimensions.width < 800);
 </script>
 
 <div class="c graphic">
@@ -24,14 +29,26 @@
 		>
 	</div>
 	{#if data.length}
-		<Plot
-			grid
-			x={{ tickRotate: -45, label: "nouns" }}
-			y={{ label: "occurences" }}
-		>
-			<AxisX tickFontSize={12} />
-			<BarY {data} {x} {y} sort="-count" fill={hex.purpleLight} />
-		</Plot>
+		{#if vertical}
+			<Plot
+				grid
+				y={{ label: "nouns" }}
+				x={{ label: "occurences" }}
+				height={data.length * 24}
+			>
+				<AxisY tickFontSize={12} />
+				<BarX {data} x={y} y={x} sort="-count" fill={hex.purpleLight} />
+			</Plot>
+		{:else}
+			<Plot
+				grid
+				x={{ tickRotate: -45, label: "nouns" }}
+				y={{ label: "occurences" }}
+			>
+				<AxisX tickFontSize={12} />
+				<BarY {data} {x} {y} sort="-count" fill={hex.purpleLight} />
+			</Plot>
+		{/if}
 	{/if}
 </div>
 

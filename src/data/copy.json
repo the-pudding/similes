@@ -61,6 +61,10 @@
         },
         {
           "type": "text",
+          "value": "I pulled every simile in the form <strong>“as ___ as ___”</strong> from tens of thousands of fiction books for the top 500 most common adjectives."
+        },
+        {
+          "type": "text",
           "value": "To put you in a writer’s mindset, fill in the blank of the simile below."
         },
         {
@@ -86,10 +90,6 @@
               }
             ]
           }
-        },
-        {
-          "type": "text",
-          "value": "I pulled every simile in the form <strong>“as ___ as ___”</strong> from tens of thousands of books for the top 500 most common adjectives."
         },
         {
           "type": "text",
@@ -193,7 +193,7 @@
         },
         {
           "type": "text",
-          "value": "First, a notable disclaimer. We’ll mostly just look at a simplified version of this form; <strong class=underline-ground-light>grounds that are adjectives</strong>, and <strong class=underline-vehicle-light>vehicles that are nouns</strong> (specifically mono/bi-grams, i.e., one or two words). This reduces the noise in favor of a clearer signal. For example:"
+          "value": "First, a notable disclaimer. We’ll mostly just look at a simplified version of this form; <span class=underline-ground-light>grounds that are adjectives</span>, and <span class=underline-vehicle-light>vehicles that are nouns</span> (specifically mono/bi-grams, i.e., one or two words). This reduces the noise in favor of a clearer signal. For example:"
         },
         {
           "type": "blockquote",
@@ -205,7 +205,7 @@
         },
         {
           "type": "text",
-          "value": "In similes, every adjective has a distinct shape. If you look at the usage of the nouns that follow, you can see whether an adjective is dominated by a single cliché or has range. Here is the shape of <strong class=underline-ground-light>dry</strong> from our pop quiz."
+          "value": "In similes, every adjective has a distinct shape. If you look at the usage of the nouns that follow, you can see whether an adjective is dominated by a single cliché or has range. Here is the shape of <span class=underline-ground-light>dry</span> from our pop quiz."
         },
         {
           "type": "ShapeExample",
@@ -230,7 +230,7 @@
           "value": {
             "li": [
               "Gentler slopes tell us there are no dominant idioms.",
-              "Many have a couple go-to nouns followed by a long tail.",
+              "Many have a couple go-to nouns, then a long tail.",
               "The clichés are obvious, marked by a single tall spike that overshadows the others."
             ]
           }
@@ -286,11 +286,11 @@
         },
         {
           "type": "text",
-          "value": "Cucumber (or as I learned that it sometimes was referred to as <a href=https://historyfacts.com/world-history/fact/cucumbers-used-to-be-called-cowcumbers/ target=_blank rel=noreferrer>cowcumber</a>) doesn’t even crack the top ten in usage for any other adjective. On the other hand, you have the noun hell, which is a top-10 noun for 17 different adjectives."
+          "value": "“Cucumber” (or as I learned that it sometimes was referred to as <a href=https://historyfacts.com/world-history/fact/cucumbers-used-to-be-called-cowcumbers/ target=_blank rel=noreferrer>cowcumber</a>) doesn’t even crack the top ten in usage for any other adjective. On the other hand, you have the noun “hell,” which is a top-10 noun for 17 different adjectives."
         },
         {
           "type": "text",
-          "value": "To quantify this, I looked at the diversity of adjectives for each noun using the <a href=https://en.wikipedia.org/wiki/Diversity_index#Simpson_index target=_blank rel=noreferrer>Simpson index.</a> Put plainly: if you pick two similes for a noun at random, what is the chance that the adjectives match?"
+          "value": "To quantify this, I looked at the diversity of adjectives for each noun using the <a href=https://en.wikipedia.org/wiki/Diversity_index#Simpson_index target=_blank rel=noreferrer>Simpson index.</a> Put plainly: if you pick two similes for a noun at random, what is the chance that the adjectives match? For example, if you were to randomly look at two sentences with “cool as a ___,” there is a 92% chance they are both “cucumber.”"
         },
         {
           "type": "Swarm",
@@ -337,7 +337,7 @@
         },
         {
           "type": "text",
-          "value": "While most animals are pigeon-holed&mdash;think stubborn as a mule&mdash;cats span a huge range of observed behavior. And cat is the most used noun for four different adjectives; nervous, active, agile, nimble."
+          "value": "While most animals are pigeon-holed&mdash;think stubborn as a mule&mdash;cats span a huge range of observed behavior. And cat is the most used noun for four different adjectives: nervous, active, agile, nimble."
         },
         {
           "type": "Cat",
