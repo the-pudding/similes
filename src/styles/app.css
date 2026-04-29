@@ -77,14 +77,20 @@ h1 {
 	font-size: var(--48px, 48px);
 }
 
-h2 {
+ h2 {
 	z-index: 3;
 	position: relative;
 	font-size: var(--24px, 24px);
+	margin-top: 3rem !important;
+	text-align: center;
+	font-weight: bold;
 }
 
 h3 {
-	font-size: var(--28px, 28px);
+	font-size: var(--20px, 20px);
+	margin-top: 3rem !important;
+	text-align: center;
+	font-weight: bold;
 }
 
 h4 {
@@ -102,7 +108,7 @@ h6 {
 .bits-button[data-button-root] {
 	border-radius: 0;
 	font-weight: bold;
-	text-transform: uppercase;
+	border: 1px solid var(--color-adjusted-black);
 }
 
 svg {
@@ -382,10 +388,9 @@ article section  img.img-stone, article section  img.img-hell {
 	margin-left: calc(50vw - var(--col-width));
 }
 
-#specific img:last-of-type {
+#nouns img:last-of-type {
 	clear: both;
 }
-
 
 /* Ending falling pages */
 #irony img:nth-last-of-type(1){
@@ -443,6 +448,12 @@ article section  img.border-decorative {
 	font-size: var(--12px);
 }
 
+
+span.spacer {
+	display: block;
+	height: 2rem;
+}
+
 @media screen and (min-width: 800px) {
 	p, li, blockquote, details {
 		font-size: var(--20px);
@@ -453,7 +464,11 @@ article section  img.border-decorative {
 	}
 
 	h2 {
-		font-size: var(--36px, 36px);
+		font-size: var(--32px, 32px);
+	}
+
+	h3 {
+		font-size: var(--24px, 24px);
 	}
 
 	#adjectives img:nth-of-type(1),

@@ -10,6 +10,7 @@
 	border-radius: var(--radius-md);
 	font-family: var(--font-form);
 	transition: transform 0.25s ease, background 0.25s ease;
+	text-transform: capitalize;
 }
 
 .bits-button[data-button-root]:disabled {

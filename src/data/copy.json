@@ -148,6 +148,10 @@
         },
         {
           "type": "text",
+          "value": "<span class=spacer></span>"
+        },
+        {
+          "type": "text",
           "value": "<small class=font-sans><strong>Why “as ___ as ___”:</strong> English has lots of ways to make comparisons. “Eyes like daggers,” “razor-sharp wit.” Most of these figurative forms are difficult to extract from text at scale. “As ___ as ___” is the exception because of its rigid structure. This makes it the most reliable to parse programmatically while minimizing the need for human judgement. It’s also surprisingly common in all forms of fiction. So while it’s just a sample of figurative language, it provides a quantifiable glimpse into the topic.</small>"
         }
       ]
@@ -305,15 +309,6 @@
         {
           "type": "text",
           "value": "But like most things, the interesting stuff lies at the extremes. Certain nouns are so tightly coupled with a single adjective that they’ve become idioms. While others are so versatile or overused they’ve become generic."
-        }
-      ]
-    },
-    {
-      "section": "specific",
-      "content": [
-        {
-          "type": "h2",
-          "value": "Four Nouns, Four Stories"
         },
         {
           "type": "text",
@@ -345,7 +340,7 @@
         },
         {
           "type": "h3",
-          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as a <span class=underline-vehicle>Stone</span>"
+          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as <span class=underline-vehicle>Stone</span>"
         },
         {
           "type": "img",
