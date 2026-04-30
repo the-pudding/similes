@@ -314,17 +314,17 @@
           "type": "text",
           "value": "Let’s focus on four of the generalist nouns that each reveal something different about how writers use comparisons."
         },
-        {
-          "type": "h3",
-          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as a <span class=underline-vehicle>Cat</span>"
-        },
-        {
+         {
           "type": "img",
           "value": {
             "src": "assets/cat.png",
             "alt": "Illustration of a cat stretching.",
             "class": "img-cat"
           }
+        },
+        {
+          "type": "h3",
+          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as a <span class=underline-vehicle>Cat</span>"
         },
         {
           "type": "text",
@@ -339,16 +339,16 @@
           "value": {}
         },
         {
-          "type": "h3",
-          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as <span class=underline-vehicle>Stone</span>"
-        },
-        {
           "type": "img",
           "value": {
             "src": "assets/stone.png",
             "alt": "Illustration of a stone with googly eyes attached.",
             "class": "img-stone"
           }
+        },
+        {
+          "type": "h3",
+          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as <span class=underline-vehicle>Stone</span>"
         },
         {
           "type": "text",
@@ -363,16 +363,16 @@
           "value": {}
         },
         {
-          "type": "h3",
-          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as a <span class=underline-vehicle>Child</span>"
-        },
-        {
           "type": "img",
           "value": {
             "src": "assets/child.png",
             "alt": "Illustration of an anxious kid, looking between two theater masks. One is smiling, the other crying.",
             "class": "img-child"
           }
+        },
+        {
+          "type": "h3",
+          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as a <span class=underline-vehicle>Child</span>"
         },
         {
           "type": "text",
@@ -387,16 +387,16 @@
           "value": "On the wholesome side, the top usage is “as <span class=underline-ground>innocent</span> as <span class=underline-vehicle>a child</span>.” But <span class=underline-vehicle>child</span> is only the second most-used noun for both of these adjectives, trailing the less evolved form: <span class=underline-vehicle>baby</span>."
         },
         {
-          "type": "h3",
-          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as <span class=underline-vehicle>Hell</span>"
-        },
-        {
           "type": "img",
           "value": {
             "src": "assets/hell.png",
             "alt": "Illustration of the devil, balancing a stack of different hats on his head.",
             "class": "img-hell"
           }
+        },
+        {
+          "type": "h3",
+          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as <span class=underline-vehicle>Hell</span>"
         },
         {
           "type": "text",

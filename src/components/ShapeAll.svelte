@@ -49,11 +49,11 @@
 	});
 </script>
 
-<div class="c graphic">
+<div class="c graphic multiples">
 	{#each byGround as { ground, data }, i}
 		{@const prefix = i === 0 ? "As " : ""}
-		{@const suffix1 = i === 0 ? " a " : ""}
-		{@const suffix2 = i === 0 ? "___" : ""}
+		{@const suffix1 = i === 0 ? " as " : ""}
+		{@const suffix2 = i === 0 ? "____" : ""}
 		{@const suffixAnnotation = i === 0 ? " (most-used noun)" : ""}
 		{@const textData = data.slice(0, 1)}
 		<div class="chart">
@@ -71,7 +71,7 @@
 					{x}
 					{y}
 					sort="-count"
-					fill={(d, j) => (j === 0 ? hex.purpleMid : hex.purpleLight)}
+					fill={(d, j) => (j === 0 ? hex.purpleMid2 : hex.purpleLight)}
 				/>
 				<Text
 					data={textData}
