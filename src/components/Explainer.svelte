@@ -17,11 +17,14 @@
 <style>
 	.c {
 		font-family: var(--font-sans);
-		margin: 2rem auto;
+		margin: 1rem auto;
+		text-align: center;
 	}
 
 	.inner {
 		padding: 2rem;
+		display: inline-block;
+		text-align: left;
 	}
 
 	ul {
@@ -71,5 +74,14 @@
 	li:nth-of-type(3) span {
 		color: var(--color-purple-light);
 		font-weight: bold;
+	}
+
+	@media(max-width: 900px){
+		ul li{
+			font-size: 16px;
+		}
+		p{
+			font-size: 20px;
+		}
 	}
 </style>

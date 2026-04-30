@@ -77,13 +77,15 @@ h1 {
 	font-size: var(--48px, 48px);
 }
 
- h2 {
+h2 {
 	z-index: 3;
 	position: relative;
 	font-size: var(--24px, 24px);
-	margin-top: 3rem !important;
 	text-align: center;
 	font-weight: bold;
+}
+article section > h2:not(.graphic){
+	margin-top: 3rem;
 }
 
 h3 {
@@ -232,6 +234,7 @@ details .content {
 
 #method {
 	font-family: var(--font-sans);
+	margin-top: 6rem;
 }
 
 article section {
@@ -305,8 +308,8 @@ article section img.section-illo {
 #intro > img:nth-of-type(1){
 	display: none;
 	width: 100%;
-	max-width: 70px;
-	margin: 15px auto 20px auto;
+	max-width: 100px;
+	margin: 2rem auto 0px auto;
 	opacity: 0.5;
 }
 #intro p:last-child{
@@ -514,10 +517,19 @@ button.game-button[data-button-root]{
 	#intro > img:nth-of-type(1){
 		display: block;
 	}
+	#intro > p:first-of-type {
+		padding-top: 1rem;
+	}
+	article section > h2:not(.graphic){
+		margin-top: 1rem;
+	}
 }
 @media screen and (max-width: 500px) {
 	#irony img:nth-last-of-type(1){
 		width: 100px;
+	}
+	#method {
+		margin-top: 4rem;
 	}
 }
 
