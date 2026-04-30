@@ -71,7 +71,7 @@
 					{x}
 					{y}
 					sort="-count"
-					fill={(d, j) => (j === 0 ? hex.purpleMid : hex.purpleLight)}
+					fill={(d, j) => (j === 0 ? hex.purpleMid2 : hex.purpleLight)}
 				/>
 				<Text
 					data={textData}
