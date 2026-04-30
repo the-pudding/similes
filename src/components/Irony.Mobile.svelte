@@ -72,7 +72,7 @@
 
 	p,
 	li {
-		font-size: var(--16px);
+		font-size: var(--14px);
 	}
 
 	.ground-text {

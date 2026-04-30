@@ -64,7 +64,7 @@
 			<Plot
 				x={{ axis: false, insetLeft: 0 }}
 				y={{ axis: false, insetTop: 10, insetBottom: 16 }}
-				height={(w) => w / 1.5}
+				height={(w) => w / (w < 150 ? 1.33 : 1.5)}
 			>
 				<BarY
 					{data}
@@ -78,6 +78,7 @@
 					{x}
 					y={0}
 					text={(d) => `${d.vehicle}: ${d.count}${suffixAnnotation}`}
+					fontSize={11}
 					lineAnchor="top"
 					textAnchor="start"
 					fill={hex.purpleMid}
@@ -95,13 +96,13 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 2rem 1rem;
+		gap: 0.5rem;
 		font-family: var(--font-sans);
-		padding: 0 1rem;
+		padding: 0 0.5rem;
 	}
 
 	.chart {
-		width: calc(33.33% - 1rem);
+		width: calc(33.33% - 0.5rem);
 		position: relative;
 	}
 
@@ -110,7 +111,7 @@
 		top: 0;
 		left: 50%;
 		transform: translate(-50%, 0);
-		font-size: var(--14px);
+		font-size: var(--12px);
 		font-weight: bold;
 		font-family: var(--font-sans);
 		text-decoration-thickness: 2px;
@@ -119,8 +120,17 @@
 	}
 
 	@media (min-width: 550px) {
+		.c {
+			gap: 1rem;
+			padding: 0 1rem;
+		}
+
 		.chart {
 			width: 150px;
+		}
+
+		.chart-title {
+			font-size: var(--12px);
 		}
 	}
 </style>

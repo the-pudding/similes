@@ -38,7 +38,8 @@
 	{#if phase === "playing"}
 		<div class="game">
 			<div class="example">
-				{@html example}<!-- svelte-ignore a11y_autofocus --><input
+				<span>My mouth has gone</span><strong> as dry as </strong>
+				<!-- svelte-ignore a11y_autofocus --><input
 					type="text"
 					bind:value={inputValue}
 					onkeydown={(e) => e.key === "Enter" && submit()}
@@ -49,9 +50,9 @@
 			</div>
 			<!-- <p class="note"><small><em>Note: {@html note}</em></small></p> -->
 			<div class="submit">
-				<span>{@html Flower}</span><Button class="game-button" onclick={submit}>Submit</Button><span
-					>{@html Flower}</span
-				>
+				<span>{@html Flower}</span><Button class="game-button" onclick={submit}
+					>Submit</Button
+				><span>{@html Flower}</span>
 			</div>
 		</div>
 	{:else if phase === "result"}
@@ -94,10 +95,10 @@
 
 <style>
 	.c {
-		min-height: 460px;
+		min-height: 530px;
 		position: relative;
 		font-family: var(--font-sans);
-		padding: 2.5rem;
+		padding: 2.5rem 1rem;
 		margin: 4rem auto;
 		display: flex;
 		align-items: center;
@@ -117,6 +118,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-wrap: wrap;
 		font-size: var(--16px);
 	}
 
@@ -126,6 +128,7 @@
 
 	input {
 		margin-left: 0.5rem;
+		margin-top: 0.5rem;
 		border-radius: 0;
 		max-width: 10rem;
 		width: 100%;
@@ -221,7 +224,7 @@
 	}
 
 	@media (max-width: 900px) {
-		.c{
+		.c {
 			margin: 2rem auto;
 		}
 		.page:nth-of-type(2),
@@ -229,9 +232,17 @@
 			display: none;
 		}
 	}
+
+	@media (min-width: 480px) {
+		input {
+			margin-top: 0;
+		}
+	}
+
 	@media (min-width: 640px) {
 		.c {
 			min-height: 410px;
+			padding: 2.5rem;
 		}
 
 		.response-label,
@@ -240,7 +251,7 @@
 			font-size: var(--16px);
 		}
 	}
-	@media (min-width: 1200px){
+	@media (min-width: 1200px) {
 		.page:nth-of-type(2),
 		.page:nth-of-type(3) {
 			left: min(-30vw, -450px);
@@ -251,7 +262,7 @@
 			right: min(-30vw, -450px);
 		}
 	}
-	@media (min-width: 1400px){
+	@media (min-width: 1400px) {
 		.page:nth-of-type(2),
 		.page:nth-of-type(3) {
 			left: min(-42vw, -600px);
@@ -262,7 +273,7 @@
 			right: min(-42vw, -600px);
 		}
 	}
-	@media (min-width: 1750px){
+	@media (min-width: 1750px) {
 		.page:nth-of-type(2),
 		.page:nth-of-type(3) {
 			left: min(-43vw, -600px);

@@ -83,6 +83,7 @@ h2 {
 	font-size: var(--24px, 24px);
 	text-align: center;
 	font-weight: bold;
+	line-height: 1.2;
 }
 article section > h2:not(.graphic){
 	margin-top: 3rem;
@@ -262,10 +263,11 @@ article section img.section-illo {
 
 #hero {
 	padding-bottom: 0;
+	overflow: hidden;
 }
 
 #hero h1 {
-	font-size: var(--56px);
+	font-size: var(--36px);
 	text-align: center;
 	line-height: 1;
 	font-weight: bold;
@@ -293,8 +295,14 @@ article section img.section-illo {
 	font-family: var(--font-sans);
 	text-align: center;
 }
+
+#hero p:nth-of-type(1) {
+	line-height: 1.25;
+}
+
+
 #hero p:nth-of-type(2) {
-	font-size: 1em;
+	font-size: var(--12px);
 }
 
 #hero .graphic {
@@ -312,9 +320,10 @@ article section img.section-illo {
 	margin: 2rem auto 0px auto;
 	opacity: 0.5;
 }
+
 #intro p:last-child{
-	padding-left: 3rem;
-	padding-right: 3rem;
+	padding: 0 3rem;
+	line-height: 1.4;
 }
 /* Sections with black bgs, white text */
 #adjectives,
@@ -484,6 +493,19 @@ button.game-button[data-button-root]{
 
 
 @media screen and (min-width: 800px) {
+	#hero h1 {
+		font-size: var(--56px);
+	}
+
+	#hero p:nth-of-type(1) {
+		line-height: 1.6;
+	}
+
+
+	#hero p:nth-of-type(2) {
+		font-size: 1em;
+	}
+
 	p, li, blockquote, details {
 		font-size: var(--20px);
 	}

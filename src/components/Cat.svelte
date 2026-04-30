@@ -72,4 +72,11 @@
 	tbody tr:nth-of-type(odd) {
 		background: color-mix(in srgb, var(--color-purple-light), white 80%);
 	}
+
+	@media (max-width: 480px) {
+		th:last-of-type,
+		td:last-of-type {
+			display: none;
+		}
+	}
 </style>

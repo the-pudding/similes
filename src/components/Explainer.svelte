@@ -76,12 +76,12 @@
 		font-weight: bold;
 	}
 
-	@media(max-width: 900px){
-		ul li{
-			font-size: 16px;
+	@media (max-width: 900px) {
+		ul li {
+			font-size: var(--16px);
 		}
-		p{
-			font-size: 20px;
+		p {
+			font-size: var(--20px);
 		}
 	}
 </style>

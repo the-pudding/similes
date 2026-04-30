@@ -88,6 +88,7 @@
 	.source {
 		text-align: right;
 		margin-top: 1rem;
+		font-size: var(--12px);
 	}
 
 	p {
@@ -96,7 +97,7 @@
 
 	blockquote {
 		position: relative;
-		font-size: var(--20px);
+		font-size: var(--16px);
 		line-height: 1.325;
 	}
 
@@ -112,6 +113,16 @@
 		color: var(--color-gold);
 	}
 
+	@media (min-width: 600px) {
+		blockquote {
+			font-size: var(--20px);
+		}
+
+		.source {
+			font-size: var(--14px);
+		}
+	}
+
 	@media (min-width: 800px) {
 		blockquote {
 			font-size: var(--24px);
@@ -119,6 +130,10 @@
 
 		.inner {
 			padding: 4rem 6rem;
+		}
+
+		.source {
+			font-size: var(--16px);
 		}
 	}
 </style>

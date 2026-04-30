@@ -69,6 +69,8 @@
 			<Plot
 				{height}
 				inset={rRange[1]}
+				marginLeft={40}
+				marginRight={rRange[1] * 2}
 				r={{ range: rRange }}
 				x={{ axis: false }}
 				y={{ domain: [0, 1], label: false, percent: true }}
