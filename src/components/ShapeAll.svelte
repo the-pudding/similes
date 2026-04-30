@@ -49,7 +49,7 @@
 	});
 </script>
 
-<div class="c graphic">
+<div class="c graphic multiples">
 	{#each byGround as { ground, data }, i}
 		{@const prefix = i === 0 ? "As " : ""}
 		{@const suffix1 = i === 0 ? " as " : ""}

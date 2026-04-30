@@ -458,7 +458,18 @@ article section  img.border-decorative {
 	text-transform: uppercase;
 	font-size: var(--12px);
 }
-
+.chart-title .underline-ground-light{
+	text-decoration-thickness: 4px;
+}
+.chart-title .underline-vehicle-light{
+	text-decoration-thickness: 4px;
+}
+.multiples .chart-title .underline-ground-light{
+	text-decoration-thickness: 1px;
+}
+.multiples .chart-title .underline-vehicle-light{
+	text-decoration-thickness: 0px;
+}
 
 span.spacer {
 	display: block;
