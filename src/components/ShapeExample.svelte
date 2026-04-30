@@ -7,7 +7,6 @@
 
 	let dimensions = new useWindowDimensions();
 
-	const maxToShow = 30;
 	const x = "vehicle";
 	const y = "count";
 
@@ -18,7 +17,8 @@
 		chartData.shape.filter((d, i) => d.ground === "dry").slice(0, maxToShow)
 	);
 
-	let vertical = $derived(dimensions.width < 800);
+	let maxToShow = $derived(dimensions.width < 640 ? 20 : 30);
+	let tickFontSize = $derived(dimensions.width < 640 ? 10 : 12);
 </script>
 
 <div class="c graphic">
@@ -29,26 +29,14 @@
 		>
 	</div>
 	{#if data.length}
-		{#if vertical}
-			<Plot
-				grid
-				y={{ label: "nouns" }}
-				x={{ label: "occurences" }}
-				height={data.length * 24}
-			>
-				<AxisY tickFontSize={12} />
-				<BarX {data} x={y} y={x} sort="-count" fill={hex.purpleLight} />
-			</Plot>
-		{:else}
-			<Plot
-				grid
-				x={{ tickRotate: -45, label: "nouns" }}
-				y={{ label: "occurences" }}
-			>
-				<AxisX tickFontSize={12} />
-				<BarY {data} {x} {y} sort="-count" fill={hex.purpleLight} />
-			</Plot>
-		{/if}
+		<Plot
+			grid
+			x={{ tickRotate: -45, label: "nouns" }}
+			y={{ label: "occurences" }}
+		>
+			<AxisX {tickFontSize} />
+			<BarY {data} {x} {y} sort="-count" fill={hex.purpleLight} />
+		</Plot>
 	{/if}
 </div>
 
