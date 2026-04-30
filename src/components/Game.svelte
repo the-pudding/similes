@@ -49,7 +49,7 @@
 			</div>
 			<!-- <p class="note"><small><em>Note: {@html note}</em></small></p> -->
 			<div class="submit">
-				<span>{@html Flower}</span><Button onclick={submit}>Submit</Button><span
+				<span>{@html Flower}</span><Button class="game-button" onclick={submit}>Submit</Button><span
 					>{@html Flower}</span
 				>
 			</div>
@@ -102,6 +102,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		border-image-width: 25px 0;
 	}
 
 	.game {
@@ -189,8 +190,8 @@
 
 	.submit span {
 		display: inline-block;
-		width: 2rem;
-		margin: 0 0.5rem;
+		width: 1.8rem;
+		margin: 4px 0.6rem 0 0.6rem;
 	}
 
 	/* These are the falling pages that curve down from topper */

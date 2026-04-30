@@ -454,6 +454,13 @@ span.spacer {
 	height: 2rem;
 }
 
+button.game-button[data-button-root]{
+  box-shadow: 
+    0 0 0 3px #FFF,     
+    0 0 0 4px #000;
+}
+
+
 @media screen and (min-width: 800px) {
 	p, li, blockquote, details {
 		font-size: var(--20px);
