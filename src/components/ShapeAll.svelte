@@ -52,8 +52,8 @@
 <div class="c graphic">
 	{#each byGround as { ground, data }, i}
 		{@const prefix = i === 0 ? "As " : ""}
-		{@const suffix1 = i === 0 ? " a " : ""}
-		{@const suffix2 = i === 0 ? "___" : ""}
+		{@const suffix1 = i === 0 ? " as " : ""}
+		{@const suffix2 = i === 0 ? "____" : ""}
 		{@const suffixAnnotation = i === 0 ? " (most-used noun)" : ""}
 		{@const textData = data.slice(0, 1)}
 		<div class="chart">

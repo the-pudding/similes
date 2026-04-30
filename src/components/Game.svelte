@@ -98,7 +98,7 @@
 		position: relative;
 		font-family: var(--font-sans);
 		padding: 2.5rem;
-		margin: 2rem auto;
+		margin: 4rem auto;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -226,6 +226,9 @@
 		}
 	}
 	@media (max-width: 900px) {
+		.c{
+			margin: 2rem auto;
+		}
 		.page:nth-of-type(2),
 		.page:nth-of-type(3) {
 			display: none;
