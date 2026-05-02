@@ -17,7 +17,9 @@
 		chartData.shape.filter((d, i) => d.ground === "dry").slice(0, maxToShow)
 	);
 
-	let maxToShow = $derived(dimensions.width < 640 ? 20 : 30);
+	let maxToShow = $derived(
+		dimensions.width < 375 ? 15 : dimensions.width < 640 ? 20 : 30
+	);
 	let tickFontSize = $derived(dimensions.width < 640 ? 10 : 12);
 </script>
 

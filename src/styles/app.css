@@ -233,6 +233,11 @@ details .content {
 	font-family: var(--font-sans);
 }
 
+.app-body {
+	overflow-x: hidden;
+	position: relative;
+}
+
 #method {
 	font-family: var(--font-sans);
 	margin-top: 6rem;
