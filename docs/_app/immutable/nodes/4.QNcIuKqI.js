@@ -1,4 +1,4 @@
-import"../chunks/DsnmJJEf.js";import{aq as m,Y as d,_ as D,t as _,G as l,Z as h,ar as B,W as L,ae as M,X as E,ab as O,J as q,aH as Y,ag as T,bb as K,I as Q}from"../chunks/CCxHhvyJ.js";import{b as v,f,c as R,t as X}from"../chunks/BawtTf_u.js";import{a as w,f as Z,e as $}from"../chunks/BZ8UElFc.js";import{e as H,i as z,c as ee,d as ne}from"../chunks/VJ--3aYi.js";import{e as te}from"../chunks/aJf7s6Jm.js";import{c as se,b as ae,i as oe}from"../chunks/DzQqPtxv.js";import{s as ie,p as j}from"../chunks/BlokMLgL.js";import{s as J}from"../chunks/DVIlHIMN.js";import{c as re,C as le,a as ce}from"../chunks/TYItdzcD.js";import{b as ue}from"../chunks/ByEgCs7y.js";import"../chunks/HvopnIf4.js";var he=f('<section id="demo-link"><h2>Link</h2> <p><a href="elements">Default element styles demo</a></p> <p><a href="fonts">Pudding-hosted font previews</a></p> <p><a href="ui">BitsUI styled components</a></p></section>');function pe(i){var n=he();v(i,n)}var de=f('<section id="demo-image"><h2>Image</h2> <p>img tag</p> <img src="../assets/demo/test.jpg" alt="cat" class="svelte-b56t42"/> <p>background image</p> <div class="svelte-b56t42"></div></section>');function me(i){var n=de();v(i,n)}var ve=f('<section id="demo-element"><h2>Dynamic Svelte Element</h2> <!></section>');function ge(i){const n=[{tag:"h3",text:"I am a h3 tag."},{tag:"p",text:"I am p tag."}];var t=ve(),e=m(d(t),2);H(e,17,()=>n,z,(r,a)=>{let c=()=>l(a).tag,p=()=>l(a).text;var g=R(),s=D(g);te(s,c,!1,(o,u)=>{var y=X();_(()=>w(y,p())),v(u,y)}),v(r,g)}),h(t),v(i,t)}var fe=f("<p> </p>");function ye(i,n){var t=fe(),e=d(t);h(t),_(()=>w(e,`I am component A and my favorite number is ${n.number??""}.`)),v(i,t)}var be=f("<p> </p>");function we(i,n){var t=be(),e=d(t);h(t),_(()=>w(e,`I am component B and my name is ${n.name??""}.`)),v(i,t)}var xe=f('<section id="demo-component"><h2>Dynamic Svelte Component</h2> <!></section>');function ke(i){const n={A:ye,B:we},t=[{component:"A",number:42},{component:"B",name:"Russell"}];var e=xe(),r=m(d(e),2);H(r,17,()=>t,z,(a,c)=>{const p=B(()=>n[l(c).component]);var g=R(),s=D(g);se(s,()=>l(p),(o,u)=>{u(o,ie(()=>l(c)))}),v(a,g)}),h(e),v(i,e)}var _e=f("<div><!></div>");function Ie(i,n){L(n,!0);let t=j(n,"root",3,null),e=j(n,"top",3,0),r=j(n,"bottom",3,0),a=j(n,"increments",3,100),c=j(n,"value",15,void 0),p=[],g=[],s=[],o=[],u;function y(){let b=0,k=0;for(let S=0;S<p.length;S++)p[S]>b&&(b=p[S],k=S);b>0?c(k):c(void 0)}function I(b,k){const S=W=>{W[0].isIntersecting;const V=W[0].intersectionRatio;p[k]=V,y()},G=e()?e()*-1:0,F=r()?r()*-1:0,N=`${G}px 0px ${F}px 0px`,U={root:t(),rootMargin:N,threshold:g};o[k]&&o[k].disconnect();const P=new IntersectionObserver(S,U);P.observe(b),o[k]=P}function A(){s.length&&s.forEach(I)}M(()=>{for(let b=0;b<a()+1;b++)g.push(b/a());s=u.querySelectorAll(":scope > *:not(iframe)"),A()}),M(()=>{e(),r(),A()});var x=_e(),C=d(x);J(C,()=>n.children??O),h(x),ae(x,b=>u=b,()=>u),v(i,x),E()}var Se=f('<div><p class="svelte-1sxgmm9"> </p></div>'),qe=f('<section id="scrolly"><h2 class="svelte-1sxgmm9">Scrolly <span> </span></h2> <div class="spacer svelte-1sxgmm9"></div> <!> <div class="spacer svelte-1sxgmm9"></div></section>');function Ae(i){let n=T(void 0);var t=qe(),e=d(t),r=m(d(e)),a=d(r,!0);h(r),h(e);var c=m(e,4);Ie(c,{get value(){return l(n)},set value(p){q(n,p,!0)},children:(p,g)=>{var s=R(),o=D(s);H(o,16,()=>[0,1,2,3,4],z,(u,y,I)=>{const A=B(()=>l(n)===I);var x=Se();let C;var b=d(x),k=d(b,!0);h(b),h(x),_(()=>{C=ee(x,1,"step svelte-1sxgmm9",null,C,{active:l(A)}),w(k,y)}),v(u,x)}),v(p,s)},$$slots:{default:!0}}),Y(2),h(t),_(()=>w(a,l(n)||"-")),v(i,t)}const je=`{
+import"../chunks/DsnmJJEf.js";import{aq as m,Y as d,_ as D,t as _,G as l,Z as h,ar as B,W as L,ae as M,X as E,ab as O,J as q,aH as Y,ag as T,bb as K,I as Q}from"../chunks/CCxHhvyJ.js";import{b as v,f,c as R,t as X}from"../chunks/BawtTf_u.js";import{a as w,f as Z,e as $}from"../chunks/BZ8UElFc.js";import{e as H,i as z,c as ee,d as ne}from"../chunks/VJ--3aYi.js";import{e as te}from"../chunks/aJf7s6Jm.js";import{c as se,b as ae,i as oe}from"../chunks/DzQqPtxv.js";import{s as ie,p as j}from"../chunks/BlokMLgL.js";import{s as J}from"../chunks/DVIlHIMN.js";import{c as re,C as le,a as ce}from"../chunks/CfTTWlP7.js";import{b as ue}from"../chunks/C2AZzI88.js";import"../chunks/HvopnIf4.js";var he=f('<section id="demo-link"><h2>Link</h2> <p><a href="elements">Default element styles demo</a></p> <p><a href="fonts">Pudding-hosted font previews</a></p> <p><a href="ui">BitsUI styled components</a></p></section>');function pe(i){var n=he();v(i,n)}var de=f('<section id="demo-image"><h2>Image</h2> <p>img tag</p> <img src="../assets/demo/test.jpg" alt="cat" class="svelte-b56t42"/> <p>background image</p> <div class="svelte-b56t42"></div></section>');function me(i){var n=de();v(i,n)}var ve=f('<section id="demo-element"><h2>Dynamic Svelte Element</h2> <!></section>');function ge(i){const n=[{tag:"h3",text:"I am a h3 tag."},{tag:"p",text:"I am p tag."}];var t=ve(),e=m(d(t),2);H(e,17,()=>n,z,(r,a)=>{let c=()=>l(a).tag,p=()=>l(a).text;var g=R(),s=D(g);te(s,c,!1,(o,u)=>{var y=X();_(()=>w(y,p())),v(u,y)}),v(r,g)}),h(t),v(i,t)}var fe=f("<p> </p>");function ye(i,n){var t=fe(),e=d(t);h(t),_(()=>w(e,`I am component A and my favorite number is ${n.number??""}.`)),v(i,t)}var be=f("<p> </p>");function we(i,n){var t=be(),e=d(t);h(t),_(()=>w(e,`I am component B and my name is ${n.name??""}.`)),v(i,t)}var xe=f('<section id="demo-component"><h2>Dynamic Svelte Component</h2> <!></section>');function ke(i){const n={A:ye,B:we},t=[{component:"A",number:42},{component:"B",name:"Russell"}];var e=xe(),r=m(d(e),2);H(r,17,()=>t,z,(a,c)=>{const p=B(()=>n[l(c).component]);var g=R(),s=D(g);se(s,()=>l(p),(o,u)=>{u(o,ie(()=>l(c)))}),v(a,g)}),h(e),v(i,e)}var _e=f("<div><!></div>");function Ie(i,n){L(n,!0);let t=j(n,"root",3,null),e=j(n,"top",3,0),r=j(n,"bottom",3,0),a=j(n,"increments",3,100),c=j(n,"value",15,void 0),p=[],g=[],s=[],o=[],u;function y(){let b=0,k=0;for(let S=0;S<p.length;S++)p[S]>b&&(b=p[S],k=S);b>0?c(k):c(void 0)}function I(b,k){const S=W=>{W[0].isIntersecting;const V=W[0].intersectionRatio;p[k]=V,y()},G=e()?e()*-1:0,F=r()?r()*-1:0,N=`${G}px 0px ${F}px 0px`,U={root:t(),rootMargin:N,threshold:g};o[k]&&o[k].disconnect();const P=new IntersectionObserver(S,U);P.observe(b),o[k]=P}function A(){s.length&&s.forEach(I)}M(()=>{for(let b=0;b<a()+1;b++)g.push(b/a());s=u.querySelectorAll(":scope > *:not(iframe)"),A()}),M(()=>{e(),r(),A()});var x=_e(),C=d(x);J(C,()=>n.children??O),h(x),ae(x,b=>u=b,()=>u),v(i,x),E()}var Se=f('<div><p class="svelte-1sxgmm9"> </p></div>'),qe=f('<section id="scrolly"><h2 class="svelte-1sxgmm9">Scrolly <span> </span></h2> <div class="spacer svelte-1sxgmm9"></div> <!> <div class="spacer svelte-1sxgmm9"></div></section>');function Ae(i){let n=T(void 0);var t=qe(),e=d(t),r=m(d(e)),a=d(r,!0);h(r),h(e);var c=m(e,4);Ie(c,{get value(){return l(n)},set value(p){q(n,p,!0)},children:(p,g)=>{var s=R(),o=D(s);H(o,16,()=>[0,1,2,3,4],z,(u,y,I)=>{const A=B(()=>l(n)===I);var x=Se();let C;var b=d(x),k=d(b,!0);h(b),h(x),_(()=>{C=ee(x,1,"step svelte-1sxgmm9",null,C,{active:l(A)}),w(k,y)}),v(u,x)}),v(p,s)},$$slots:{default:!0}}),Y(2),h(t),_(()=>w(a,l(n)||"-")),v(i,t)}const je=`{
   "meta": {
     "title": "Comparisons as Predictable as the Sunrise",
     "description": "An analysis of 200,000 similes from popular fiction.",
@@ -15,11 +15,11 @@ import"../chunks/DsnmJJEf.js";import{aq as m,Y as d,_ as D,t as _,G as l,Z as h,
         },
         {
           "type": "text",
-          "value": "<span class=dek>An analysis of 200,000 similes from popular fiction.</span>"
+          "value": "An analysis of 200,000 similes from popular fiction."
         },
         {
           "type": "text",
-          "value": "<span class=byline>By <a href=https://pudding.cool/author/russell-samora>Russell Samora.</a> Design &amp; Illustration by <a href=https://pudding.cool/author/shelly-tan>Shelly Tan.</a>"
+          "value": "By <a href=https://pudding.cool/author/russell-samora>Russell Samora.</a> Design &amp; Illustration by <a href=https://pudding.cool/author/shelly-tan>Shelly Tan.</a>"
         },
         {
           "type": "TopperImages",
@@ -315,16 +315,16 @@ import"../chunks/DsnmJJEf.js";import{aq as m,Y as d,_ as D,t as _,G as l,Z as h,
           "value": "Let’s focus on four of the generalist nouns that each reveal something different about how writers use comparisons."
         },
         {
-          "type": "h3",
-          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as a <span class=underline-vehicle>Cat</span>"
-        },
-        {
           "type": "img",
           "value": {
             "src": "assets/cat.png",
             "alt": "Illustration of a cat stretching.",
             "class": "img-cat"
           }
+        },
+        {
+          "type": "h3",
+          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as a <span class=underline-vehicle>Cat</span>"
         },
         {
           "type": "text",
@@ -339,16 +339,16 @@ import"../chunks/DsnmJJEf.js";import{aq as m,Y as d,_ as D,t as _,G as l,Z as h,
           "value": {}
         },
         {
-          "type": "h3",
-          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as <span class=underline-vehicle>Stone</span>"
-        },
-        {
           "type": "img",
           "value": {
             "src": "assets/stone.png",
             "alt": "Illustration of a stone with googly eyes attached.",
             "class": "img-stone"
           }
+        },
+        {
+          "type": "h3",
+          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as <span class=underline-vehicle>Stone</span>"
         },
         {
           "type": "text",
@@ -363,16 +363,16 @@ import"../chunks/DsnmJJEf.js";import{aq as m,Y as d,_ as D,t as _,G as l,Z as h,
           "value": {}
         },
         {
-          "type": "h3",
-          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as a <span class=underline-vehicle>Child</span>"
-        },
-        {
           "type": "img",
           "value": {
             "src": "assets/child.png",
             "alt": "Illustration of an anxious kid, looking between two theater masks. One is smiling, the other crying.",
             "class": "img-child"
           }
+        },
+        {
+          "type": "h3",
+          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as a <span class=underline-vehicle>Child</span>"
         },
         {
           "type": "text",
@@ -387,16 +387,16 @@ import"../chunks/DsnmJJEf.js";import{aq as m,Y as d,_ as D,t as _,G as l,Z as h,
           "value": "On the wholesome side, the top usage is “as <span class=underline-ground>innocent</span> as <span class=underline-vehicle>a child</span>.” But <span class=underline-vehicle>child</span> is only the second most-used noun for both of these adjectives, trailing the less evolved form: <span class=underline-vehicle>baby</span>."
         },
         {
-          "type": "h3",
-          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as <span class=underline-vehicle>Hell</span>"
-        },
-        {
           "type": "img",
           "value": {
             "src": "assets/hell.png",
             "alt": "Illustration of the devil, balancing a stack of different hats on his head.",
             "class": "img-hell"
           }
+        },
+        {
+          "type": "h3",
+          "value": "As <span class=underline-ground>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> as <span class=underline-vehicle>Hell</span>"
         },
         {
           "type": "text",
