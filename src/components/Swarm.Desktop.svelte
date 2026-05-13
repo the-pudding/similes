@@ -66,7 +66,7 @@
 	</div>
 	<div class="annotation">
 		<div>&larr; Generalists</div>
-		<div>Specialiasts &rarr;</div>
+		<div>Specialists &rarr;</div>
 	</div>
 	<div class="chart">
 		{#if data.length}
