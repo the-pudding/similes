@@ -294,7 +294,7 @@
         },
         {
           "type": "text",
-          "value": "To quantify this, I looked at the diversity of adjectives for each noun using the <a href=https://en.wikipedia.org/wiki/Diversity_index#Simpson_index target=_blank rel=noreferrer>Simpson index.</a> Put plainly: if you pick two similes for a noun at random, what is the chance that the adjectives match? For example, if you were to randomly look at two sentences with “cool as a ___,” there is a 92% chance they are both “cucumber.”"
+          "value": "To quantify this, I looked at the diversity of adjectives for each noun using the <a href=https://en.wikipedia.org/wiki/Diversity_index#Simpson_index target=_blank rel=noreferrer>Simpson index.</a> Put plainly: if you pick two similes for a noun at random, what is the chance that the adjectives match? For example, if you were to randomly look at two sentences with “___ as a cucumber,” there is a 92% chance they are both “cool.”"
         },
         {
           "type": "Swarm",
